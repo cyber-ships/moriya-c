@@ -976,3 +976,112 @@ main {
     }
   }
 }
+
+/* -----------------------------------------------------
+	footer
+----------------------------------------------------- */
+footer {
+  position: relative;
+  border-top: solid 1px #cccccc;
+  padding: 24px 0 23px 0;
+  @include mq() {
+    padding: vw(60) 0;
+  }
+  .inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 50px;
+    @include mq() {
+      padding: 0;
+    }
+    nav {
+      @include mq() {
+        width: 100%;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        @include mq() {
+          justify-content: center;
+        }
+        li {
+          margin-left: 12px;
+          @include mq() {
+            margin-left: vw(40);
+          }
+          a {
+            position: relative;
+            font-size: 1rem;
+            font-weight: 700;
+            @include mq() {
+              font-size: vw(24);
+            }
+            &:before {
+              content: "";
+              display: block;
+              width: 6px;
+              height: 9px;
+              background-image: url("../img/icon/arrow-r-01_black.svg");
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: left center;
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+              @include mq() {
+                width: vw(12);
+                height: vw(19);
+              }
+            }
+            span {
+              display: inline-block;
+              padding: 0 0 0 12px;
+              @include mq() {
+                padding: 0 0 0 vw(24);
+              }
+            }
+          }
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+    .sns {
+      margin: 0 0 0 18px;
+      @include mq() {
+        width: 100%;
+        margin: vw(58) 0 0 0;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        @include mq() {
+          justify-content: center;
+        }
+        li {
+          width: 30px;
+          @include mq() {
+            width: vw(76);
+          }
+          a {
+            display: block;
+          }
+        }
+      }
+    }
+    .copyright {
+      font-size: 1rem;
+      font-weight: 500;
+      margin: 0 0 0 auto;
+      @include mq() {
+        width: 100%;
+        text-align: center;
+        margin: vw(67) 0 0 0;
+        font-size: vw(18);
+      }
+    }
+  }
+}
