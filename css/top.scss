@@ -19,6 +19,12 @@ $breakpoints: (
   }
 }
 
+@mixin lg($breakpoint: pc) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
 @function vw($px, $viewport: null) {
   @if $viewport == null {
     $viewport: $break;
@@ -26,7 +32,12 @@ $breakpoints: (
   @return $px / $viewport * 100vw;
 }
 
-
+main section {
+  @include mq() {
+    padding-left: vw(30);
+    padding-right: vw(30);
+  }
+}
 
 .top_mv{
   margin-top: 38px;
@@ -34,14 +45,26 @@ $breakpoints: (
   background-image: url(../img/top/top_mv.jpg);
   background-size: cover;
   position: relative;
+  @media screen and (max-width: 1000px) {
+    height: 500px;
+    margin-top: vw(30);
+  }
   @include mq() {
-    
+    height: vw(950);
+    background-image: url(../img/top/top_mv_sp.jpg);
   }
   &_img{
     position: absolute;
     width: clamp(700px, 66vw, 1143px);
     top: -38px;
     right: 0;
+    @media screen and (max-width: 1000px) {
+      width: 540px;
+    }
+    @include mq() {
+      width: vw(443);
+      top: vw(-30);
+    }
   }
   &_wrap{
     position: relative;
@@ -51,6 +74,14 @@ $breakpoints: (
     padding-top: 34px;
     width: 196px;
     transform: translateX(-50%);
+    @media screen and (max-width: 1000px) {
+      padding-top: 0;
+      transform: unset;
+      width: 130px;
+    }
+    @include mq() {
+      width: vw(208);
+    }
   }
 }
 
@@ -59,12 +90,19 @@ $breakpoints: (
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
+    @include mq() {
+      margin-top: vw(24);
+    }
   }
   &_text{
     p{
       font-size: 2rem;
       line-height: 1.8;
       margin-top: 35px;
+      @include mq() {
+        font-size: vw(26);
+        margin-top: vw(38);
+      }
       span{
         color: $sub1;
       }
@@ -74,21 +112,33 @@ $breakpoints: (
     }
     .logo{
       margin-top: 50px;
+      @include mq() {
+        margin-top: vw(80);
+      }
       span{
         font-size: 1.8rem;
         font-weight: bold;
+        @include mq() {
+          font-size: vw(26);
+        }
       }
       .img{
         margin-top: 18px;
         display: block;
         img{
           width: 340px;
+          @include mq() {
+            width: vw(506);
+          }
         }
       }
     }
   }
   &_btn{
     margin-top: 70px;
+    @include mq() {
+      margin-top: vw(100);
+    }
   }
 }
 
@@ -106,6 +156,14 @@ $breakpoints: (
     background-position: top right;
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (max-width: 1000px) {
+      height: 100%;
+    }
+    @include mq() {
+      background-image: unset;
+      background-color: #f1f8fe;
+      width: 100%;
+    }
   }
   &_wrap{
     display: flex;
@@ -113,6 +171,9 @@ $breakpoints: (
   }
   &_list01{
     margin-bottom: 30px;
+    @include mq() {
+      margin-bottom: vw(50);
+    }
   }
   &_list_title{
     display: flex;
@@ -120,10 +181,16 @@ $breakpoints: (
     align-items: center;
     padding-bottom: 8px;
     border-bottom: 1px solid #222222;
+    @include mq() {
+    padding-bottom: vw(14);
+    }
     h3{
       font-size: 2rem;
       font-weight: bold;
       color: $sub1;
+      @include mq() {
+        font-size: vw(30);
+      }
     }
     a{
       display: block;
@@ -131,6 +198,9 @@ $breakpoints: (
       color: $fontColor;
       padding-right: 20px;
       position: relative;
+      @include mq() {
+        font-size: vw(24);
+      }
       &::before{
         content: '';
         position: absolute;
@@ -141,44 +211,87 @@ $breakpoints: (
         border-top: 1px solid #222222;
         width: 7px;
         height: 7px;
+        @include mq() {
+          width: vw(12);
+          height: vw(12);
+        }
       }
     }
   }
   &_box{
     max-width: 786px;
+    @media screen and (max-width: 1000px) {
+      margin-left: 30px;
+    }
+    @include mq() {
+      margin-left: vw(34);
+    }
   }
   &_item{
     &01{
       margin-top: 15px;
+      @include mq() {
+        margin-top: vw(18);
+      }
     }
     &02{
       margin-top: 20px;
+      @include mq() {
+        margin-top: vw(30);
+      }
     }
     li{
       margin-bottom: 15px;
+      @include mq() {
+        margin-bottom: vw(20);
+      }
       &:last-child{
         margin-bottom: 0;
       }
       a{
         display: flex;
-        .date{
-          min-width:  100px;
-          font-size: 1.6rem;
-          font-weight: bold;
+        @include mq() {
+          flex-direction: column;
         }
-        .tag{
-          padding: 4px 0 6px;
-          margin-right: 14px;
-          height: fit-content;
-          min-width: 83px;
-          color: #ffffff;
-          background-color: #717171;
-          text-align: center;
-          font-weight: bold;
-          font-size: 1.2rem;
+        .text{
+          display: flex;
+          @include mq() {
+            align-items: center;
+          }
+          .date{
+            min-width:  100px;
+            font-size: 1.6rem;
+            font-weight: bold;
+            @include mq() {
+              min-width: unset;
+              font-size: vw(26);
+            }
+          }
+          .tag{
+            display: inline-block;
+            padding: 4px 0 6px;
+            margin-right: 14px;
+            height: fit-content;
+            min-width: 83px;
+            color: #ffffff;
+            background-color: #717171;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            @include mq() {
+              padding: vw(1) 0 vw(2);
+              margin-right: vw(20);
+              font-size: vw(20);
+              min-width: vw(124);
+            }
+          }
         }
         h4{
           font-size: 1.6rem;
+          @include mq() {
+            margin-top: vw(10);
+            font-size: vw(26);
+          }
         }
       }
     }
@@ -187,6 +300,7 @@ $breakpoints: (
 
 .top_reason{
   position: relative;
+  overflow: hidden;
   &::before{
     content: '';
     position: absolute;
@@ -199,6 +313,15 @@ $breakpoints: (
     background-position: top left;
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (max-width: 1000px) {
+      height: 100%;
+      width: calc(100vw + 200px);
+    }
+    @include mq() {
+      top: vw(230);
+      height: 100%;
+      width: calc(100vw + vw(300));
+    }
   }
   &_wrap{
     display: flex;
@@ -209,31 +332,70 @@ $breakpoints: (
     flex-wrap: wrap;
     width: 744px;
     margin-left: 72px;
+    @media screen and (max-width: 1000px) {
+      width: 100%;
+      margin-left: 0;
+    }
     li{
       width: 244px;
+      @media screen and (max-width: 1000px) {
+        width: 50%;
+      }
       &:first-child{
         transform: translateX(76px);
+        @media screen and (max-width: 1000px) {
+          transform: unset;
+        }
       }
       &:nth-child(2){
         transform: translateX(38px);
+        @media screen and (max-width: 1000px) {
+          transform: translateX(-16%);
+        }
       }
       &:nth-child(4){
         transform: translateX(-10px);
+        @media screen and (max-width: 1000px) {
+          transform: translateX(-16%);
+        }
       }
       &:nth-child(5){
         transform: translateX(-48px);
+        @media screen and (max-width: 1000px) {
+          transform: unset;
+        }
+
       }
       &:last-child{
         transform: translateX(-88px);
+        @media screen and (max-width: 1000px) {
+          transform: translateX(-16%);
+        }
+      }
+      &:nth-child(3){
+        @media screen and (max-width: 1000px) {
+          margin-top: 17px;
+        }
+        @include mq() {
+          margin-top: vw(34);
+        }
       }
       &:nth-child(4),&:nth-child(5),&:nth-child(6){
         margin-top: 17px;
+        @include mq() {
+          margin-top: vw(34);
+        }
       }
       p{
         font-size: 1.7rem;
         font-weight: bold;
         line-height: 1.4;
         margin-top: 10px;
+        @include mq() {
+          font-size: vw(22);
+          margin-top: vw(12);
+          white-space: nowrap;
+        }
         span{
           color: $sub1;
         }
@@ -242,6 +404,9 @@ $breakpoints: (
   }
   &_btn{
     margin-top: 64px;
+    @include mq() {
+      margin-top: vw(60);
+    }
   }
 }
 
@@ -249,6 +414,11 @@ $breakpoints: (
   background-image: url(../img/top/top_bg.jpg);
   background-size: cover;
   overflow: hidden;
+  @include mq() {
+    margin-top: vw(100);
+    background-position: bottom 0 left 0;
+    background-image: url(../img/top/top_bg_sp.jpg);
+  }
   &_wrap{
     display: flex;
     justify-content: space-between;
@@ -266,11 +436,19 @@ $breakpoints: (
   }
   &_box{
     margin-left: 95px;
+    @include mq() {
+      margin-left: vw(30);
+    }
   }
   &_produce{
     position: relative;
     padding-top: 100px;
     padding-bottom: 95px;
+    @include mq() {
+      padding-top: vw(112);
+      padding-bottom: vw(108);
+      width: 102%;
+    }
     &::before{
       content: '';
       position: absolute;
@@ -281,6 +459,10 @@ $breakpoints: (
       background-image: url(../img/top/top_img09.png);
       background-size: cover;
       background-position: bottom left;
+      @include mq() {
+        width: 100%;
+        background-image: url(../img/top/top_img09_sp.png);
+      }
     }
     &_title{
       position: relative;
@@ -301,9 +483,30 @@ $breakpoints: (
     }
     &_link{
       margin-top: 30px;
+      .btn_wrap03{
+        @include mq() {
+          width: vw(510);
+        }
+        .btn{
+          @include mq() {
+            &.type-04{
+              padding: vw(18) 0;
+              span{
+                font-size: vw(19);
+                margin-bottom: vw(4);
+              }
+            }
+          }
+        }
+      }
     }
     &_btn{
       margin-left: 0;
+      .btn{
+        @include mq() {
+          width: vw(510);
+        }
+      }
     }
     &_btn_box{
       margin-left: 0;
@@ -312,6 +515,9 @@ $breakpoints: (
   }
   &_btn{
     margin-top: 35px;
+    @include mq() {
+      margin-top: vw(60);
+    }
     a{
       display: block;
       width: 784px;
@@ -319,6 +525,16 @@ $breakpoints: (
       background-image: url(../img/top/top_img10.jpg);
       background-size: 100%;
       position: relative;
+      border: 1px solid #ffffff;
+      @media screen and (max-width: 1000px) {
+        width: 517px;
+        height: 102px;
+      }
+      @include mq() {
+        width: vw(510);
+        height: vw(200);
+        background-image: url(../img/top/top_img10_sp.jpg);
+      }
       &::before{
         content: "";
         display: block;
@@ -336,6 +552,12 @@ $breakpoints: (
         background-repeat: no-repeat;
         background-position: center;
         background-size: 22px auto;
+        @include mq() {
+          right: vw(20);
+          width: vw(50);
+          height: vw(50);
+          background-size: vw(22) auto;
+        }
       }
       .title{
         position: absolute;
@@ -343,13 +565,30 @@ $breakpoints: (
         top: 50%;
         left: 42px;
         transform: translateY(-50%);
+        @include mq() {
+          left: vw(20);
+        }
         p{
           font-size: 3rem;
+          font-weight: 500;
+          @media screen and (max-width: 1000px) {
+            font-size: 2.4rem;
+          }
+          @include mq() {
+            font-size: vw(44);
+          }
         }
         span{
           font-size: 1.8rem;
           margin-top: 4px;
           font-weight: 600;
+          @media screen and (max-width: 1000px) {
+            font-size: 1.2rem;
+          }
+          @include mq() {
+            font-size: vw(26);
+            margin-top: vw(8);
+          }
         }
       }
     }
@@ -359,6 +598,15 @@ $breakpoints: (
     padding-bottom: 150px;
     margin-top: 100px;
     position: relative;
+    @media screen and (max-width: 1000px) {
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
+    @include mq() {
+      padding-top: vw(205);
+      padding-bottom: vw(205);
+      margin-top: vw(60);
+    }
     &::before{
       content: '';
       position: absolute;
@@ -369,6 +617,11 @@ $breakpoints: (
       background-image: url(../img/top/top_img11.png);
       background-size: 100%;
       background-position: top left;
+      background-repeat: no-repeat;
+      @include mq() {
+        background-image: url(../img/top/top_img11_sp.png);
+        left: vw(-50);
+      }
     }
     &_title{
       position: relative;
@@ -376,8 +629,11 @@ $breakpoints: (
         font-size: 5rem;
         color: #ffffff;
         font-family: "din-2014", sans-serif;
-        font-weight: bold;
+        font-weight: 600;
         line-height: 1;
+        @include mq() {
+          font-size: vw(76);
+        }
       }
       p{
         font-size: 2rem;
@@ -385,11 +641,20 @@ $breakpoints: (
         color: #ffffff;
         line-height: 1;
         margin-top: 12px;
+        @include mq() {
+          font-size: vw(30);
+          margin-top: vw(20);
+        }
       }
     }
     &_btn{
       margin-left: 0;
       margin-top: 30px;
+      .btn{
+        @include mq() {
+          width: vw(510);
+        }
+      }
     }
   }
 }
@@ -397,6 +662,10 @@ $breakpoints: (
 .top_recruit{
   margin-top: 40px;
   padding-bottom: 200px;
+  @include mq() {
+    padding-top: vw(100);
+    padding-bottom: vw(120);
+  }
   &_inner{
     position: relative;
     &::before{
@@ -413,24 +682,36 @@ $breakpoints: (
       background-repeat: no-repeat;
       background-position: center;
       background-size: 22px auto;
-    }
-    &::after{
-      content: '';
-      position: absolute;
-      right: 0;
-      bottom: -30px;
-      width: 870px;
-      height: 253px;
-      background-image: url(../img/top/top_img13.png);
-      background-size: contain;
-      z-index: -1;
+      z-index: 10;
+      @media screen and (max-width: 1000px) {
+        top: 50%;
+        transform: translateY(-50%);
+        right: 50px;
+      }
+      @include mq() {
+        right: vw(74);
+        width: vw(64);
+        height: vw(64);
+        background-size: vw(28) auto;
+      }
     }
   }
   &_btn{
     display: block;
     position: relative;
+    height: 289px;
+    @media screen and (max-width: 1000px) {
+      height: auto;
+      margin: 0 auto;
+    }
     &:hover{
       opacity: 1;
+    }
+  }
+  &_bg{
+    position: relative;
+    img{
+      object-fit: contain;
     }
     h2{
       color: #ffffff;
@@ -438,28 +719,49 @@ $breakpoints: (
       font-weight: bold;
       font-size: 7.3rem;
       position: absolute;
-      bottom: -12px;
-      right: 176px;
+      bottom: 18px;
+      right: 165px;
       line-height: 1;
-    }
-  }
-  &_bg{
-    max-width: 876px;
-    img{
-      object-fit: contain;
+      @media screen and (max-width: 1000px) {
+        font-size: 5rem;
+        bottom: 20px;
+        right: 153px;
+      }
+      @include mq() {
+        font-size: vw(84);
+        bottom: vw(30);
+        right: vw(189);
+        width: vw(336);
+      }
     }
   }
   &_title{
     color: #ffffff;
     z-index: 10;
     position: absolute;
-    top: 64px;
-    left: 133px;
+    top: 54px;
+    left: 114px;
+    @media screen and (max-width: 1000px) {
+      top: 52px;
+      left: 116px;
+    }
+    @include mq() {
+      top: vw(124);
+      left: vw(100);
+    }
     .sub_title{
       padding-left: 60px;
       font-size: 2rem;
       position: relative;
       font-weight: 400;
+      @media screen and (max-width: 1000px) {
+        font-size: 1.2rem;
+        padding-left: 40px;
+      }
+      @include mq() {
+        font-size: vw(22);
+        padding-left: vw(80);
+      }
       &::before{
         content: '';
         position: absolute;
@@ -468,6 +770,12 @@ $breakpoints: (
         width: 48px;
         height: 1px;
         background-color: #ffffff;
+        @media screen and (max-width: 1000px) {
+          width: 30px;
+        }
+        @include mq() {
+          width: vw(58);
+        }
       }
     }
     .title{
@@ -476,12 +784,28 @@ $breakpoints: (
       font-weight: 600;
       margin-top: 18px;
       text-shadow: 0 0 10px #000;
+      @media screen and (max-width: 1000px) {
+        font-size: 2rem;
+        margin-top: 6px;
+      }
+      @include mq() {
+        font-size: vw(38);
+        line-height: 1.3;
+        margin-top: vw(12);
+      }
     }
     .text{
       margin-top: 12px;
       font-size: 2rem;
       font-weight: 600;
       text-shadow: 0 0 10px #000;
+      @media screen and (max-width: 1000px) {
+        font-size: 1.5rem;
+      }
+      @include mq() {
+        font-size: vw(22);
+        margin-top: vw(12);
+      }
     }
   }
 }
