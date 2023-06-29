@@ -1014,220 +1014,118 @@ main section .inner p + p {
 }
 
 /* -----------------------------------------------------
-	summary
+	company_client
 ----------------------------------------------------- */
-.summary {
-  display: flex;
-  flex-wrap: wrap;
-}
-.summary dt {
-  width: 20%;
-  border-bottom: solid 1px #999999;
-  padding: 22.5px 40px;
-  font-weight: 700;
-}
-@media screen and (max-width: 768px) {
-  .summary dt {
-    width: 30%;
-    padding: 2.6666666667vw 4vw;
-  }
-}
-.summary dt:nth-of-type(even) {
-  background-color: #fafafa;
-}
-.summary dd {
-  width: 80%;
-  border-bottom: solid 1px #999999;
-  padding: 22.5px 40px 22.5px 0;
-}
-@media screen and (max-width: 768px) {
-  .summary dd {
-    width: 70%;
-    padding: 2.6666666667vw 4vw 2.6666666667vw 0;
-  }
-}
-.summary dd:nth-of-type(even) {
-  background-color: #fafafa;
-}
-
-/* -----------------------------------------------------
-	company_office
------------------------------------------------------ */
-.company_office_title {
-  font-size: 4rem;
-  line-height: 1.5;
-  font-weight: 700;
-  text-align: center;
-  font-feature-settings: "palt" 1;
-  letter-spacing: 0.1em;
-  color: #222222;
-  margin: 0 0 50px 0;
-}
-@media screen and (max-width: 768px) {
-  .company_office_title {
-    font-size: 6.1333333333vw;
-    margin: 0 0 8vw 0;
-  }
-}
-.company_office_title span {
-  display: block;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 2.7rem;
-  line-height: 1;
-  margin: 20px 0 0 0;
-}
-@media screen and (max-width: 768px) {
-  .company_office_title span {
-    font-size: 3.7333333333vw;
-    margin: 4vw 0 0 0;
-  }
-}
-.company_office_map {
+.company_client_box {
   background-color: #f8f9f9;
-  padding: 50px;
-  margin-top: 100px;
+  padding: 30px 50px;
+  margin-bottom: 50px;
+  position: relative;
 }
-@media screen and (max-width:1000px) {
-  .company_office_map {
-    padding: 50px 20px;
-    margin-top: 50px;
+@media screen and (max-width: 768px) {
+  .company_client_box {
+    padding: 30px 20px;
   }
 }
-.company_office_map_box {
+.company_client_box_title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #3d609d;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .company_client_box_title {
+    font-size: 6.1333333333vw;
+  }
+}
+.company_client_box_title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background-color: #3d609d;
+}
+@media screen and (max-width: 768px) {
+  .company_client_box_title::before {
+    width: 30px;
+    left: -30px;
+  }
+}
+.company_client_box_l {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 100px;
 }
-@media screen and (max-width: 768px) {
-  .company_office_map_box:last-of-type {
-    margin-bottom: 0;
-  }
-}
-@media screen and (max-width:1000px) {
-  .company_office_map_box {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 50px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .company_office_map_box {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 50px;
-  }
-}
-.company_office_map_box_l {
+.company_client_box_s {
   width: 30%;
-}
-@media screen and (max-width:1000px) {
-  .company_office_map_box_l {
-    margin-bottom: 30px;
-    width: 100%;
-  }
-}
-.company_office_map_box_l_title {
-  font-size: 2.8rem;
-  font-weight: 600;
-  margin-bottom: 50px;
-}
-@media screen and (max-width:1000px) {
-  .company_office_map_box_l_title {
-    margin-bottom: 30px;
-  }
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
-  .company_office_map_box_l_title {
-    font-size: 6.1333333333vw;
+  .company_client_box_s {
+    width: 50%;
   }
 }
-.company_office_map_box_l_access {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
+.company_client_box_s_copy {
+  font-size: 2rem;
 }
 @media screen and (max-width: 768px) {
-  .company_office_map_box_l_access {
+  .company_client_box_s_copy {
     font-size: 3.7333333333vw;
-  }
-}
-.company_office_map_box_l_tell {
-  font-size: 1.8rem;
-}
-@media screen and (max-width: 768px) {
-  .company_office_map_box_l_tell {
-    font-size: 3.7333333333vw;
-  }
-}
-.company_office_map_box_l_fax {
-  font-size: 1.8rem;
-}
-@media screen and (max-width: 768px) {
-  .company_office_map_box_l_fax {
-    font-size: 3.7333333333vw;
-  }
-}
-.company_office_map_box iframe {
-  width: 50%;
-  aspect-ratio: 16/9;
-}
-@media screen and (max-width:1000px) {
-  .company_office_map_box iframe {
-    width: 100%;
   }
 }
 
-.access_icon {
+.company_client_accordion {
+  margin-top: 20px;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .company_client_accordion {
+    margin-top: 1em;
+  }
+}
+
+.company_client_accordion_text {
+  display: none;
+  position: absolute;
+  right: 120px;
+  bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .company_client_accordion_text {
+    right: 50%;
+    bottom: 10px;
+    transform: translatex(50%);
+  }
+}
+
+.company_client_accordion_btn {
   display: block;
-  width: 130px;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.8rem;
-  padding: 2px 0;
-  border-radius: 5px;
   text-align: center;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
   color: #fff;
-  background-color: #4472c4;
-  margin-bottom: 20px;
+  background-color: #003798;
+  margin-left: auto;
+  margin-top: 20px;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-  .access_icon {
-    font-size: 3.7333333333vw;
+  .company_client_accordion_btn {
+    margin: 20px auto 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
   }
 }
 
-.tel_icon {
-  display: inline-block;
-  width: 100px;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.8rem;
-  padding: 2px 0;
-  border-radius: 5px;
-  text-align: center;
-  color: #fff;
-  background-color: #4472c4;
-  margin-right: 10px;
-}
 @media screen and (max-width: 768px) {
-  .tel_icon {
-    font-size: 3.7333333333vw;
-  }
-}
-
-.fax_icon {
-  display: inline-block;
-  width: 100px;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.8rem;
-  padding: 2px 0;
-  border-radius: 5px;
-  text-align: center;
-  color: #fff;
-  background-color: #4472c4;
-  margin-right: 10px;
-}
-@media screen and (max-width: 768px) {
-  .fax_icon {
-    font-size: 3.7333333333vw;
+  .sp_none {
+    display: none;
   }
 }
 
@@ -1414,4 +1312,4 @@ footer .inner .copyright {
     font-size: 2.4vw;
   }
 }
-/*# sourceMappingURL=company_office.css.map */
+/*# sourceMappingURL=company_client.css.map */
