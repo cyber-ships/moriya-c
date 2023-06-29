@@ -1,0 +1,39 @@
+.common_inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.common_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.common_title h2 {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-size: 9rem;
+  color: #003798;
+  font-family: "din-2014", sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  margin-right: 16px;
+}
+.common_title span {
+  font-size: 2.2rem;
+  font-weight: 600;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  padding-top: 68px;
+  position: relative;
+}
+.common_title span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 58px;
+  background-color: #222222;
+}/*# sourceMappingURL=common.css.map */
