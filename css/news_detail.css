@@ -1539,20 +1539,83 @@ main section .inner p + p {
 }
 
 /* -----------------------------------------------------
-	news
+	new_detail
 ----------------------------------------------------- */
-.news_num_list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+.detail_bgc {
+  background-color: #f8f9f9;
 }
-.news_num_list_item {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+
+.news_detail_sub {
+  display: block;
+  width: 130px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.8rem;
+  padding: 2px 0;
+  border-radius: 5px;
   text-align: center;
-  background-color: #f1f8fe;
+  color: #fff;
+  background-color: #c00000;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  .news_detail_sub {
+    font-size: 3.7333333333vw;
+  }
+}
+.news_detail_title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  .news_detail_title {
+    font-size: 6.1333333333vw;
+  }
+}
+.news_detail_copy {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  .news_detail_copy {
+    font-size: 3.7333333333vw;
+  }
+}
+.news_detail_img {
+  margin-bottom: 15px;
+}
+.news_detail_img img {
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .news_detail_img img {
+    height: 50vw;
+  }
+}
+.news_detail_text {
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 768px) {
+  .news_detail_text {
+    font-size: 3.7333333333vw;
+  }
+}
+.news_detail_btn {
+  display: block;
+  text-align: center;
+  font-size: 2.8rem;
+  padding: 20px 30px;
+  max-width: 320px;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #4472c4;
+}
+@media screen and (max-width: 768px) {
+  .news_detail_btn {
+    font-size: 6.1333333333vw;
+  }
 }
 
 /* -----------------------------------------------------
@@ -1772,4 +1835,4 @@ footer .inner .copyright {
     font-size: 2.4vw;
   }
 }
-/*# sourceMappingURL=news.css.map */
+/*# sourceMappingURL=news_detail.css.map */
