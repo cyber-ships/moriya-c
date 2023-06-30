@@ -1,0 +1,34 @@
+
+
+.page_products{
+  padding-top: 0;
+  .sub-page_list{
+    justify-content: space-between;
+    .block{
+      margin-left: 0;
+      &:nth-child(2){
+        margin-top: 0;
+      }
+      &_01{
+        a{
+          background-image: url(../img/products/img2.png);
+        }
+      }
+      &_02{
+        a{
+          background-image: url(../img/products/img3.png);
+        }
+      }
+      &_03{
+        a{
+          background-image: url(../img/products/img4.png);
+        }
+      }
+      &_04{
+        a{
+          background-image: url(../img/products/img5.png);
+        }
+      }
+    }
+  }
+}
