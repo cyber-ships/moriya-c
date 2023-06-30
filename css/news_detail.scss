@@ -1446,20 +1446,71 @@ main {
 }
 
 /* -----------------------------------------------------
-	news
+	new_detail
 ----------------------------------------------------- */
-.news_num {
-  &_list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    &_item {
-      display: inline-block;
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
-      text-align: center;
-      background-color: #f1f8fe;
+.detail_bgc {
+  background-color: #f8f9f9;
+}
+
+.news_detail {
+  &_sub {
+    display: block;
+    width: 130px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.8rem;
+    padding: 2px 0;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: #c00000;
+    margin-bottom: 15px;
+    @include mq() {
+      font-size: 3.7333333333vw;
+    }
+  }
+  &_title {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    @include mq() {
+      font-size: 6.1333333333vw;
+    }
+  }
+  &_copy {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    @include mq() {
+      font-size: 3.7333333333vw;
+    }
+  }
+  &_img {
+    margin-bottom: 15px;
+    img {
+      height: 500px;
+      object-fit: cover;
+      @include mq() {
+        height: 50vw;
+      }
+    }
+  }
+  &_text {
+    font-size: 1.8rem;
+    @include mq() {
+      font-size: 3.7333333333vw;
+    }
+  }
+
+  &_btn {
+    display: block;
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 20px 30px;
+    max-width: 320px;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #4472c4;
+    @include mq() {
+      font-size: 6.1333333333vw;
     }
   }
 }
