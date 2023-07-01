@@ -159,3 +159,17 @@ $breakpoints: (
     }
   }
 }
+
+.renewal-levator-type{
+  padding-top: 0;
+  .block_type_01 {
+    .block{
+      &:nth-child(even){
+        flex-direction: row;
+      }
+    }
+  }
+  &_btn{
+    margin-top: 90px;
+  }
+}
