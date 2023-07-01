@@ -152,4 +152,17 @@
   .benefits-of-choosing .block-cnt {
     margin-top: 1vw !important;
   }
+}
+
+.renewal-levator-type {
+  padding-top: 0;
+}
+.renewal-levator-type .block_type_01 .block:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.renewal-levator-type_btn {
+  margin-top: 90px;
 }/*# sourceMappingURL=products.css.map */
