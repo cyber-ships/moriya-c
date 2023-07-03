@@ -444,7 +444,7 @@ $breakpoints: (
 /* -----------------------------------------------------
 	info_performance
 ----------------------------------------------------- */
-.info_performance {
+.info_finance {
   &_box {
     display: flex;
     flex-wrap: wrap;
@@ -507,6 +507,6 @@ $breakpoints: (
   }
 }
 
-.performance_pb {
+.finance_pb {
   padding-bottom: 30px;
 }
