@@ -286,6 +286,9 @@ $breakpoints: (
   }
   .box{
     margin-top: 40px;
+    padding: 50px;
+    margin-top: 40px;
+    background-color: whitesmoke;
     @include mq() {
       margin-top: vw(40);
       padding: vw(40);
@@ -310,6 +313,67 @@ $breakpoints: (
       margin-top: 48px;
       @include mq() {
         margin-top: vw(80);
+      }
+    }
+  }
+}
+
+.maintenance_periodic-inspection{
+  h2{
+    font-size: 36px;
+    font-weight: bold;
+    span{
+      font-weight: normal;
+      font-size: 24px;
+      display: block;
+    }
+    @include mq() {
+      font-size: vw(43);
+      span{
+        font-size: vw(28);
+      }
+    }
+  }
+  .box{
+    padding: 50px;
+    margin-top: 40px;
+    background-color: whitesmoke;
+    @include mq() {
+      margin-top: vw(40);
+      padding: vw(40);
+    }
+    p{
+      font-size: 16px;
+      line-height: 1.625;
+      margin-bottom: 20px;
+      @include mq() {
+        font-size: vw(26);
+        margin-bottom: vw(38);
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+      a{
+        text-decoration: underline;
+        color: #0000ee;
+      }
+    }
+    .btn_wrap02{
+      margin-top: 48px;
+      @include mq() {
+        margin-top: vw(80);
+      }
+    }
+  }
+  .btn_box{
+    margin-top: 50px;
+    @include mq() {
+      margin-top: vw(80);
+    }
+    .btn_wrap01{
+      margin-top: 30px;
+      @include mq() {
+        margin-top: vw(50);
       }
     }
   }
