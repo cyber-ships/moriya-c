@@ -108,9 +108,9 @@ $breakpoints: (
         width: calc(50% - 20px);
         @include mq() {
           width: 100%;
-        }
-        &:last-child{
-          margin-top: vw(90);
+          &:last-child{
+            margin-top: vw(90);
+          }
         }
         .head{
           font-size: 20px;

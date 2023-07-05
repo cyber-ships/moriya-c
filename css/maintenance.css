@@ -106,9 +106,9 @@
   .maintenance_ss__list .box01 ul li {
     width: 100%;
   }
-}
-.maintenance_ss__list .box01 ul li:last-child {
-  margin-top: 12vw;
+  .maintenance_ss__list .box01 ul li:last-child {
+    margin-top: 12vw;
+  }
 }
 .maintenance_ss__list .box01 ul li .head {
   font-size: 20px;
