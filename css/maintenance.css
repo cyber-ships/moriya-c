@@ -256,4 +256,12 @@
   .maintenance_ss__list .btn_wrap02 {
     margin-top: 10.6666666667vw;
   }
+}
+
+.maintenance_ss_base_title {
+  padding-bottom: 0;
+}
+
+.maintenance_ss_base {
+  padding-top: 0;
 }/*# sourceMappingURL=maintenance.css.map */
