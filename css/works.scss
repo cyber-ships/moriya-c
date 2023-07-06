@@ -122,17 +122,10 @@ $breakpoints: (
       }
       .head_year_list{
         margin-top: 10px;
-        opacity: 0;
-        position: absolute;
-        top: 70px;
-        left: 0;
+        display: none;
         width: 100%;
         @include mq(){
           margin-top: vw(10);
-          top: vw(94);
-        }
-        &.active{
-          opacity: 1;
         }
         li{
           &.current{
@@ -323,6 +316,161 @@ $breakpoints: (
               }
             }
           }
+        }
+      }
+    }
+  }
+
+  .works_detail{
+    margin-top: 32px;
+    @include mq(){
+      margin-top: vw(18);
+    }
+    .works_detail_title{
+      h2{
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 1.5;
+        @include mq(){
+          font-size: vw(40);
+        }
+      }
+      .tag-box{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        @include mq(){
+          margin-top: vw(10);
+        }
+        .date{
+          font-size: 16px;
+          @include mq(){
+            font-size: vw(26);
+          }
+        }
+        .tag{
+          display: inline-block;
+          height: fit-content;
+          padding: 4px 12px;
+          font-size: 14px;
+          color: #fff;
+          border-radius: 3px;
+          @include mq(){
+            padding: vw(4) vw(14) vw(6);
+            font-size: vw(20);
+            border-radius: vw(6);
+          }
+          &-01{
+            background-color: #0060d7;
+          }
+          &-02{
+            background-color: #00aaf7;
+          }
+          &-03{
+            background-color: #2a129c;
+          }
+        }
+      }
+    }
+    .works_detail_thumbnail{
+      margin-top: 23px;
+      @include mq(){
+        margin-top: vw(30);
+      }
+      img{
+        width: 100%;
+      }
+      p{
+        line-height: 1.625;
+        margin-top: 20px;
+        @include mq(){
+          margin-top: vw(30);
+          font-size: vw(26);
+        }
+      }
+    }
+    .works_detail_head{
+      padding-bottom: 16px;
+      border-bottom: 2px solid #003798;
+      @include mq(){
+        padding-bottom: vw(18);
+        border-bottom: vw(3) solid #003798;
+      }
+      h3{
+        font-size: 24px;
+        font-weight: bold;
+        color: #003798;
+        @include mq(){
+          font-size: vw(34);
+        }
+      }
+    }
+    .works_detail_table{
+      margin-top: 60px;
+      @include mq(){
+        margin-top: vw(80);
+      }
+      .table{
+        .row{
+          display: flex;
+          padding: 26px 0;
+          border-bottom: 1px solid #999999;
+          line-height: 1.5;
+          @include mq(){
+            padding: vw(30) 0;
+          }
+          &:nth-child(even){
+            background-color: #fafafa;
+          }
+          .title{
+            width: 200px;
+            padding-left: 40px;
+            font-weight: bold;
+            @include mq(){
+              width: 30%;
+              padding-left: vw(30);
+              font-size: vw(26);
+            }
+          }
+          .text{
+            padding-right: 26px;
+            @include mq(){
+              width: 70%;
+              padding-right: vw(30);
+              font-size: vw(26);
+            }
+          }
+        }
+      }
+    }
+    .works_detail_comment{
+      margin-top: 60px;
+      @include mq(){
+        margin-top: vw(80);
+      }
+      p{
+        line-height: 1.625;
+        margin-top: 20px;
+        @include mq(){
+          margin-top: vw(30);
+          font-size: vw(26);
+        }
+      }
+      .movie{
+        margin-top: 60px;
+        @include mq(){
+          margin-top: vw(80);
+        }
+        iframe{
+          width: 100%;
+          height: 100%;
+          aspect-ratio: 3/2;
+        }
+      }
+      .btn_wrap01{
+        margin-top: 70px;
+        @include mq(){
+          margin-top: vw(90);
         }
       }
     }
