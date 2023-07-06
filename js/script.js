@@ -41,3 +41,11 @@ $(function () {
   $answer.slideDown();
   $content.find(".company_client_accordion_text").fadeIn();
 }*/
+
+
+$(function() {
+  $(".head_year_btn").click(function() {
+      $(".head_year_list").toggleClass("active");
+      console.log();
+  });
+});
