@@ -32,6 +32,7 @@ $(function () {
     $answer.slideUp();
   });
 });
+
 /*if ($answer.hasClass("open")) {
   $answer.removeClass("open");
   $answer.slideUp();
