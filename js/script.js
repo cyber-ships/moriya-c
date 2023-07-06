@@ -15,11 +15,30 @@ $(function () {
       $container.find(".company_client_accordion_text").fadeIn();
     }
   });
-});
 
-$(function() {
-  $(".head_year_btn").click(function() {
-      $(".head_year_list").toggleClass("active");
-      console.log();
+  $(".ir_others_faq_accordion_open").click(function () {
+    var $content = $(this).closest(".ir_others_faq_box_l");
+    var $answer = $content.find(".ir_others_faq_box_answer");
+
+    $(".ir_others_faq_box_answer").not($answer).slideUp();
+
+    $answer.slideToggle();
+  });
+
+  $(".ir_others_faq_accordion_close").click(function () {
+    var $content = $(this).closest(".ir_others_faq_box_l");
+    var $answer = $content.find(".ir_others_faq_box_answer");
+
+    $answer.slideUp();
   });
 });
+
+/*if ($answer.hasClass("open")) {
+  $answer.removeClass("open");
+  $answer.slideUp();
+  $content.find(".company_client_accordion_text").fadeOut();
+} else {
+  $answer.addClass("open");
+  $answer.slideDown();
+  $content.find(".company_client_accordion_text").fadeIn();
+}*/
