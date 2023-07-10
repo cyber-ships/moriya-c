@@ -33,20 +33,26 @@ $(function () {
   });
 });
 
-/*if ($answer.hasClass("open")) {
-  $answer.removeClass("open");
-  $answer.slideUp();
-  $content.find(".company_client_accordion_text").fadeOut();
-} else {
-  $answer.addClass("open");
-  $answer.slideDown();
-  $content.find(".company_client_accordion_text").fadeIn();
-}*/
+$(function () {
+  $(".head_year_btn").click(function () {
+    $(".head_year_list").toggleClass("active");
+    $(this).next(".head_year_list").slideToggle();
+  });
+});
 
-$(function(){
-  //クリックで動く
-  $('.head_year_btn').click(function(){
-    $('.head_year_list').toggleClass('active');
-    $(this).next('.head_year_list').slideToggle();
+//recruit_faq accordion
+$(function () {
+  $(".recruit_faq_accordion_item").click(function () {
+    var $answer = $(this).find(".answer");
+
+    if ($answer.hasClass("open")) {
+      $answer.removeClass("open");
+      $answer.slideUp();
+      $(this).find(".arrow").text("∨");
+    } else {
+      $answer.addClass("open");
+      $answer.slideDown();
+      $(this).find(".arrow").text("∧");
+    }
   });
 });
