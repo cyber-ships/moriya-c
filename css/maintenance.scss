@@ -26,6 +26,23 @@ $breakpoints: (
   @return $px / $viewport * 100vw;
 }
 
+/* -----------------------------------------------------
+	option
+----------------------------------------------------- */
+.pc {
+  display: block;
+  @include mq() {
+    display: none;
+  }
+}
+
+.sp {
+  display: none;
+  @include mq() {
+    display: block;
+  }
+}
+
 .maintenance_btn{
   margin-top: 48px;
   @include mq() {
@@ -433,6 +450,203 @@ $breakpoints: (
             width: 20%;
             @include mq() {
               width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.maintenance_ss_maintenance-agreement{
+  &_title{
+    h2{
+      font-size: 36px;
+      font-weight: bold;
+      span{
+        font-weight: normal;
+        font-size: 24px;
+        display: block;
+      }
+      @include mq() {
+        font-size: vw(43);
+        span{
+          font-size: vw(28);
+        }
+      }
+    }
+  }
+  &_wrap{
+    margin-top: 50px;
+    @include mq() {
+      margin-top: vw(70);
+    }
+    .btn_wrap01{
+      margin-top: 50px;
+    }
+  }
+  &_table{
+    .tr{
+      display: flex;
+      border-bottom: 2px solid #fff;
+      line-height: 1.75;
+      .th{
+        text-align: center;
+        background-color: #003798;
+        color: #fff;
+        width: 45%;
+        font-weight: bold;
+        padding: 8px 0;
+        &:first-child{
+          width: 10%;
+          border-right: 2px solid #fff;
+        }
+      }
+      .td{
+        padding: 18px;
+        width: 45%;
+        position: relative;
+        &:first-child{
+          width: 10%;
+          background-color: whitesmoke;
+          border-right: 2px solid #fff;
+          padding: 18px 0;
+          text-align: center;
+          position: relative;
+          p{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+          }
+        }
+        &:nth-child(2){
+          border-right: 2px solid #fff;
+        }
+        &:nth-child(2), &:nth-child(3){
+          background-color: #f1f8fe;
+        }
+        span{
+          font-size: 14px;
+        }
+        ul{
+          margin-top: 20px;
+          li{
+            font-size: 14px;
+          }
+        }
+      }
+      &:nth-child(4), &:last-child{
+        .td{
+          &:nth-child(2){
+            position: relative;
+            p{
+              position: absolute;
+              top: 50%;
+              left: 18px;
+              transform: translateY(-50%);
+              width: 100%;
+            }
+          }
+        }
+      }
+      &:nth-child(3){
+        .td{
+          &:nth-child(3){
+            position: relative;
+            p{
+              position: absolute;
+              top: 50%;
+              left: 18px;
+              transform: translateY(-50%);
+              width: 100%;
+            }
+          }
+        }
+      }
+      &:nth-child(5){
+        .td{
+          &:nth-child(2){
+            width: 90%;
+          }
+        }
+      }
+    }
+    .table{
+      display: flex;
+      width: 100%;
+      height: vw(1060);
+      overflow-x: scroll;
+      .block{
+        width: 90%;
+        flex-shrink: 0;
+        width: vw(400);
+        &:first-child{
+          width: vw(250);
+          margin-top: vw(100);
+        }
+        &:nth-child(4){
+          .box-text{
+            &:last-child{
+              p{
+                height: 20%;
+              }
+            }
+          }
+        }
+        &:nth-child(5){
+          .box-text{
+            height: vw(960);
+          }
+        }
+        .head{
+          background-color: #003798;
+          height: vw(480);
+          p{
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            font-size: vw(26);
+          }
+        }
+        .box-title{
+          background-color: whitesmoke;
+          height: vw(100);
+          p{
+            font-size: vw(26);
+            line-height: 1.625;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+          }
+        }
+        .box-text{
+          background-color: #f1f8fe;
+          padding:  vw(36);
+          height: vw(480);
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          p{
+            font-size: vw(26);
+            line-height: 1.625;
+            height: 100%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+          }
+          ul{
+            margin-top:  vw(14);
+            li{
+              span{
+                font-size: 0.8em;
+              }
             }
           }
         }
