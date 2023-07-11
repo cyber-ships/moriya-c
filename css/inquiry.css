@@ -61,6 +61,37 @@
     margin-bottom: 9.3333333333vw;
   }
 }
+.page_inquiry .inquiry_box .inquiry_form .thanks_box {
+  border: 1px solid rgb(212, 212, 212);
+  padding: 30px;
+  background-color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .page_inquiry .inquiry_box .inquiry_form .thanks_box {
+    padding: 5.3333333333vw;
+  }
+}
+.page_inquiry .inquiry_box .inquiry_form .thanks_box h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .page_inquiry .inquiry_box .inquiry_form .thanks_box h3 {
+    font-size: 4.2666666667vw;
+  }
+}
+.page_inquiry .inquiry_box .inquiry_form .thanks_box p {
+  line-height: 1.625;
+  text-align: center;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .page_inquiry .inquiry_box .inquiry_form .thanks_box p {
+    margin-top: 4vw;
+    font-size: 3.4666666667vw;
+  }
+}
 .page_inquiry .inquiry_box .inquiry_form .form .block {
   display: -webkit-box;
   display: -ms-flexbox;
