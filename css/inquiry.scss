@@ -67,6 +67,14 @@ $breakpoints: (
         margin-top: vw(40);
         padding: vw(40);
       }
+      .confirm-text{
+        font-size: 16px;
+        margin-bottom: 40px;
+        @include mq() {
+          font-size: vw(26);
+          margin-bottom: vw(70);
+        }
+      }
       .form{
         .block{
           display: flex;
@@ -80,9 +88,12 @@ $breakpoints: (
             border-bottom: 1px solid rgb(212, 212, 212);
             border-left: 1px solid rgb(212, 212, 212);
             background-color: #eee;
+            display: flex;
+            justify-content: space-between;
             @include mq() {
               padding: vw(39) 0 vw(39) vw(24);
               width: vw(270);
+              flex-direction: column;
             }
             p{
               display: flex;
@@ -91,10 +102,20 @@ $breakpoints: (
                 font-size: vw(24);
               }
             }
+            span{
+              font-size: 14px;
+              color: red;
+              @include mq() {
+                display: inline-block;
+                font-size: vw(20);
+                margin-top: vw(10);
+              }
+            }
           }
           .box{
             width: 100%;
             padding: 16px;
+            background-color: #fff;
             border-left: 1px solid rgb(212, 212, 212);
             border-right: 1px solid rgb(212, 212, 212);
             border-bottom: 1px solid rgb(212, 212, 212);
@@ -163,6 +184,37 @@ $breakpoints: (
               border: 1px solid #eee;
               margin-top: 20px;
             }
+          }
+          .box-confirm{
+            display: flex;
+            align-items: center
+          }
+          .box-select{
+            .select{
+              margin-bottom: 20px;
+              padding: 12px;
+              border: 1px solid rgb(153, 153, 153);
+              border-radius: 6px;
+              @include mq() {
+                margin-bottom: vw(30);
+                padding: vw(14);
+                border-radius: vw(8);
+              }
+              &::before{
+                content: none;
+              }
+            }
+          }
+        }
+        .btn-box{
+          display: flex;
+          justify-content: center;
+          @include mq() {
+            flex-direction: column;
+          }
+          .btn_wrap01{
+            margin-left: 20px;
+            margin-right: 20px;
           }
         }
       }
