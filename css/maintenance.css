@@ -623,98 +623,121 @@
 .maintenance_ss_maintenance-agreement_table .tr:nth-child(5) .td:nth-child(2) {
   width: 90%;
 }
-.maintenance_ss_maintenance-agreement_table .table {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 141.3333333333vw;
-  overflow-x: scroll;
+@media screen and (max-width: 768px) {
+  .maintenance_ss_maintenance-agreement_table .table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 141.3333333333vw;
+    overflow-x: scroll;
+  }
+  .maintenance_ss_maintenance-agreement_table .table .block {
+    width: 90%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 53.3333333333vw;
+  }
+  .maintenance_ss_maintenance-agreement_table .table .block:first-child {
+    width: 33.3333333333vw;
+    margin-top: 13.3333333333vw;
+  }
+  .maintenance_ss_maintenance-agreement_table .table .block:nth-child(4) .box-text:last-child p {
+    height: 20%;
+  }
+  .maintenance_ss_maintenance-agreement_table .table .block:nth-child(5) .box-text {
+    height: 128vw;
+  }
+  .maintenance_ss_maintenance-agreement_table .table .block .head {
+    background-color: #003798;
+    height: 64vw;
+    border-right: 2px solid #fff;
+  }
+  .maintenance_ss_maintenance-agreement_table .table .block .head:first-child {
+    border-bottom: 2px solid #fff;
+  }
+  .maintenance_ss_maintenance-agreement_table .table .block .head p {
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    text-align: center;
+    font-size: 3.4666666667vw;
+  }
+  .maintenance_ss_maintenance-agreement_table .table .block .box-title {
+    background-color: whitesmoke;
+    height: 13.3333333333vw;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+  }
+  .maintenance_ss_maintenance-agreement_table .table .block .box-title p {
+    font-size: 3.4666666667vw;
+    line-height: 1.625;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+  }
+  .maintenance_ss_maintenance-agreement_table .table .block .box-text {
+    background-color: #f1f8fe;
+    padding: 4.8vw;
+    height: 64vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-right: 2px solid #fff;
+  }
+  .maintenance_ss_maintenance-agreement_table .table .block .box-text:nth-child(2) {
+    border-bottom: 2px solid #fff;
+  }
+  .maintenance_ss_maintenance-agreement_table .table .block .box-text p {
+    font-size: 3.4666666667vw;
+    line-height: 1.625;
+    height: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .maintenance_ss_maintenance-agreement_table .table .block .box-text ul {
+    margin-top: 1.8666666667vw;
+  }
+  .maintenance_ss_maintenance-agreement_table .table .block .box-text ul li span {
+    font-size: 0.8em;
+  }
 }
-.maintenance_ss_maintenance-agreement_table .table .block {
-  width: 90%;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  width: 53.3333333333vw;
+.maintenance_ss_maintenance-agreement .text {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.65;
 }
-.maintenance_ss_maintenance-agreement_table .table .block:first-child {
-  width: 33.3333333333vw;
-  margin-top: 13.3333333333vw;
-}
-.maintenance_ss_maintenance-agreement_table .table .block:nth-child(4) .box-text:last-child p {
-  height: 20%;
-}
-.maintenance_ss_maintenance-agreement_table .table .block:nth-child(5) .box-text {
-  height: 128vw;
-}
-.maintenance_ss_maintenance-agreement_table .table .block .head {
-  background-color: #003798;
-  height: 64vw;
-}
-.maintenance_ss_maintenance-agreement_table .table .block .head p {
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100%;
-  text-align: center;
-  font-size: 3.4666666667vw;
-}
-.maintenance_ss_maintenance-agreement_table .table .block .box-title {
-  background-color: whitesmoke;
-  height: 13.3333333333vw;
-}
-.maintenance_ss_maintenance-agreement_table .table .block .box-title p {
-  font-size: 3.4666666667vw;
-  line-height: 1.625;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100%;
-}
-.maintenance_ss_maintenance-agreement_table .table .block .box-text {
-  background-color: #f1f8fe;
-  padding: 4.8vw;
-  height: 64vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.maintenance_ss_maintenance-agreement_table .table .block .box-text p {
-  font-size: 3.4666666667vw;
-  line-height: 1.625;
-  height: 100%;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.maintenance_ss_maintenance-agreement_table .table .block .box-text ul {
-  margin-top: 1.8666666667vw;
-}
-.maintenance_ss_maintenance-agreement_table .table .block .box-text ul li span {
-  font-size: 0.8em;
+@media screen and (max-width: 768px) {
+  .maintenance_ss_maintenance-agreement .text {
+    margin-top: 4vw;
+    font-size: 3.2vw;
+  }
 }/*# sourceMappingURL=maintenance.css.map */
