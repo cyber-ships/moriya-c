@@ -18,9 +18,11 @@
   display: block;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   background-repeat: no-repeat;
   background-size: contain;
+  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 .btn.type-01 {
@@ -225,9 +227,14 @@
 }
 
 .btn_wrap02 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .btn_wrap02 a {
   width: 320px;
@@ -246,9 +253,14 @@
 }
 
 .btn_wrap03 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   max-width: 415px;
   margin: 0 auto;
 }
@@ -280,13 +292,20 @@
 }
 
 .btn_wrap04 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 @media screen and (max-width: 768px) {
   .btn_wrap04 {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .btn_wrap04 a {
@@ -322,9 +341,14 @@
 }
 
 .btn_wrap05 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
   .btn_wrap05 {
@@ -391,16 +415,23 @@
 }
 .page_heading .inner h1 {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .page_heading .inner h1 .text {
   color: #ffffff;
   font-size: 4.5rem;
   line-height: 1.14;
   font-weight: 700;
-  font-feature-settings: "palt" 1;
+  -webkit-font-feature-settings: "palt" 1;
+          font-feature-settings: "palt" 1;
   letter-spacing: 0.1em;
 }
 @media screen and (max-width: 768px) {
@@ -532,9 +563,14 @@ footer {
   }
 }
 footer .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 50px;
 }
 @media screen and (max-width: 768px) {
@@ -548,12 +584,17 @@ footer .inner {
   }
 }
 footer .inner nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
   footer .inner nav ul {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 footer .inner nav ul li {
@@ -586,7 +627,8 @@ footer .inner nav ul li a:before {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 @media screen and (max-width: 768px) {
   footer .inner nav ul li a:before {
@@ -616,12 +658,17 @@ footer .inner .sns {
   }
 }
 footer .inner .sns ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
   footer .inner .sns ul {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 footer .inner .sns ul li {
@@ -647,5 +694,4 @@ footer .inner .copyright {
     margin: 8.9333333333vw 0 0 0;
     font-size: 2.4vw;
   }
-}
-/*# sourceMappingURL=map.css.map */
+}/*# sourceMappingURL=map.css.map */

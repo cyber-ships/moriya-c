@@ -573,6 +573,7 @@ $breakpoints: (
         }
       }
     }
+    @include mq() {
     .table{
       display: flex;
       width: 100%;
@@ -603,6 +604,10 @@ $breakpoints: (
         .head{
           background-color: #003798;
           height: vw(480);
+          border-right: 2px solid #fff;
+          &:first-child{
+            border-bottom: 2px solid #fff;
+          }
           p{
             color: #fff;
             display: flex;
@@ -616,6 +621,8 @@ $breakpoints: (
         .box-title{
           background-color: whitesmoke;
           height: vw(100);
+          border-right: 2px solid #fff;
+          border-bottom: 2px solid #fff;
           p{
             font-size: vw(26);
             line-height: 1.625;
@@ -633,6 +640,10 @@ $breakpoints: (
           display: flex;
           align-items: center;
           flex-direction: column;
+          border-right: 2px solid #fff;
+          &:nth-child(2){
+            border-bottom: 2px solid #fff;
+          }
           p{
             font-size: vw(26);
             line-height: 1.625;
@@ -651,6 +662,16 @@ $breakpoints: (
           }
         }
       }
+    }
+  }
+  }
+  .text{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.65;
+    @include mq() {
+      margin-top: vw(30);
+      font-size: vw(24);
     }
   }
 }
