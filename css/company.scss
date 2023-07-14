@@ -71,6 +71,11 @@ a {
 /* -----------------------------------------------------
 	header
 ----------------------------------------------------- */
+.pointer_none {
+  @include mq() {
+    pointer-events: none;
+  }
+}
 header {
   width: 100%;
   position: relative;
@@ -182,7 +187,7 @@ header {
             font-size: 1.5rem;
             padding: 29.5px 15px;
             @include mq() {
-              pointer-events: none;
+              //pointer-events: none;
               cursor: pointer;
               font-size: vw(26);
               line-height: 1;
@@ -1051,6 +1056,367 @@ main {
       @include mq() {
         background-size: vw(30) auto;
       }
+    }
+  }
+}
+
+/* -----------------------------------------------------
+	btn
+----------------------------------------------------- */
+.btn {
+  position: relative;
+  display: block;
+  border-radius: 100vh;
+  text-align: center;
+  line-height: 1;
+  width: 100%;
+  span {
+    display: inline-block;
+    font-weight: 700;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 0.2s ease;
+  }
+  &.type {
+    &-01 {
+      padding: 24px 0;
+      background-color: $sub1;
+      color: #fff;
+      @include mq() {
+        padding: vw(37) 0;
+      }
+      span {
+        font-size: 1.7rem;
+        @include mq() {
+          font-size: vw(26);
+        }
+      }
+      &::after {
+        width: 22px;
+        height: 7px;
+        right: 20px;
+        background-image: url("../img/icon/arrow-r-02_white.svg");
+        @include mq() {
+          width: vw(33);
+          height: vw(11);
+          right: vw(30);
+        }
+      }
+      &:hover {
+        &::after {
+          right: 10px;
+        }
+      }
+      &.back {
+        &::after {
+          left: 20px;
+          background-image: url("../img/icon/arrow-l-02_white.svg");
+          @include mq() {
+            left: vw(30);
+          }
+        }
+        &:hover {
+          &::after {
+            left: 10px;
+          }
+        }
+      }
+    }
+    &-02 {
+      padding: 24px 0;
+      background-color: #fff;
+      color: $sub1;
+      @include mq() {
+        padding: vw(37) 0;
+      }
+      span {
+        font-size: 1.7rem;
+        @include mq() {
+          font-size: vw(26);
+        }
+      }
+      &::after {
+        width: 22px;
+        height: 7px;
+        right: 20px;
+        background-image: url("../img/icon/arrow-r-02_blue.svg");
+        @include mq() {
+          width: vw(33);
+          height: vw(11);
+          right: vw(30);
+        }
+      }
+      &:hover {
+        &::after {
+          right: 10px;
+        }
+      }
+      &.back {
+        &::after {
+          left: 20px;
+          background-image: url("../img/icon/arrow-l-02_blue.svg");
+          @include mq() {
+            left: vw(30);
+          }
+        }
+        &:hover {
+          &::after {
+            left: 10px;
+          }
+        }
+      }
+    }
+    &-03 {
+      padding: 7px 0;
+      background-color: $sub1;
+      color: #fff;
+      @include mq() {
+        padding: vw(23) 0;
+      }
+      span {
+        font-size: 1.5rem;
+        @include mq() {
+          font-size: vw(22);
+        }
+      }
+      &::after {
+        width: 7px;
+        height: 12px;
+        right: 10px;
+        background-image: url("../img/icon/arrow-r-01_white.svg");
+        @include mq() {
+          width: vw(10);
+          height: vw(18);
+          right: vw(15);
+        }
+      }
+    }
+    &-04 {
+      padding: 7px 0;
+      background-color: #fff;
+      color: $sub1;
+      @include mq() {
+        padding: vw(23) 0;
+      }
+      span {
+        font-size: 1.5rem;
+        @include mq() {
+          font-size: vw(22);
+        }
+      }
+      &::after {
+        width: 7px;
+        height: 12px;
+        right: 10px;
+        background-image: url("../img/icon/arrow-r-01_blue.svg");
+        @include mq() {
+          width: vw(10);
+          height: vw(18);
+          right: vw(15);
+        }
+      }
+    }
+    &-05 {
+      padding: 14.5px 0;
+      background-color: $sub1;
+      color: #fff;
+      @include mq() {
+        padding: vw(23) 0;
+      }
+      span {
+        font-size: 1.5rem;
+        @include mq() {
+          font-size: vw(22);
+        }
+      }
+      &::after {
+        width: 17px;
+        height: 5px;
+        right: 20px;
+        background-image: url("../img/icon/arrow-r-02_white.svg");
+        @include mq() {
+          width: vw(24);
+          height: vw(8);
+          right: vw(30);
+        }
+      }
+      &:hover {
+        &::after {
+          right: 10px;
+        }
+      }
+    }
+  }
+}
+
+/* btn_wrap
+-------------------------*/
+.btn_wrap01 {
+  width: 340px;
+  margin: 0 auto;
+  @include mq() {
+    width: vw(530);
+  }
+}
+.btn_wrap02 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include mq() {
+  }
+  a {
+    width: 320px;
+    margin: 0 20px;
+    @include mq() {
+      width: vw(530);
+      margin: vw(30) 0 0 0;
+    }
+    &:first-child {
+      @include mq() {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.btn_wrap03 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 415px;
+  margin: 0 auto;
+  @include mq() {
+    max-width: vw(530);
+  }
+  a {
+    width: 48.19277108433735%;
+    margin-left: 15px;
+    @include mq() {
+      width: 49.056603773584904%;
+      margin-left: 1.8867924528301887%;
+    }
+    &:nth-child(odd) {
+      margin-left: 0;
+    }
+    &:nth-child(n + 3) {
+      margin-top: 15px;
+      @include mq() {
+        margin-top: vw(15);
+      }
+    }
+  }
+}
+
+.btn_wrap04 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  @include mq() {
+    justify-content: center;
+  }
+  a {
+    width: 32%;
+    margin: 0 0 0 2%;
+    @include mq() {
+      width: vw(530);
+      margin: vw(30) 0 0 0;
+    }
+    &:first-child {
+      margin: 0;
+      @include mq() {
+      }
+    }
+    &.not-link {
+      display: block;
+      padding: 24px 0;
+      background-color: #f1f8fe;
+      border-radius: 100vh;
+      color: $sub1;
+      font-size: 1.7rem;
+      font-weight: 700;
+      text-align: center;
+      pointer-events: none;
+      @include mq() {
+        width: vw(530);
+        padding: vw(37) 0;
+        font-size: vw(26);
+      }
+    }
+  }
+}
+
+.btn_wrap05 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include mq() {
+    width: vw(530);
+    margin: 0 auto;
+  }
+  a {
+    width: 19.2%;
+    margin-left: 1%;
+    @include mq() {
+      width: 49.056603773584904%;
+      margin-left: 1.8867924528301887%;
+    }
+    &:nth-child(5n + 1) {
+      margin-left: 0;
+    }
+    &:nth-child(odd) {
+      @include mq() {
+        margin-left: 0;
+      }
+    }
+    &:nth-child(n + 3) {
+      @include mq() {
+        margin-top: 1.8867924528301887%;
+      }
+    }
+    &:nth-child(n + 6) {
+      margin-top: 10px;
+      @include mq() {
+        margin-top: 1.8867924528301887%;
+      }
+    }
+  }
+}
+
+/* -----------------------------------------------------
+	contact
+----------------------------------------------------- */
+#contact {
+  background-image: url("../img/contact_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  @include mq() {
+  }
+  .ttl {
+    width: 212px;
+    margin: 0 auto 40px auto;
+    @include mq() {
+      width: vw(236);
+      margin: 0 auto vw(40) auto;
+    }
+  }
+  p {
+    color: #ffffff;
+    font-size: 1.7rem;
+    line-height: 1.57;
+    font-weight: 700;
+    margin: 0 auto 40px auto;
+    @include mq() {
+      font-size: vw(23);
+      margin: 0 auto vw(40) auto;
     }
   }
 }

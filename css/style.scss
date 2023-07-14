@@ -73,7 +73,10 @@ a {
 ----------------------------------------------------- */
 header {
   width: 100%;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
   background-color: #fff;
   > .inner {
     display: flex;

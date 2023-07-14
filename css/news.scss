@@ -71,6 +71,11 @@ a {
 /* -----------------------------------------------------
 	header
 ----------------------------------------------------- */
+.pointer_none {
+  @include mq() {
+    pointer-events: none;
+  }
+}
 header {
   width: 100%;
   position: relative;
@@ -182,7 +187,7 @@ header {
             font-size: 1.5rem;
             padding: 29.5px 15px;
             @include mq() {
-              pointer-events: none;
+              //pointer-events: none;
               cursor: pointer;
               font-size: vw(26);
               line-height: 1;
