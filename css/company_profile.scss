@@ -71,6 +71,11 @@ a {
 /* -----------------------------------------------------
 	header
 ----------------------------------------------------- */
+.pointer_none {
+  @include mq() {
+    pointer-events: none;
+  }
+}
 header {
   width: 100%;
   position: relative;
@@ -182,7 +187,7 @@ header {
             font-size: 1.5rem;
             padding: 29.5px 15px;
             @include mq() {
-              pointer-events: none;
+              //pointer-events: none;
               cursor: pointer;
               font-size: vw(26);
               line-height: 1;
@@ -902,6 +907,14 @@ main {
     padding-bottom: 20px;
   }
 }
+.profile_corporate_title {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #003798;
+  border-bottom: 2px solid #003798;
+  padding: 0 0 14px 0;
+}
 .profile_anchor {
   background-color: #f1f8fe;
   padding: 20px 0;
@@ -944,6 +957,12 @@ main {
   margin-bottom: 50px;
   @include mq() {
     font-size: 3.7333333333vw;
+  }
+}
+.profile_map_img {
+  width: 100%;
+  img {
+    width: 100%;
   }
 }
 
@@ -1013,10 +1032,15 @@ main {
     width: 70%;
     //border-bottom: solid 1px #999999;
     padding: 22.5px 40px 22.5px 0;
-
     @include mq() {
       width: 50%;
       padding: vw(20) vw(30) vw(20) 0;
+    }
+    span {
+      font-size: 1.2rem;
+      @include mq() {
+        font-size: 1rem;
+      }
     }
   }
 }

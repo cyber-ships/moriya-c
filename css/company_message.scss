@@ -71,6 +71,11 @@ a {
 /* -----------------------------------------------------
 	header
 ----------------------------------------------------- */
+.pointer_none {
+  @include mq() {
+    pointer-events: none;
+  }
+}
 header {
   width: 100%;
   position: relative;
@@ -182,7 +187,7 @@ header {
             font-size: 1.5rem;
             padding: 29.5px 15px;
             @include mq() {
-              pointer-events: none;
+              //pointer-events: none;
               cursor: pointer;
               font-size: vw(26);
               line-height: 1;
@@ -1049,7 +1054,7 @@ main {
   &_box {
     margin-top: -100px;
     background-color: #fafafa;
-    padding: 150px 20px 60px;
+    padding: 150px 120px;
     @include mq() {
       padding: 150px 20px 30px;
     }
@@ -1072,11 +1077,11 @@ main {
     }
     &_name {
       color: $fontColor;
-      font-size: 4rem;
+      font-size: 2rem;
       font-weight: 700;
       text-align: right;
       @include mq() {
-        font-size: vw(46);
+        font-size: 3.7333333333vw;
         margin: 0 0 vw(60) 0;
       }
     }
