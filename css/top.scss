@@ -447,31 +447,76 @@ main section {
 /* topここから
 -------------------------*/
 
+.flexslider{
+  margin-bottom: 0 !important;
+  border: unset !important;
+  border-radius: unset !important;
+  box-shadow: unset !important;
+}
+
+main.top{
+  overflow: hidden;
+}
+
 .top_mv {
-  margin-top: 38px;
+  margin-top: 129px;
   height: 895px;
   background-image: url(../img/top/top_mv.jpg);
   background-size: cover;
+  background-position: center;
   position: relative;
+  // overflow-x: hidden;
   @media screen and (max-width: 1000px) {
     height: 500px;
-    margin-top: vw(30);
+    margin-top: vw(145);
   }
   @include mq() {
-    height: vw(950);
+    height: vw(940);
     background-image: url(../img/top/top_mv_sp.jpg);
   }
   &_img {
-    position: absolute;
-    width: clamp(700px, 66vw, 1143px);
-    top: -38px;
-    right: 0;
+    position: relative;
     @media screen and (max-width: 1000px) {
-      width: 540px;
+      width: 100%;
     }
     @include mq() {
-      width: vw(443);
-      top: vw(-30);
+      top: 0;
+    }
+  }
+  &_img_slide{
+    width: 711px;
+    height: 780px;
+    position: absolute;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    @media screen and (max-width: 1000px) {
+      width: 355px;
+      height: 390px;
+    }
+    @include mq() {
+      width: vw(456);
+      height: vw(480);
+    }
+    &-01{
+      top: -140px;
+      right: 385px;
+      @media screen and (max-width: 1000px) {
+        right: 160px;
+      }
+      @include mq() {
+        top: vw(-126);
+        right: vw(-45);
+      }
+    }
+    &-02{
+      top: 53px;
+      right: -138px;
+      @media screen and (max-width: 1000px) {
+        right: -90px;
+      }
+      @include mq() {
+        top: vw(390);
+        right: vw(-67);
+      }
     }
   }
   &_wrap {
@@ -479,15 +524,16 @@ main section {
     height: 100%;
   }
   &_title {
-    padding-top: 15px;
+    padding-top: 31px;
     width: 196px;
-    transform: translateX(-15%);
+    transform: translateX(-54%);
     @media screen and (max-width: 1000px) {
-      padding-top: 0;
+      padding-top: vw(26);
       transform: unset;
       width: 130px;
     }
     @include mq() {
+      transform: translateX(vw(20));
       width: vw(208);
     }
   }
