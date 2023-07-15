@@ -456,7 +456,6 @@ main section {
   position: relative;
   @media screen and (max-width: 1000px) {
     height: 500px;
-    margin-top: vw(30);
   }
   @include mq() {
     height: vw(500);
