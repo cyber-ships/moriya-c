@@ -80,6 +80,10 @@ header {
   width: 100%;
   position: relative;
   background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
   > .inner {
     display: flex;
     align-items: center;
@@ -1121,9 +1125,11 @@ main {
   background-size: cover;
   padding: 7.5px 50px;
   background-position: left top;
+  margin-top: 90px;
   @include mq() {
     background-position: center;
     padding: vw(14.5) vw(20) vw(14.5) vw(40);
+    margin-top: 70px;
   }
   &.company {
     background-image: url("../img/news/heading_bg.jpg");

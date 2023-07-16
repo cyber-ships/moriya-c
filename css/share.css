@@ -829,12 +829,13 @@ main section .inner p + p {
   background-size: cover;
   padding: 7.5px 50px;
   background-position: left top;
-  margin-top: 100px;
+  margin-top: 90px;
 }
 @media screen and (max-width: 768px) {
   .page_heading {
     background-position: center;
     padding: 1.9333333333vw 2.6666666667vw 1.9333333333vw 5.3333333333vw;
+    margin-top: 70px;
   }
 }
 .page_heading.company {
