@@ -795,10 +795,11 @@ main {
   background-size: cover;
   padding: 7.5px 50px;
   background-position: left top;
-  margin-top: 100px;
+  margin-top: 90px;
   @include mq() {
     background-position: center;
     padding: vw(14.5) vw(20) vw(14.5) vw(40);
+    margin-top: 70px;
   }
   &.company {
     background-image: url(../img/company/heading_bg.jpg);
