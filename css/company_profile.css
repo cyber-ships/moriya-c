@@ -342,7 +342,7 @@ header > .inner .global-nav .nav-list .nav-item .nav-item_sub .nav-item_sub_inne
 header > .inner .global-nav .nav-list .nav-item .nav-item_sub .nav-item_sub_inner .nav-item_sub_list {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 81.5%;
 }
 @media screen and (max-width: 768px) {
   header > .inner .global-nav .nav-list .nav-item .nav-item_sub .nav-item_sub_inner .nav-item_sub_list {
