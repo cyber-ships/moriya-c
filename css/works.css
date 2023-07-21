@@ -128,10 +128,14 @@
   margin-top: 10px;
   display: none;
   width: 100%;
+  position: absolute;
+  top: 70px;
+  left: 0;
 }
 @media screen and (max-width: 768px) {
   .page_works .head_box .head_year .head_year_list {
     margin-top: 1.3333333333vw;
+    top: 13.3333333333vw;
   }
 }
 .page_works .head_box .head_year .head_year_list li.current a {

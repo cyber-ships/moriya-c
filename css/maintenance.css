@@ -345,7 +345,7 @@
   margin-top: 40px;
   padding: 50px;
   margin-top: 40px;
-  background-color: whitesmoke;
+  background-color: #f1f8fe;
 }
 @media screen and (max-width: 768px) {
   .maintenance_technical-information .box {
@@ -400,7 +400,7 @@
 .maintenance_periodic-inspection .box {
   padding: 50px;
   margin-top: 40px;
-  background-color: whitesmoke;
+  background-color: #f1f8fe;
 }
 @media screen and (max-width: 768px) {
   .maintenance_periodic-inspection .box {
@@ -513,6 +513,140 @@
   .maintenance_download .ir_info ul li dl dt {
     width: 100%;
   }
+}
+
+.maintenance_download_info ul li {
+  border-bottom: solid 1px #999999;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .maintenance_download_info ul li {
+    margin-top: 2.6666666667vw;
+  }
+}
+.maintenance_download_info ul li dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.maintenance_download_info ul li dl dt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 27.2%;
+  padding: 0 30px 20px 40px;
+}
+@media screen and (max-width: 768px) {
+  .maintenance_download_info ul li dl dt {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0 5.3333333333vw;
+    margin: 0 0 2vw 0;
+  }
+}
+.maintenance_download_info ul li dl dt .date {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .maintenance_download_info ul li dl dt .date {
+    font-size: 3.4666666667vw;
+  }
+}
+.maintenance_download_info ul li dl dt .cat {
+  display: block;
+  background-color: #b70000;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 4px 0;
+  width: 84px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .maintenance_download_info ul li dl dt .cat {
+    font-size: 2.6666666667vw;
+    padding: 0.8vw 0;
+    width: 16.8vw;
+    margin: 0 0 0 2.6666666667vw;
+  }
+}
+.maintenance_download_info ul li dl dd {
+  width: 72.8%;
+  padding: 0 0 20px 0;
+}
+@media screen and (max-width: 768px) {
+  .maintenance_download_info ul li dl dd {
+    width: 100%;
+    padding: 0 5.3333333333vw 2.6666666667vw 5.3333333333vw;
+  }
+}
+.maintenance_download_info ul li dl dd a {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background-image: url("../img/icon/arrow-r-02_black.svg");
+  background-repeat: no-repeat;
+  background-position: right 40px center;
+  background-size: 22px auto;
+  padding: 0 102px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .maintenance_download_info ul li dl dd a {
+    font-size: 3.4666666667vw;
+    background-position: right center;
+    background-size: 4vw auto;
+    padding: 0 5.3333333333vw 0 0;
+  }
+}
+.maintenance_download_info ul li dl dd a.pdf {
+  position: relative;
+  padding: 0 142px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .maintenance_download_info ul li dl dd a.pdf {
+    padding: 0 16vw 0 0;
+  }
+}
+.maintenance_download_info ul li dl dd a.pdf:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 33px;
+  background-image: url("../img/icon/pdf.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 30px auto;
+  position: absolute;
+  top: 50%;
+  right: 102px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media screen and (max-width: 768px) {
+  .maintenance_download_info ul li dl dd a.pdf:after {
+    width: 5.3333333333vw;
+    height: 5.8666666667vw;
+    background-size: 5.3333333333vw auto;
+    right: 9.3333333333vw;
+  }
+}
+.maintenance_download_info ul li:first-child {
+  margin-top: 0;
 }
 
 .maintenance_ss_maintenance-agreement_title h2 {

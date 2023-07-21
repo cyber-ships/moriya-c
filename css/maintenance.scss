@@ -305,7 +305,7 @@ $breakpoints: (
     margin-top: 40px;
     padding: 50px;
     margin-top: 40px;
-    background-color: whitesmoke;
+    background-color: #f1f8fe;
     @include mq() {
       margin-top: vw(40);
       padding: vw(40);
@@ -354,7 +354,7 @@ $breakpoints: (
   .box{
     padding: 50px;
     margin-top: 40px;
-    background-color: whitesmoke;
+    background-color: #f1f8fe;
     @include mq() {
       margin-top: vw(40);
       padding: vw(40);
@@ -453,6 +453,115 @@ $breakpoints: (
             }
           }
         }
+      }
+    }
+  }
+}
+
+.maintenance_download_info{
+  ul {
+    li {
+      border-bottom: solid 1px #999999;
+      margin-top: 20px;
+      @include mq() {
+        margin-top: vw(20);
+      }
+      dl {
+        display: flex;
+        flex-wrap: wrap;
+        dt {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          width: 27.2%;
+          padding: 0 30px 20px 40px;
+          @include mq() {
+            width: 100%;
+            justify-content: flex-start;
+            padding: 0 vw(40);
+            margin: 0 0 vw(15) 0;
+          }
+          .date {
+            display: block;
+            font-size: 1.6rem;
+            font-weight: 700;
+            @include mq() {
+              font-size: vw(26);
+            }
+          }
+          .cat {
+            display: block;
+            background-color: #b70000;
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: 1;
+            padding: 4px 0;
+            width: 84px;
+            text-align: center;
+            @include mq() {
+              font-size: vw(20);
+              padding: vw(6) 0;
+              width: vw(126);
+              margin: 0 0 0 vw(20);
+            }
+          }
+        }
+        dd {
+          width: 72.8%;
+          padding: 0 0 20px 0;
+          @include mq() {
+            width: 100%;
+            padding: 0 vw(40) vw(20) vw(40);
+          }
+          a {
+            display: block;
+            font-size: 1.6rem;
+            font-weight: 500;
+            background-image: url("../img/icon/arrow-r-02_black.svg");
+            background-repeat: no-repeat;
+            background-position: right 40px center;
+            background-size: 22px auto;
+            padding: 0 102px 0 0;
+            @include mq() {
+              font-size: vw(26);
+              background-position: right center;
+              background-size: vw(30) auto;
+              padding: 0 vw(40) 0 0;
+            }
+            &.pdf {
+              position: relative;
+              padding: 0 142px 0 0;
+              @include mq() {
+                padding: 0 vw(120) 0 0;
+              }
+              &:after {
+                content: "";
+                display: block;
+                width: 30px;
+                height: 33px;
+                background-image: url("../img/icon/pdf.svg");
+                background-repeat: no-repeat;
+                background-position: left top;
+                background-size: 30px auto;
+                position: absolute;
+                top: 50%;
+                right: 102px;
+                transform: translateY(-50%);
+                @include mq() {
+                  width: vw(40);
+                  height: vw(44);
+                  background-size: vw(40) auto;
+                  right: vw(70);
+                }
+              }
+            }
+          }
+        }
+      }
+      &:first-child {
+        margin-top: 0;
       }
     }
   }

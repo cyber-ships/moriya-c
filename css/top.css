@@ -637,6 +637,7 @@ main.top {
 }
 .top_message_text p span {
   color: #003798;
+  font-weight: bold;
 }
 .top_message_text p:first-child {
   margin-top: 0;
