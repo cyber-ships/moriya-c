@@ -124,8 +124,12 @@ $breakpoints: (
         margin-top: 10px;
         display: none;
         width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
         @include mq(){
           margin-top: vw(10);
+          top: vw(100);
         }
         li{
           &.current{
