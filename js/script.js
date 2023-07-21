@@ -97,12 +97,12 @@ $(function () {
       $open.removeClass("open");
       $open.slideUp();
       $(this).removeClass("open");
-      $container.find(".company_client_accordion_text").fadeOut();
+      $container.find(".company_client_accordion_text").text("もっと見る");
     } else {
       $open.addClass("open");
       $open.slideDown();
       $(this).addClass("open");
-      $container.find(".company_client_accordion_text").fadeIn();
+      $container.find(".company_client_accordion_text").text("閉じる");
     }
   });
 
@@ -144,5 +144,12 @@ $(function () {
       $answer.slideDown();
       $(this).find(".arrow").text("∧");
     }
+  });
+});
+
+//ir_pulldown_menu
+$(function () {
+  $(".ir_pulldown_menu").click(function () {
+    $(this).find("ul").slideToggle();
   });
 });

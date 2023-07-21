@@ -445,11 +445,11 @@ $breakpoints: (
 	news_ir_info
 ----------------------------------------------------- */
 .ir_info {
-  margin-bottom: 80px;
-  background-color: #f8f9f9;
-  padding: 80px 50px;
+  //margin-bottom: 80px;
+  //background-color: #f8f9f9;
+  padding-bottom: 80px;
   @include mq() {
-    margin-bottom: 40px;
+    padding-bottom: 0;
   }
   ul {
     li {
@@ -468,7 +468,7 @@ $breakpoints: (
           flex-wrap: wrap;
           justify-content: space-between;
           align-items: center;
-          width: 27.2%;
+          width: 50%;
           padding: 0 30px 20px 40px;
           @include mq() {
             width: 100%;
@@ -503,7 +503,7 @@ $breakpoints: (
           }
         }
         dd {
-          width: 72.8%;
+          width: 50%;
           padding: 0 0 20px 0;
           @include mq() {
             width: 100%;
@@ -731,6 +731,8 @@ $breakpoints: (
   }
 
   &_btn {
+    width: 75%;
+    margin: 0 auto;
     &_top {
       display: grid;
       grid-template-columns: 1fr 1fr 2fr;
@@ -749,11 +751,13 @@ $breakpoints: (
       }
     }
     &_item {
-      display: block;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 20px 50px;
-      border: 2px solid #5a9bd5;
-      font-size: 2rem;
+      background-color: $sub1;
+      color: #fff;
+      font-size: 1.8rem;
       @include mq("tab") {
         font-size: 3.73333vw;
       }

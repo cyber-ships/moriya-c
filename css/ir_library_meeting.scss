@@ -445,11 +445,11 @@ $breakpoints: (
 	news_ir_info
 ----------------------------------------------------- */
 .ir_info {
-  margin-bottom: 80px;
-  background-color: #f8f9f9;
-  padding: 80px 50px 20px;
+  //margin-bottom: 80px;
+  //background-color: #f8f9f9;
+  padding-bottom: 80px;
   @include mq() {
-    margin-bottom: 40px;
+    padding-bottom: 0;
   }
   ul {
     li {
@@ -705,45 +705,58 @@ $breakpoints: (
 }
 
 /* -----------------------------------------------------
+	ir_pulldown
+----------------------------------------------------- */
+.ir_pulldown {
+  &_menu {
+    width: 115px;
+    margin-left: auto;
+    z-index: 9999;
+    &_title {
+      display: inline-block;
+      border-bottom: 2px solid $sub1;
+      cursor: pointer;
+      padding-bottom: 10px;
+      color: $sub1;
+      span {
+        padding-left: 50px;
+      }
+    }
+    ul {
+      display: none;
+      li {
+        color: $sub1;
+        border-bottom: 2px solid $sub1;
+        cursor: pointer;
+        padding: 10px 0;
+        background-color: #f8f9f9;
+      }
+    }
+  }
+}
+
+/* -----------------------------------------------------
 	ir_library_meeting
 ----------------------------------------------------- */
 .library_meeting {
   &_title {
     font: 2.4rem;
+    color: $sub1;
     line-height: 1.5;
     font-weight: 700;
     border-bottom: 2px solid #003798;
     padding: 0 0 14px 20px;
-    margin: 0 0 20px 0;
+    margin: 0 0 35px 0;
     @include mq() {
       font-size: 4vw;
       padding: 0 0 2.66667vw 0;
       margin: 0 0 4vw 0;
     }
   }
-  &_num {
-    &_list {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      &_item {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        border: 2px solid #5a9bd5;
-        background-color: #fafafa;
-        @include mq() {
-          width: 30px;
-          height: 30px;
-          line-height: 30px;
-        }
-      }
-    }
-  }
 
   &_btn {
+    width: 75%;
+    margin: 0 auto;
     &_top {
       display: grid;
       grid-template-columns: 1fr 1fr 2fr;
@@ -762,11 +775,13 @@ $breakpoints: (
       }
     }
     &_item {
-      display: block;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 20px 50px;
-      border: 2px solid #5a9bd5;
-      font-size: 2rem;
+      background-color: $sub1;
+      color: #fff;
+      font-size: 1.8rem;
       @include mq("tab") {
         font-size: 3.73333vw;
       }

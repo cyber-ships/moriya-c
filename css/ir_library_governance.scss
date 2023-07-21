@@ -707,10 +707,6 @@ $breakpoints: (
 /* -----------------------------------------------------
 	ir_library_governance
 ----------------------------------------------------- */
-.bgc_gray {
-  background-color: #fafafa;
-  padding: 50px 50px 30px;
-}
 
 .library_governance {
   &_title {
@@ -733,11 +729,15 @@ $breakpoints: (
 
   &_copy {
     font-size: 2rem;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     line-height: 1.7;
     @include mq() {
       font-size: 3.73333vw;
     }
+  }
+
+  &_img {
+    margin-bottom: 80px;
   }
 
   &_pdf {
