@@ -249,7 +249,8 @@ header > .inner .global-nav .nav-list .nav-item .nav-item_sub {
   }
 }
 header > .inner .global-nav .nav-list .nav-item .nav-item_sub .nav-item_sub_inner {
-  max-width: 1200px;
+  display: flex;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 70px 0;
 }
