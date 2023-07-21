@@ -18,11 +18,9 @@
   display: block;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   background-repeat: no-repeat;
   background-size: contain;
-  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 .btn.type-01 {
@@ -227,14 +225,9 @@
 }
 
 .btn_wrap02 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .btn_wrap02 a {
   width: 320px;
@@ -253,14 +246,9 @@
 }
 
 .btn_wrap03 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   max-width: 415px;
   margin: 0 auto;
 }
@@ -292,20 +280,13 @@
 }
 
 .btn_wrap04 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 @media screen and (max-width: 768px) {
   .btn_wrap04 {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
 .btn_wrap04 a {
@@ -343,14 +324,9 @@
 }
 
 .btn_wrap05 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
   .btn_wrap05 {
@@ -417,23 +393,16 @@
 }
 .page_heading .inner h1 {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .page_heading .inner h1 .text {
   color: #ffffff;
   font-size: 4.5rem;
   line-height: 1.14;
   font-weight: 700;
-  -webkit-font-feature-settings: "palt" 1;
-          font-feature-settings: "palt" 1;
+  font-feature-settings: "palt" 1;
   letter-spacing: 0.1em;
 }
 @media screen and (max-width: 768px) {
@@ -500,36 +469,22 @@
   }
 }
 .ir_info ul li dl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .ir_info ul li dl dt {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   width: 27.2%;
   padding: 0 30px 20px 40px;
 }
 @media screen and (max-width: 768px) {
   .ir_info ul li dl dt {
     width: 100%;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
     padding: 0 5.3333333333vw;
     margin: 0 0 2vw 0;
   }
@@ -546,7 +501,7 @@
 }
 .ir_info ul li dl dt .cat {
   display: block;
-  background-color: #717171;
+  background-color: #b70000;
   color: #fff;
   font-size: 1.4rem;
   font-weight: 700;
@@ -612,8 +567,7 @@
   position: absolute;
   top: 50%;
   right: 102px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 @media screen and (max-width: 768px) {
   .ir_info ul li dl dd a.pdf:after {
@@ -664,11 +618,8 @@
   margin-bottom: 0;
 }
 .ir_cat_list .block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 50px;
 }
 @media screen and (max-width: 768px) {
@@ -683,15 +634,9 @@
   position: relative;
   width: 50%;
   height: 340px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -712,8 +657,7 @@
   position: absolute;
   top: 50%;
   right: 20px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   background-color: #fff;
   background-image: url("../img/icon/arrow-r-02_blue.svg");
   background-repeat: no-repeat;
@@ -734,8 +678,7 @@
   font-weight: 700;
   line-height: 1;
   color: #fff;
-  -webkit-font-feature-settings: "palt" 1;
-          font-feature-settings: "palt" 1;
+  font-feature-settings: "palt" 1;
   letter-spacing: 0.1em;
 }
 @media screen and (max-width: 768px) {
@@ -802,10 +745,12 @@
 ----------------------------------------------------- */
 .ir_library_title {
   font-size: 2.4rem;
+  color: #003798;
   line-height: 1.5;
   font-weight: 700;
   padding: 0 0 14px 0;
   margin: 0 0 20px 0;
+  border-bottom: 2px solid #003798;
 }
 @media screen and (max-width:1000px) {
   .ir_library_title {
@@ -813,21 +758,13 @@
   }
 }
 .ir_library_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 @media screen and (max-width:1000px) {
   .ir_library_box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 .ir_library_box_content {
@@ -841,9 +778,9 @@
 }
 .ir_library_box_content_title {
   font-size: 2rem;
+  color: #003798;
   font-weight: 700;
-  background-color: #f5f5f5;
-  padding: 10px 0 10px 20px;
+  padding: 10px 0 20px;
   border-bottom: 2px solid #114f7a;
 }
 @media screen and (max-width: 768px) {
@@ -859,7 +796,7 @@
   display: block;
   font-size: 1.6rem;
   font-weight: 500;
-  border-bottom: 2px solid #114f7a;
+  border-bottom: 2px solid #222222;
   padding-bottom: 30px;
   margin-bottom: 30px;
   position: relative;
@@ -868,6 +805,20 @@
   .ir_library_box_content_pdf {
     font-size: 3.46667vw;
     padding: 0 16vw 30px 0;
+    background-position: right center;
+    background-size: 4vw auto;
+  }
+}
+.ir_library_box_content_pdf img {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 20%;
+  width: 22px;
+}
+@media screen and (max-width: 768px) {
+  .ir_library_box_content_pdf img {
+    width: 4vw;
   }
 }
 .ir_library_box_content_pdf:after {
@@ -882,8 +833,7 @@
   position: absolute;
   top: 20%;
   right: 50px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 @media screen and (max-width: 768px) {
   .ir_library_box_content_pdf:after {
@@ -903,6 +853,9 @@
   .ir_library_box_content_link {
     font-size: 3.46667vw;
   }
+}
+.ir_library_box_content_link span {
+  padding-left: 5px;
 }
 .ir_library_adobe {
   width: 80%;
@@ -926,15 +879,9 @@
 }
 
 .library_flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  align-items: center;
+  justify-content: flex-end;
   gap: 10px;
 }
 
@@ -970,4 +917,5 @@
     font-size: 3.0666666667vw;
     margin: 0 auto 5.3333333333vw auto;
   }
-}/*# sourceMappingURL=ir_library.css.map */
+}
+/*# sourceMappingURL=ir_library.css.map */

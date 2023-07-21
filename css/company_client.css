@@ -250,7 +250,7 @@ header > .inner .global-nav .nav-list .nav-item .nav-item_sub {
 }
 header > .inner .global-nav .nav-list .nav-item .nav-item_sub .nav-item_sub_inner {
   display: flex;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 70px 0;
 }
@@ -342,7 +342,7 @@ header > .inner .global-nav .nav-list .nav-item .nav-item_sub .nav-item_sub_inne
 header > .inner .global-nav .nav-list .nav-item .nav-item_sub .nav-item_sub_inner .nav-item_sub_list {
   display: flex;
   flex-wrap: wrap;
-  width: 81.5%;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   header > .inner .global-nav .nav-list .nav-item .nav-item_sub .nav-item_sub_inner .nav-item_sub_list {
@@ -1099,7 +1099,6 @@ main section .inner p + p {
 }
 
 .company_client_accordion_text {
-  display: none;
   position: absolute;
   right: 120px;
   bottom: 40px;

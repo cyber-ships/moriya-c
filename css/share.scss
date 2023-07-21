@@ -261,7 +261,7 @@ header {
             }
             .nav-item_sub_inner {
               display: flex;
-              max-width: 1000px;
+              max-width: 1200px;
               margin: 0 auto;
               padding: 70px 0;
               @include mq() {
@@ -340,7 +340,7 @@ header {
               .nav-item_sub_list {
                 display: flex;
                 flex-wrap: wrap;
-                width: 81.5%;
+                width: 100%;
                 @include mq() {
                   width: 100%;
                 }

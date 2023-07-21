@@ -554,6 +554,7 @@ $breakpoints: (
     text-align: center;
     letter-spacing: 0.1em;
     margin: 0 0 50px 0;
+    color: $sub1;
     &:last-of-type {
       margin-top: 30px;
     }
@@ -577,12 +578,13 @@ $breakpoints: (
   &_summary {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    align-items: center;
+    border-bottom: solid 1px #999999;
     dt {
       width: 30%;
-      border: solid 1px #fff;
-      color: #fff;
-      background-color: #2e5597;
+      //border: solid 1px #fff;
+      // color: #fff;
+      //background-color: #2e5597;
       padding: 22.5px 40px;
       font-weight: 700;
       @include mq() {
@@ -592,8 +594,8 @@ $breakpoints: (
     }
     dd {
       width: 70%;
-      border: solid 1px #fff;
-      background-color: #dae3f3;
+      //border: solid 1px #fff;
+      // background-color: #dae3f3;
       padding: 22.5px 40px 22.5px 20px;
       @include mq() {
         width: 70%;
@@ -602,12 +604,15 @@ $breakpoints: (
     }
   }
 }
+.bgc_stock_gray {
+  background-color: #fafafa;
+}
 
 /* -----------------------------------------------------
 	ir_stock_quote
 ----------------------------------------------------- */
 .quote_bgc {
-  background-color: #f8f9f9;
+  //background-color: #f8f9f9;
   text-align: center;
   padding: 30px 50px;
   @include mq() {
@@ -616,27 +621,17 @@ $breakpoints: (
 }
 
 .ir_stock_quote {
-  &_title {
-    font-size: 2.4rem;
-    line-height: 1.5;
-    font-weight: 700;
-    padding: 0 0 14px 0;
-    @include mq() {
-      font-size: 4vw;
-      padding: 0 0 2.66667vw 0;
-    }
-  }
-  &_copy {
-    padding-bottom: 20px;
-    @include mq() {
-      font-size: 3.46667vw;
-    }
-  }
   &_link {
+    width: 70%;
+    margin: 0 auto;
     display: block;
     text-decoration: underline;
-    color: #7194d1;
-    border: 2px solid #7194d1;
+    color: $sub1;
+    border: 2px solid $sub1;
     padding: 30px 0;
+    margin-top: 30px;
+    @include mq() {
+      width: 100%;
+    }
   }
 }
