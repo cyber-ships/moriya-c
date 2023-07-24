@@ -503,13 +503,14 @@ main section {
       position: absolute;
       top: 15%;
       right: 0;
-      width: 90vw;
+      width: 95vw;
       height: 1000px;
       z-index: -1;
       background-image: url(../img/recruit/blue_bg01.png);
       background-position: top right;
       background-size: cover;
       background-repeat: no-repeat;
+
       @media screen and(max-width:1000px) {
         top: 10%;
         height: 40%;
@@ -525,7 +526,7 @@ main section {
       position: absolute;
       top: 15%;
       left: 0;
-      width: 90vw;
+      width: 95vw;
       height: 1000px;
       z-index: -1;
       background-image: url(../img/recruit/blue_bg02.png);
@@ -535,7 +536,7 @@ main section {
       @media screen and(max-width:1000px) {
         top: 33%;
         height: 60%;
-        width: calc(100vw + 200px);
+        // width: calc(100vw + 200px);
       }
     }
   }
@@ -545,6 +546,7 @@ main section {
   .block {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     text-align: center;
     margin-top: 110px;
     flex-direction: row-reverse;
@@ -559,13 +561,13 @@ main section {
       flex-direction: row;
     }
     &-img {
-      width: 50%;
+      width: 100%;
       @include mq() {
         width: 100%;
       }
       picture {
         width: 100%;
-        height: 313px;
+        //height: 313px;
         clip-path: polygon(
           15.208333333333332% 0%,
           100% 0%,

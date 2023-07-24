@@ -539,14 +539,6 @@ $breakpoints: (
 	recruit_faq
 ----------------------------------------------------- */
 .recruit_faq {
-  &_link {
-    display: block;
-    text-align: center;
-    margin-bottom: -50px;
-    color: #5a9bd5;
-    cursor: pointer;
-  }
-
   &_accordion {
     &_item {
       position: relative;
@@ -557,27 +549,53 @@ $breakpoints: (
       .question {
         font-size: 2rem;
         font-weight: 700;
-        padding-left: 70px;
+        //padding-left: 70px;
         @include mq() {
           font-size: 3.7333333333vw;
-        }
-        .number {
-          font-size: 4rem;
-          position: absolute;
-          top: -20px;
-          left: 0;
         }
       }
       .answer {
         display: none;
-        padding-left: 70px;
+
         padding-top: 30px;
       }
       .arrow {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: $sub1;
         position: absolute;
-        top: 0;
+        top: -10px;
         right: 10px;
+
         cursor: pointer;
+        &::after {
+          content: "";
+          position: absolute;
+          right: 45%;
+          top: 40%;
+          transition: all 0.2%s ease-in-out;
+          display: block;
+          width: 8px;
+          height: 8px;
+          border-top: solid 2px #fff;
+          border-right: solid 2px #fff;
+          -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+          @include mq() {
+            width: 6px;
+            height: 6px;
+            right: 40%;
+          }
+        }
+        &.open::after {
+          -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+          top: 45%;
+        }
       }
     }
   }

@@ -138,11 +138,11 @@ $(function () {
     if ($answer.hasClass("open")) {
       $answer.removeClass("open");
       $answer.slideUp();
-      $(this).find(".arrow").text("∨");
+      $(this).find(".arrow").removeClass("open");
     } else {
       $answer.addClass("open");
       $answer.slideDown();
-      $(this).find(".arrow").text("∧");
+      $(this).find(".arrow").addClass("open");
     }
   });
 });

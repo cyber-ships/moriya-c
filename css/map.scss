@@ -443,16 +443,33 @@ $breakpoints: (
 	sitemap
 ----------------------------------------------------- */
 .sitemap {
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    text-align: left;
-    th,
-    td {
-      border: 1px solid $fontColor;
-      padding: 10px 20px;
-      a {
-        cursor: pointer;
+  &_box {
+    &_l {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &_s {
+      width: 48%;
+      margin-bottom: 100px;
+      p {
+        color: $sub1;
+        font-weight: 700;
+      }
+    }
+
+    &_bottom {
+      &_l {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      &_s {
+        width: 32%;
+        p {
+          color: $sub1;
+          font-weight: 700;
+        }
       }
     }
   }
