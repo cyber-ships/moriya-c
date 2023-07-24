@@ -546,6 +546,13 @@ $breakpoints: (
         background-image: url("../img/company/sub-page_list_client.jpg");
       }
     }
+    &.people {
+      a {
+        background: url("../img/recruit/work/recruit_joblist_4.png");
+        background-position: center;
+        background-size: cover;
+      }
+    }
     p {
       margin: 20px 0 0 0;
       line-height: 1.6;
@@ -665,9 +672,7 @@ $breakpoints: (
       flex-wrap: wrap;
       margin-top: vw(80);
     }
-    &:first-child {
-      margin-top: 0;
-    }
+
     &:nth-child(even) {
       flex-direction: row;
     }
@@ -725,6 +730,9 @@ $breakpoints: (
         line-height: 1.5;
         font-weight: 700;
         margin: 0 0 20px 0;
+        color: $sub1;
+        border-bottom: 2px solid $sub1;
+        padding-bottom: 14px;
         @include mq() {
           font-size: vw(38);
           margin: 0 0 vw(30) 0;
@@ -759,6 +767,9 @@ $breakpoints: (
     line-height: 1.5;
     font-weight: 700;
     margin: 0 0 20px 0;
+    color: $sub1;
+    border-bottom: 2px solid $sub1;
+    padding-bottom: 14px;
     @include mq() {
       font-size: 5.0666666667vw;
       margin: 0 0 4vw 0;

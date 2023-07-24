@@ -443,50 +443,117 @@ $breakpoints: (
 	policy
 ----------------------------------------------------- */
 .policy {
-  &_bg {
-    background-color: #f8f9f9;
-    padding: 50px 30px;
-  }
-  &_link {
-    display: block;
-    text-decoration: underline;
-    font-size: 2.4rem;
-    font-weight: 700;
-    @include mq() {
-      font-size: 5.3333333333vw;
-    }
-  }
-  &_copy {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    @include mq() {
-      font-size: 3.7333333333vw;
-    }
-  }
-  &_lead {
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 1.8;
-    margin-bottom: 50px;
-    @include mq() {
-      font-size: 3.7333333333vw;
-    }
-  }
-
-  &_privacy_title {
-    font-size: 2.4rem;
-    font-weight: 700;
-    @include mq() {
-      font-size: 5.3333333333vw;
-    }
-  }
-  &_privacy_copy {
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 1.8;
-    margin-bottom: 50px;
-    @include mq() {
-      font-size: 3.7333333333vw;
+  .sub-page_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .block {
+      width: 45%;
+      //margin-left: 4%;
+      margin-top: 50px;
+      @include mq() {
+        width: 100%;
+        margin-left: 0;
+        margin-top: vw(50);
+      }
+      &:first-child {
+        //margin-top: 0;
+      }
+      &:nth-child(even) {
+        margin-left: 0;
+      }
+      a {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 320px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: #f5f5f5;
+        @include mq() {
+          height: vw(320);
+        }
+        &:after {
+          content: "";
+          display: block;
+          width: 44px;
+          height: 44px;
+          border-radius: 100vh;
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          transform: translateY(-50%);
+          background-color: #fff;
+          background-image: url("../img/icon/arrow-r-02_blue.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 22px auto;
+          @include mq() {
+            width: vw(50);
+            height: vw(50);
+            right: vw(20);
+            background-size: vw(22) auto;
+          }
+        }
+        .ttl {
+          font-size: 2.6rem;
+          font-weight: 700;
+          line-height: 1.7;
+          color: #fff;
+          font-feature-settings: "palt" 1;
+          letter-spacing: 0.1em;
+          text-align: center;
+          @include mq() {
+            font-size: vw(40);
+          }
+          small {
+            display: block;
+            margin: 15px 0 0 0;
+            font-family: "Roboto Condensed", sans-serif;
+            font-size: 2rem;
+            @include mq() {
+              margin: vw(15) 0 0 0;
+              font-size: vw(34);
+            }
+          }
+        }
+      }
+      &.profile {
+        width: 100%;
+        margin-left: 0;
+        a {
+          background-image: url("../img/company/sub-page_list_profile.jpg");
+        }
+      }
+      &.message {
+        a {
+          background-image: url("../img/company/sub-page_list_message.jpg");
+        }
+      }
+      &.history {
+        a {
+          background-image: url("../img/company/sub-page_list_history.jpg");
+        }
+      }
+      &.office {
+        a {
+          background-image: url("../img/company/sub-page_list_office.jpg");
+        }
+      }
+      &.client {
+        a {
+          background-image: url("../img/company/sub-page_list_client.jpg");
+        }
+      }
+      p {
+        margin: 20px 0 0 0;
+        line-height: 1.6;
+        @include mq() {
+          margin: vw(20) 0 0 0;
+        }
+      }
     }
   }
 }
@@ -507,32 +574,37 @@ $breakpoints: (
       font-size: 5.3333333333vw;
     }
   }
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 50px;
-    th,
-    td {
-      border: 1px solid $fontColor;
+  &_summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: solid 1px #999999;
+    &:last-of-type {
+      margin-bottom: 50px;
+    }
+    dt {
+      width: 30%;
+      //border-bottom: solid 1px #999999;
+      padding: 22.5px 40px;
+      font-weight: 700;
       vertical-align: middle;
-      text-align: left;
-      padding: 10px;
-    }
-    th {
-      font-size: 2rem;
-      font-weight: 500;
-      line-height: 1.8;
-      background-color: #f8f9f9;
       @include mq() {
-        font-size: 3.7333333333vw;
+        width: 30%;
+        padding: vw(20) vw(30);
       }
     }
-    td {
-      font-size: 2rem;
-      line-height: 1.8;
+    dd {
+      width: 70%;
+      //border-bottom: solid 1px #999999;
+      padding: 22.5px 40px 22.5px 0;
+
       @include mq() {
-        font-size: 3.7333333333vw;
+        width: 70%;
+        padding: vw(20) vw(30) vw(20) 0;
       }
+    }
+    &.bgc {
+      background-color: #fafafa;
     }
   }
 
@@ -545,35 +617,6 @@ $breakpoints: (
 	policy_career
 ----------------------------------------------------- */
 .policy_career {
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 100px;
-    th,
-    td {
-      border: 1px solid $fontColor;
-      vertical-align: middle;
-      text-align: center;
-      padding: 10px;
-    }
-    th {
-      font-size: 2rem;
-      font-weight: 500;
-      line-height: 1.8;
-      background-color: #f8f9f9;
-      @include mq() {
-        font-size: 3.7333333333vw;
-      }
-    }
-    td {
-      font-size: 2rem;
-      line-height: 1.8;
-      @include mq() {
-        font-size: 3.7333333333vw;
-      }
-    }
-  }
-
   &_date {
     text-align: right;
     font-size: 2rem;
