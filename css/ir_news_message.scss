@@ -509,3 +509,33 @@ $breakpoints: (
     }
   }
 }
+
+.news_breadcrumbs {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto 0 auto;
+  padding: 20px 50px 0;
+}
+.news_breadcrumbs li {
+  position: relative;
+  color: #777;
+  padding: 0 15px 0 0;
+  margin: 0 0 0 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1;
+}
+.news_breadcrumbs li::after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-image: url(../img/icon/arrow-r-01_gray.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 100% auto;
+}

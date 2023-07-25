@@ -809,24 +809,44 @@
   }
 }
 .library_governance_adobe {
-  width: 80%;
+  width: 90%;
   margin: 50px auto 100px;
   background-color: #f5f5f5;
   padding: 20px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
 }
 @media screen and (max-width: 768px) {
   .library_governance_adobe {
     width: 100%;
     margin: 50px auto;
+    flex-direction: column-reverse;
+  }
+}
+.library_governance_adobe a {
+  display: block;
+  height: 40px;
+  width: 30%;
+}
+.library_governance_adobe a img {
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .library_governance_adobe a {
+    width: 100%;
+    text-align: center;
   }
 }
 .library_governance_adobe p {
+  width: 90%;
   line-height: 1.7;
 }
 @media screen and (max-width: 768px) {
   .library_governance_adobe p {
     font-size: 3.46667vw;
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 

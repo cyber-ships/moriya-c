@@ -1060,6 +1060,8 @@ main {
   position: absolute;
   right: 120px;
   bottom: 40px;
+  color: $sub1;
+  font-weight: bold;
   @include mq() {
     right: 50%;
     bottom: 10px;

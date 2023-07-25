@@ -1458,18 +1458,60 @@ main {
 /* -----------------------------------------------------
 	news
 ----------------------------------------------------- */
-.news_num {
-  &_list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    &_item {
-      display: inline-block;
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
-      text-align: center;
-      background-color: #f1f8fe;
+.pager {
+  margin-top: 80px;
+  @include mq() {
+    margin-top: vw(60);
+  }
+  &_inner {
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        border: none;
+        margin-right: 4px;
+        @include mq() {
+          margin-right: vw(7);
+        }
+        &:first-child {
+          margin-left: 4px;
+          @include mq() {
+            margin-left: vw(7);
+          }
+        }
+        &.next {
+          margin-left: 25px;
+          @include mq() {
+            margin-left: vw(37);
+          }
+        }
+        &.prev {
+          margin-right: 25px;
+          @include mq() {
+            margin-right: vw(37);
+          }
+        }
+        &.current {
+          a {
+            color: #fff;
+            background-color: #003798;
+          }
+        }
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          font-weight: bold;
+          background-color: #f1f8fe;
+          @include mq() {
+            width: vw(58);
+            height: vw(58);
+            font-size: vw(24);
+          }
+        }
+      }
     }
   }
 }

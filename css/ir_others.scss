@@ -727,8 +727,8 @@ $breakpoints: (
         width: 30%;
         padding: vw(20) vw(30);
       }
-      &:nth-of-type(even) {
-        //background-color: #fafafa;
+      &:first-of-type {
+        border-top: 2px solid $fontColor;
       }
     }
     dd {
@@ -739,8 +739,8 @@ $breakpoints: (
         width: 70%;
         padding: vw(20) vw(30) vw(20) 0;
       }
-      &:nth-of-type(even) {
-        //background-color: #fafafa;
+      &:first-of-type {
+        border-top: 2px solid $fontColor;
       }
     }
 

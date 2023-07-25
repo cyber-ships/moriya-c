@@ -746,6 +746,9 @@
     padding: 2.6666666667vw 4vw;
   }
 }
+.ir_others_calender_summary dt:first-of-type {
+  border-top: 2px solid #222222;
+}
 .ir_others_calender_summary dd {
   width: 80%;
   border-bottom: solid 2px #222222;
@@ -756,6 +759,9 @@
     width: 70%;
     padding: 2.6666666667vw 4vw 2.6666666667vw 0;
   }
+}
+.ir_others_calender_summary dd:first-of-type {
+  border-top: 2px solid #222222;
 }
 .ir_others_calender_summary_copy {
   text-align: right;

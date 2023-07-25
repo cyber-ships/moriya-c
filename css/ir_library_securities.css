@@ -453,26 +453,27 @@
 	news_ir_info
 ----------------------------------------------------- */
 .ir_info {
-  padding-bottom: 80px;
+  margin-bottom: 80px;
 }
 @media screen and (max-width: 768px) {
   .ir_info {
-    padding-bottom: 0;
+    margin-bottom: 40px;
   }
 }
 .ir_info ul li {
-  margin: 20px 0 50px;
-  padding-bottom: 20px;
-  border-bottom: 2px solid #222222;
+  border-bottom: solid 1px #999999;
+  margin-top: 20px;
 }
 @media screen and (max-width: 768px) {
   .ir_info ul li {
     margin-top: 2.6666666667vw;
   }
 }
+.ir_info ul li.library_securities_num_list_item {
+  margin-top: 100px;
+}
 .ir_info ul li dl {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
 }
 .ir_info ul li dl dt {
@@ -503,12 +504,12 @@
 }
 .ir_info ul li dl dt .cat {
   display: block;
-  background-color: #717171;
+  background-color: #b70000;
   color: #fff;
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1;
-  padding: 10px 0;
+  padding: 4px 0;
   width: 84px;
   text-align: center;
 }
@@ -771,85 +772,215 @@
 /* -----------------------------------------------------
 	ir_library_securities
 ----------------------------------------------------- */
-.library_securities_num_list {
+.library_securities_btn {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-.library_securities_num_list_item {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  border: 2px solid #5a9bd5;
-  background-color: #fafafa;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
-  .library_securities_num_list_item {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-  }
-}
-.library_securities_btn {
-  width: 75%;
-  margin: 0 auto;
-}
-.library_securities_btn_top {
-  display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-@media screen and (max-width:1000px) {
-  .library_securities_btn_top {
-    grid-template-columns: 1fr;
-  }
-}
-.library_securities_btn_bottom {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 10px;
-}
-@media screen and (max-width:1000px) {
-  .library_securities_btn_bottom {
-    grid-template-columns: 1fr;
+  .library_securities_btn {
+    flex-direction: column;
   }
 }
 .library_securities_btn_item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 50px;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
   background-color: #003798;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 14.5px 0;
+  width: 30%;
 }
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 768px) {
   .library_securities_btn_item {
-    font-size: 3.73333vw;
+    width: 100%;
   }
 }
 .library_securities_adobe {
-  width: 80%;
+  width: 90%;
   margin: 50px auto 100px;
   background-color: #f5f5f5;
   padding: 20px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
 }
 @media screen and (max-width: 768px) {
   .library_securities_adobe {
     width: 100%;
     margin: 50px auto;
+    flex-direction: column-reverse;
+  }
+}
+.library_securities_adobe a {
+  display: block;
+  height: 40px;
+  width: 30%;
+}
+.library_securities_adobe a img {
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .library_securities_adobe a {
+    width: 100%;
+    text-align: center;
   }
 }
 .library_securities_adobe p {
+  width: 90%;
   line-height: 1.7;
 }
 @media screen and (max-width: 768px) {
   .library_securities_adobe p {
     font-size: 3.46667vw;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.head_year {
+  width: 158px;
+  position: relative;
+  margin-left: auto;
+  margin-bottom: 20px;
+  z-index: 9999;
+}
+@media screen and (max-width: 768px) {
+  .head_year {
+    width: 100%;
+    margin-top: 2.9333333333vw;
+  }
+}
+.head_year .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .head_year .title {
+    font-size: 4vw;
+  }
+}
+.head_year .head_year_btn {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 16px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .head_year .head_year_btn {
+    font-size: 3.4666666667vw;
+    margin-top: 1.8666666667vw;
+  }
+}
+.head_year .head_year_btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 8px;
+  background-image: url(../img/works/arrow02.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (max-width: 768px) {
+  .head_year .head_year_btn::before {
+    right: 2.6666666667vw;
+    width: 1.8666666667vw;
+    height: 1.0666666667vw;
+  }
+}
+.head_year .head_year_list {
+  margin-top: 10px;
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 70px;
+  left: 0;
+}
+@media screen and (max-width: 768px) {
+  .head_year .head_year_list {
+    margin-top: 1.3333333333vw;
+    top: 13.3333333333vw;
+  }
+}
+.head_year .head_year_list li.current a {
+  color: #003798;
+}
+.head_year .head_year_list li a {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 20px;
+  background-color: #f1f8fe;
+}
+
+.pager {
+  margin-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  .pager {
+    margin-top: 8vw;
+  }
+}
+.pager_inner ul {
+  display: flex;
+  justify-content: center;
+}
+.pager_inner ul li {
+  border: none;
+  margin-right: 4px;
+}
+@media screen and (max-width: 768px) {
+  .pager_inner ul li {
+    margin-right: 0.9333333333vw;
+  }
+}
+.pager_inner ul li:first-child {
+  margin-left: 4px;
+}
+@media screen and (max-width: 768px) {
+  .pager_inner ul li:first-child {
+    margin-left: 0.9333333333vw;
+  }
+}
+.pager_inner ul li.next {
+  margin-left: 25px;
+}
+@media screen and (max-width: 768px) {
+  .pager_inner ul li.next {
+    margin-left: 4.9333333333vw;
+  }
+}
+.pager_inner ul li.prev {
+  margin-right: 25px;
+}
+@media screen and (max-width: 768px) {
+  .pager_inner ul li.prev {
+    margin-right: 4.9333333333vw;
+  }
+}
+.pager_inner ul li.current a {
+  color: #fff;
+  background-color: #003798;
+}
+.pager_inner ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  background-color: #f1f8fe;
+}
+@media screen and (max-width: 768px) {
+  .pager_inner ul li a {
+    width: 7.7333333333vw;
+    height: 7.7333333333vw;
+    font-size: 3.2vw;
   }
 }
 
