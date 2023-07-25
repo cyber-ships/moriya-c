@@ -452,6 +452,9 @@ $breakpoints: (
     &_s {
       width: 48%;
       margin-bottom: 100px;
+      @include mq() {
+        margin-bottom: 50px;
+      }
       p {
         color: $sub1;
         font-weight: 700;
@@ -459,6 +462,10 @@ $breakpoints: (
     }
 
     &_bottom {
+      margin-bottom: 100px;
+      @include mq() {
+        margin-bottom: 50px;
+      }
       &_l {
         display: flex;
         flex-wrap: wrap;
