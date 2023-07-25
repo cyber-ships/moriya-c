@@ -569,6 +569,33 @@
 }
 
 /* -----------------------------------------------------
+	policy_antisocial
+----------------------------------------------------- */
+.policy_antisocial_title {
+  font-weight: bold;
+  color: #003798;
+}
+.policy_antisocial_copy {
+  font-size: 2.7rem;
+  font-weight: bold;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .policy_antisocial_copy {
+    font-size: 3.7333333333vw;
+  }
+}
+
+/* -----------------------------------------------------
+	policy_security
+----------------------------------------------------- */
+.policy_security_title {
+  font-weight: bold;
+  color: #003798;
+  margin-bottom: 30px;
+}
+
+/* -----------------------------------------------------
 	policy_disclosure
 ----------------------------------------------------- */
 .policy_disclosure_title {

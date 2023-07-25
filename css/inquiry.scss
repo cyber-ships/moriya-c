@@ -26,6 +26,7 @@ $breakpoints: (
 }
 
 .page_inquiry {
+  padding-top: 0;
   .inquiry_box {
     margin-top: 80px;
     @include mq() {
@@ -33,6 +34,7 @@ $breakpoints: (
     }
     .inquiry_title {
       margin-top: 80px;
+      text-align: center;
       @include mq() {
         margin-top: vw(48);
       }
@@ -60,8 +62,8 @@ $breakpoints: (
       }
     }
     .inquiry_form {
-      padding: 50px;
-      margin-top: 40px;
+      padding: 0 50px 50px;
+      //margin-top: 40px;
       //background-color: whitesmoke;
       @include mq() {
         margin-top: vw(40);
@@ -70,6 +72,7 @@ $breakpoints: (
       .confirm-text {
         font-size: 16px;
         margin-bottom: 40px;
+        text-align: center;
         @include mq() {
           font-size: vw(26);
           margin-bottom: vw(70);
@@ -278,7 +281,7 @@ $breakpoints: (
         }
       }
       .btn_wrap01 {
-        margin-top: 30px;
+        margin-top: 80px;
       }
     }
   }
