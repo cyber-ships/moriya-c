@@ -459,9 +459,22 @@
   width: 48%;
   margin-bottom: 100px;
 }
+@media screen and (max-width: 768px) {
+  .sitemap_box_s {
+    margin-bottom: 50px;
+  }
+}
 .sitemap_box_s p {
   color: #003798;
   font-weight: 700;
+}
+.sitemap_box_bottom {
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 768px) {
+  .sitemap_box_bottom {
+    margin-bottom: 50px;
+  }
 }
 .sitemap_box_bottom_l {
   display: flex;
