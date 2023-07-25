@@ -563,6 +563,35 @@ $breakpoints: (
 }
 
 /* -----------------------------------------------------
+	policy_antisocial
+----------------------------------------------------- */
+.policy_antisocial {
+  &_title {
+    font-weight: bold;
+    color: $sub1;
+  }
+  &_copy {
+    font-size: 2.7rem;
+    font-weight: bold;
+    text-align: center;
+    @include mq() {
+      font-size: 3.7333333333vw;
+    }
+  }
+}
+
+/* -----------------------------------------------------
+	policy_security
+----------------------------------------------------- */
+.policy_security {
+  &_title {
+    font-weight: bold;
+    color: $sub1;
+    margin-bottom: 30px;
+  }
+}
+
+/* -----------------------------------------------------
 	policy_disclosure
 ----------------------------------------------------- */
 .policy_disclosure {

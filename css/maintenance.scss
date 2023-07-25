@@ -290,7 +290,7 @@ $breakpoints: (
     font-size: 36px;
     font-weight: bold;
     span {
-      font-weight: normal;
+      font-weight: bold;
       font-size: 24px;
       display: block;
     }
@@ -401,11 +401,11 @@ $breakpoints: (
     font-size: 16px;
     line-height: 1.625;
     margin-bottom: 40px;
-    margin-top: 50px;
+    //margin-top: 50px;
     @include mq() {
       font-size: vw(26);
       margin-bottom: vw(38);
-      margin-top: vw(60);
+      //margin-top: vw(60);
     }
   }
   h2 {
@@ -573,7 +573,7 @@ $breakpoints: (
       font-size: 36px;
       font-weight: bold;
       span {
-        font-weight: normal;
+        font-weight: bold;
         font-size: 24px;
         display: block;
       }

@@ -1025,6 +1025,9 @@ main {
 /* -----------------------------------------------------
 	company_office
 ----------------------------------------------------- */
+.office_color {
+  color: $sub1;
+}
 .company_office {
   &_title {
     font-size: 4rem;
@@ -1033,8 +1036,8 @@ main {
     text-align: center;
     font-feature-settings: "palt" 1;
     letter-spacing: 0.1em;
-    color: $fontColor;
-    margin: 0 0 50px 0;
+    color: $sub1;
+    margin: 0 0 20px 0;
     @include mq() {
       font-size: vw(46);
       margin: 0 0 vw(60) 0;
@@ -1055,7 +1058,7 @@ main {
   &_map {
     background-color: #f8f9f9;
     padding: 50px;
-    margin-top: 100px;
+    margin-top: 70px;
     @include mq("tab") {
       padding: 50px 20px;
       margin-top: 50px;
