@@ -445,23 +445,22 @@ $breakpoints: (
 	news_ir_info
 ----------------------------------------------------- */
 .ir_info {
-  //margin-bottom: 80px;
-  //background-color: #f8f9f9;
-  padding-bottom: 80px;
+  margin-bottom: 80px;
   @include mq() {
-    padding-bottom: 0;
+    margin-bottom: 40px;
   }
   ul {
     li {
-      margin: 20px 0 50px;
-      padding-bottom: 20px;
-      border-bottom: 2px solid $fontColor;
+      border-bottom: solid 1px #999999;
+      margin-top: 20px;
       @include mq() {
         margin-top: vw(20);
       }
+      &.library_meeting_num_list_item {
+        margin-top: 100px;
+      }
       dl {
         display: flex;
-        align-items: center;
         flex-wrap: wrap;
         dt {
           display: flex;
@@ -486,12 +485,12 @@ $breakpoints: (
           }
           .cat {
             display: block;
-            background-color: #717171;
+            background-color: #b70000;
             color: #fff;
             font-size: 1.4rem;
             font-weight: 700;
             line-height: 1;
-            padding: 10px 0;
+            padding: 4px 0;
             width: 84px;
             text-align: center;
             @include mq() {
@@ -705,37 +704,6 @@ $breakpoints: (
 }
 
 /* -----------------------------------------------------
-	ir_pulldown
------------------------------------------------------ */
-.ir_pulldown {
-  &_menu {
-    width: 115px;
-    margin-left: auto;
-    z-index: 9999;
-    &_title {
-      display: inline-block;
-      border-bottom: 2px solid $sub1;
-      cursor: pointer;
-      padding-bottom: 10px;
-      color: $sub1;
-      span {
-        padding-left: 50px;
-      }
-    }
-    ul {
-      display: none;
-      li {
-        color: $sub1;
-        border-bottom: 2px solid $sub1;
-        cursor: pointer;
-        padding: 10px 0;
-        background-color: #f8f9f9;
-      }
-    }
-  }
-}
-
-/* -----------------------------------------------------
 	ir_library_meeting
 ----------------------------------------------------- */
 .library_meeting {
@@ -746,7 +714,7 @@ $breakpoints: (
     font-weight: 700;
     border-bottom: 2px solid #003798;
     padding: 0 0 14px 20px;
-    margin: 0 0 35px 0;
+    margin: 0 0 20px 0;
     @include mq() {
       font-size: 4vw;
       padding: 0 0 2.66667vw 0;
@@ -755,53 +723,131 @@ $breakpoints: (
   }
 
   &_btn {
-    width: 75%;
-    margin: 0 auto;
-    &_top {
-      display: grid;
-      grid-template-columns: 1fr 1fr 2fr;
-      gap: 10px;
-      margin-bottom: 20px;
-      @include mq("tab") {
-        grid-template-columns: 1fr;
-      }
-    }
-    &_bottom {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 10px;
-      @include mq("tab") {
-        grid-template-columns: 1fr;
-      }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include mq() {
+      flex-direction: column;
     }
     &_item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px 50px;
+      display: block;
+      margin-bottom: 20px;
+      text-align: center;
       background-color: $sub1;
       color: #fff;
-      font-size: 1.8rem;
-      @include mq("tab") {
-        font-size: 3.73333vw;
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding: 14.5px 0;
+      width: 30%;
+      @include mq() {
+        width: 100%;
       }
     }
   }
 
   &_adobe {
-    width: 80%;
+    width: 90%;
     margin: 50px auto 100px;
     background-color: #f5f5f5;
     padding: 20px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
     @include mq() {
       width: 100%;
       margin: 50px auto;
+      flex-direction: column-reverse;
+    }
+    a {
+      display: block;
+      height: 40px;
+      width: 30%;
+      img {
+        height: 40px;
+        object-fit: cover;
+      }
+      @include mq() {
+        width: 100%;
+        text-align: center;
+      }
     }
     p {
+      width: 90%;
       line-height: 1.7;
       @include mq() {
         font-size: 3.46667vw;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.head_year {
+  width: 158px;
+  position: relative;
+  margin-left: auto;
+  margin-bottom: 20px;
+  z-index: 9999;
+  @include mq() {
+    width: 100%;
+    margin-top: vw(22);
+  }
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    @include mq() {
+      font-size: vw(30);
+    }
+  }
+  .head_year_btn {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 16px;
+    position: relative;
+    @include mq() {
+      font-size: vw(26);
+      margin-top: vw(14);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      transform: translateY(-50%);
+      width: 14px;
+      height: 8px;
+      background-image: url(../img/works/arrow02.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      @include mq() {
+        right: vw(20);
+        width: vw(14);
+        height: vw(8);
+      }
+    }
+  }
+  .head_year_list {
+    margin-top: 10px;
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    @include mq() {
+      margin-top: vw(10);
+      top: vw(100);
+    }
+    li {
+      &.current {
+        a {
+          color: #003798;
+        }
+      }
+      a {
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 12px 20px;
+        background-color: #f1f8fe;
       }
     }
   }

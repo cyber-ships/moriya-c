@@ -1102,6 +1102,8 @@ main section .inner p + p {
   position: absolute;
   right: 120px;
   bottom: 40px;
+  color: #003798;
+  font-weight: bold;
 }
 @media screen and (max-width: 768px) {
   .company_client_accordion_text {

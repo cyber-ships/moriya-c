@@ -457,9 +457,7 @@ $breakpoints: (
       }
       dl {
         display: flex;
-        align-items: center;
         flex-wrap: wrap;
-        padding: 15px 0;
         dt {
           display: flex;
           flex-wrap: wrap;
@@ -483,12 +481,12 @@ $breakpoints: (
           }
           .cat {
             display: block;
-            border: 2px solid #5a9bd5;
-            color: $fontColor;
+            background-color: #b70000;
+            color: #fff;
             font-size: 1.4rem;
             font-weight: 700;
             line-height: 1;
-            padding: 10px 0;
+            padding: 4px 0;
             width: 84px;
             text-align: center;
             @include mq() {
@@ -552,7 +550,7 @@ $breakpoints: (
         }
       }
       &:first-child {
-        margin-top: 0;
+        //margin-top: 0;
       }
     }
   }
@@ -705,79 +703,188 @@ $breakpoints: (
 	ir_news
 ----------------------------------------------------- */
 .ir_news {
-  &_list {
-    margin-bottom: 100px;
-    &_content {
-      display: flex;
-      justify-content: space-around;
-      color: #5a9bd5;
-      &_item {
-        font-size: 1.6rem;
-        font-weight: 500;
+  .head_box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    @include mq() {
+      flex-direction: column;
+    }
+    .head_category {
+      .title {
+        font-size: 20px;
+        font-weight: bold;
         @include mq() {
-          font-size: 3.4666666667vw;
+          font-size: vw(30);
         }
-        &_btn {
-          padding-bottom: 5px;
-          border-bottom: 3px solid #5a9bd5;
-          font-size: 1.6rem;
-          font-weight: 500;
+      }
+      ul {
+        display: flex;
+        margin-top: 16px;
+        @include mq() {
+          margin-top: vw(10);
+        }
+        li {
+          width: 120px;
           @include mq() {
-            font-size: 3.4666666667vw;
+            width: auto;
           }
-          span {
-            padding-left: 30px;
+          &.current {
+            a {
+              color: #003798;
+              border-bottom: 3px solid #003798;
+              @include mq() {
+                border-bottom: vw(3) solid #003798;
+              }
+            }
+          }
+          a {
+            display: block;
+            text-align: center;
+            padding-bottom: 14px;
+            font-size: 16px;
+            font-weight: bold;
+            @include mq() {
+              padding: 0 vw(13);
+              padding-bottom: vw(8);
+              font-size: vw(26);
+            }
+          }
+        }
+      }
+    }
+    .head_year {
+      width: 158px;
+      position: relative;
+      z-index: 9999;
+      @include mq() {
+        width: 100%;
+        margin-top: vw(22);
+      }
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+        @include mq() {
+          font-size: vw(30);
+        }
+      }
+      .head_year_btn {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 16px;
+        position: relative;
+        @include mq() {
+          font-size: vw(26);
+          margin-top: vw(14);
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 16px;
+          transform: translateY(-50%);
+          width: 14px;
+          height: 8px;
+          background-image: url(../img/works/arrow02.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          @include mq() {
+            right: vw(20);
+            width: vw(14);
+            height: vw(8);
+          }
+        }
+      }
+      .head_year_list {
+        margin-top: 10px;
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        @include mq() {
+          margin-top: vw(10);
+          top: vw(100);
+        }
+        li {
+          &.current {
+            a {
+              color: #003798;
+            }
+          }
+          a {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 12px 20px;
+            background-color: #f1f8fe;
           }
         }
       }
     }
   }
-
-  &_num {
-    &_list {
+}
+.pager {
+  margin-top: 80px;
+  @include mq() {
+    margin-top: vw(60);
+  }
+  &_inner {
+    ul {
       display: flex;
       justify-content: center;
-      gap: 10px;
-      &_item {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        border: 2px solid #5a9bd5;
-        background-color: #fafafa;
+      li {
+        border: none;
+        margin-right: 4px;
         @include mq() {
-          width: 30px;
-          height: 30px;
-          line-height: 30px;
+          margin-right: vw(7);
+        }
+        &:first-child {
+          margin-left: 4px;
+          @include mq() {
+            margin-left: vw(7);
+          }
+        }
+        &.next {
+          margin-left: 25px;
+          @include mq() {
+            margin-left: vw(37);
+          }
+        }
+        &.prev {
+          margin-right: 25px;
+          @include mq() {
+            margin-right: vw(37);
+          }
+        }
+        &.current {
+          a {
+            color: #fff;
+            background-color: #003798;
+          }
+        }
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          font-weight: bold;
+          background-color: #f1f8fe;
+          @include mq() {
+            width: vw(58);
+            height: vw(58);
+            font-size: vw(24);
+          }
         }
       }
     }
   }
 }
 
-.ir_gray {
-  background-color: #fafafa;
-  padding: 50px;
-}
 .ir_blue {
   color: #5a9bd5;
-}
-.ir_red {
-  background-color: #b70100;
-  color: #fff;
-  display: inline-block;
-  width: 84px;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 5px;
-  font-size: 1.4rem;
-  font-weight: 700;
-  @include mq() {
-    font-size: 2.6666666667vw;
-    padding: 0.8vw 0;
-    width: 16.8vw;
-  }
 }
 
 /* -----------------------------------------------------
