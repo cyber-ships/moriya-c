@@ -743,7 +743,7 @@
 .ir_news .head_box {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 768px) {
   .ir_news .head_box {

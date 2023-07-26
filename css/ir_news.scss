@@ -706,7 +706,7 @@ $breakpoints: (
   .head_box {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
     @include mq() {
       flex-direction: column;

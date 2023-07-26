@@ -1468,6 +1468,9 @@ main {
   max-width: 1440px;
   margin: 0 auto 0 auto;
   padding: 20px 50px 0;
+  li a {
+    text-decoration: underline;
+  }
 }
 .news_breadcrumbs li {
   position: relative;
@@ -1491,6 +1494,10 @@ main {
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 100% auto;
+}
+
+.news_breadcrumbs li:last-child::after {
+  display: none;
 }
 
 .news_detail {

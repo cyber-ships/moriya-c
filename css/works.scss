@@ -25,52 +25,52 @@ $breakpoints: (
   @return $px / $viewport * 100vw;
 }
 
-.page_works{
+.page_works {
   margin-top: 38px;
-  @include mq(){
+  @include mq() {
     margin-top: 0;
   }
-  .head_box{
+  .head_box {
     display: flex;
     justify-content: space-between;
-    @include mq(){
+    @include mq() {
       flex-direction: column;
     }
-    .head_category{
-      .title{
+    .head_category {
+      .title {
         font-size: 20px;
         font-weight: bold;
-        @include mq(){
+        @include mq() {
           font-size: vw(30);
         }
       }
-      ul{
+      ul {
         display: flex;
         margin-top: 16px;
-        @include mq(){
+        @include mq() {
           margin-top: vw(10);
         }
-        li{
-          width: 120px;
-          @include mq(){
+        li {
+          width: 150px;
+          @include mq() {
             width: auto;
           }
-          &.current{
-            a{
+          &.current {
+            a {
               color: #003798;
               border-bottom: 3px solid #003798;
-              @include mq(){
+              @include mq() {
                 border-bottom: vw(3) solid #003798;
               }
             }
           }
-          a{
+          a {
             display: block;
             text-align: center;
             padding-bottom: 14px;
             font-size: 16px;
             font-weight: bold;
-            @include mq(){
+            @include mq() {
               padding: 0 vw(13);
               padding-bottom: vw(8);
               font-size: vw(26);
@@ -79,31 +79,31 @@ $breakpoints: (
         }
       }
     }
-    .head_year{
+    .head_year {
       width: 158px;
       position: relative;
-      @include mq(){
+      @include mq() {
         width: 100%;
         margin-top: vw(22);
       }
-      .title{
+      .title {
         font-size: 20px;
         font-weight: bold;
-        @include mq(){
+        @include mq() {
           font-size: vw(30);
         }
       }
-      .head_year_btn{
+      .head_year_btn {
         font-size: 16px;
         font-weight: bold;
         margin-top: 16px;
         position: relative;
-        @include mq(){
+        @include mq() {
           font-size: vw(26);
           margin-top: vw(14);
         }
-        &::before{
-          content: '';
+        &::before {
+          content: "";
           position: absolute;
           top: 50%;
           right: 16px;
@@ -113,31 +113,31 @@ $breakpoints: (
           background-image: url(../img/works/arrow02.png);
           background-repeat: no-repeat;
           background-size: contain;
-          @include mq(){
+          @include mq() {
             right: vw(20);
             width: vw(14);
             height: vw(8);
           }
         }
       }
-      .head_year_list{
+      .head_year_list {
         margin-top: 10px;
         display: none;
         width: 100%;
         position: absolute;
         top: 70px;
         left: 0;
-        @include mq(){
+        @include mq() {
           margin-top: vw(10);
           top: vw(100);
         }
-        li{
-          &.current{
-            a{
+        li {
+          &.current {
+            a {
               color: #003798;
             }
           }
-          a{
+          a {
             display: block;
             font-size: 16px;
             font-weight: bold;
@@ -149,117 +149,117 @@ $breakpoints: (
     }
   }
 
-  .works_archive{
+  .works_archive {
     margin-top: 32px;
-    @include mq(){
+    @include mq() {
       margin-top: vw(18);
     }
-    &_list{
+    &_list {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      @include mq(){
+      @include mq() {
         flex-direction: column;
       }
-      li{
+      li {
         width: calc(33.3333% - 10px);
         margin-top: 40px;
-        @include mq(){
+        @include mq() {
           width: 100%;
           margin-top: vw(40);
         }
-        &:first-child{
+        &:first-child {
           margin-top: 0;
         }
-        &:nth-child(2){
+        &:nth-child(2) {
           margin-top: 0;
-          @include mq(){
+          @include mq() {
             margin-top: vw(40);
           }
         }
-        &:nth-child(3){
+        &:nth-child(3) {
           margin-top: 0;
-          @include mq(){
+          @include mq() {
             margin-top: vw(40);
           }
         }
-        .thumbnail{
+        .thumbnail {
           height: 205px;
-          @include mq(){
+          @include mq() {
             height: vw(414);
           }
-          img{
+          img {
             width: 100%;
             height: 100%;
             object-fit: cover;
           }
         }
-        .box{
+        .box {
           padding: 18px;
           background-color: #f1f8fe;
           position: relative;
-          @include mq(){
+          @include mq() {
             padding: vw(30);
           }
-          .arrow{
+          .arrow {
             width: 46px;
             height: 46px;
             position: absolute;
             bottom: 18px;
             right: 18px;
-            @include mq(){
+            @include mq() {
               width: vw(55);
               height: vw(55);
               bottom: vw(30);
               right: vw(30);
             }
           }
-          .tag-category{
+          .tag-category {
             display: inline-block;
             padding: 6px 10px;
             font-size: 14px;
             color: #fff;
             border-radius: 3px;
-            @include mq(){
+            @include mq() {
               padding: vw(4) vw(14) vw(6);
               font-size: vw(20);
               border-radius: vw(6);
             }
-            &-01{
+            &-01 {
               background-color: #0060d7;
             }
-            &-02{
+            &-02 {
               background-color: #00aaf7;
             }
-            &-03{
+            &-03 {
               background-color: #2a129c;
             }
           }
-          .title{
+          .title {
             font-size: 20px;
             font-weight: bold;
             line-height: 1.5;
             margin-top: 14px;
-            @include mq(){
+            @include mq() {
               font-size: vw(38);
               margin-top: vw(14);
             }
           }
-          .text{
+          .text {
             font-size: 16px;
             line-height: 1.3;
             margin-top: 12px;
-            @include mq(){
+            @include mq() {
               font-size: vw(26);
               margin-top: vw(12);
             }
           }
-          .year{
+          .year {
             font-size: 15px;
             color: #d2d7db;
             margin-top: 40px;
             display: inline-block;
-            @include mq(){
+            @include mq() {
               font-size: vw(21);
               margin-top: vw(50);
             }
@@ -267,45 +267,45 @@ $breakpoints: (
         }
       }
     }
-    .pager{
+    .pager {
       margin-top: 80px;
-      @include mq(){
+      @include mq() {
         margin-top: vw(60);
       }
-      &_inner{
-        ul{
+      &_inner {
+        ul {
           display: flex;
           justify-content: center;
-          li{
+          li {
             margin-right: 4px;
-            @include mq(){
+            @include mq() {
               margin-right: vw(7);
             }
-            &:first-child{
+            &:first-child {
               margin-left: 4px;
-              @include mq(){
+              @include mq() {
                 margin-left: vw(7);
               }
             }
-            &.next{
+            &.next {
               margin-left: 25px;
-              @include mq(){
+              @include mq() {
                 margin-left: vw(37);
               }
             }
-            &.prev{
+            &.prev {
               margin-right: 25px;
-              @include mq(){
+              @include mq() {
                 margin-right: vw(37);
               }
             }
-            &.current{
-              a{
+            &.current {
+              a {
                 color: #fff;
                 background-color: #003798;
               }
             }
-            a{
+            a {
               display: flex;
               justify-content: center;
               align-items: center;
@@ -313,7 +313,7 @@ $breakpoints: (
               height: 40px;
               font-weight: bold;
               background-color: #f1f8fe;
-              @include mq(){
+              @include mq() {
                 width: vw(58);
                 height: vw(58);
                 font-size: vw(24);
@@ -325,120 +325,120 @@ $breakpoints: (
     }
   }
 
-  .works_detail{
+  .works_detail {
     margin-top: 32px;
-    @include mq(){
+    @include mq() {
       margin-top: vw(18);
     }
-    .works_detail_title{
-      h2{
+    .works_detail_title {
+      h2 {
         font-size: 26px;
         font-weight: bold;
         line-height: 1.5;
-        @include mq(){
+        @include mq() {
           font-size: vw(40);
         }
       }
-      .tag-box{
+      .tag-box {
         display: flex;
         justify-content: space-between;
         margin-top: 10px;
-        @include mq(){
+        @include mq() {
           margin-top: vw(10);
         }
-        .date{
+        .date {
           font-size: 16px;
-          @include mq(){
+          @include mq() {
             font-size: vw(26);
           }
         }
-        .tag{
+        .tag {
           display: inline-block;
           height: fit-content;
           padding: 4px 12px;
           font-size: 14px;
           color: #fff;
           border-radius: 3px;
-          @include mq(){
+          @include mq() {
             padding: vw(4) vw(14) vw(6);
             font-size: vw(20);
             border-radius: vw(6);
           }
-          &-01{
+          &-01 {
             background-color: #0060d7;
           }
-          &-02{
+          &-02 {
             background-color: #00aaf7;
           }
-          &-03{
+          &-03 {
             background-color: #2a129c;
           }
         }
       }
     }
-    .works_detail_thumbnail{
+    .works_detail_thumbnail {
       margin-top: 23px;
-      @include mq(){
+      @include mq() {
         margin-top: vw(30);
       }
-      img{
+      img {
         width: 100%;
       }
-      p{
+      p {
         line-height: 1.625;
         margin-top: 20px;
-        @include mq(){
+        @include mq() {
           margin-top: vw(30);
           font-size: vw(26);
         }
       }
     }
-    .works_detail_head{
+    .works_detail_head {
       padding-bottom: 16px;
       border-bottom: 2px solid #003798;
-      @include mq(){
+      @include mq() {
         padding-bottom: vw(18);
         border-bottom: vw(3) solid #003798;
       }
-      h3{
+      h3 {
         font-size: 24px;
         font-weight: bold;
         color: #003798;
-        @include mq(){
+        @include mq() {
           font-size: vw(34);
         }
       }
     }
-    .works_detail_table{
+    .works_detail_table {
       margin-top: 60px;
-      @include mq(){
+      @include mq() {
         margin-top: vw(80);
       }
-      .table{
-        .row{
+      .table {
+        .row {
           display: flex;
           padding: 26px 0;
           border-bottom: 1px solid #999999;
           line-height: 1.5;
-          @include mq(){
+          @include mq() {
             padding: vw(30) 0;
           }
-          &:nth-child(even){
+          &:nth-child(even) {
             background-color: #fafafa;
           }
-          .title{
+          .title {
             width: 200px;
             padding-left: 40px;
             font-weight: bold;
-            @include mq(){
+            @include mq() {
               width: 30%;
               padding-left: vw(30);
               font-size: vw(26);
             }
           }
-          .text{
+          .text {
             padding-right: 26px;
-            @include mq(){
+            @include mq() {
               width: 70%;
               padding-right: vw(30);
               font-size: vw(26);
@@ -447,33 +447,33 @@ $breakpoints: (
         }
       }
     }
-    .works_detail_comment{
+    .works_detail_comment {
       margin-top: 60px;
-      @include mq(){
+      @include mq() {
         margin-top: vw(80);
       }
-      p{
+      p {
         line-height: 1.625;
         margin-top: 20px;
-        @include mq(){
+        @include mq() {
           margin-top: vw(30);
           font-size: vw(26);
         }
       }
-      .movie{
+      .movie {
         margin-top: 60px;
-        @include mq(){
+        @include mq() {
           margin-top: vw(80);
         }
-        iframe{
+        iframe {
           width: 100%;
           height: 100%;
           aspect-ratio: 3/2;
         }
       }
-      .btn_wrap01{
+      .btn_wrap01 {
         margin-top: 70px;
-        @include mq(){
+        @include mq() {
           margin-top: vw(90);
         }
       }

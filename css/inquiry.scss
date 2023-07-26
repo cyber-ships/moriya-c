@@ -25,6 +25,13 @@ $breakpoints: (
   @return $px / $viewport * 100vw;
 }
 
+.inquiry__mt {
+  margin-top: 60px;
+}
+.inquiry__mb {
+  margin-bottom: 80px;
+}
+
 .page_inquiry {
   padding-top: 0;
   .inquiry_box {
@@ -34,6 +41,7 @@ $breakpoints: (
     }
     .inquiry_title {
       margin-top: 80px;
+      //margin-bottom: 80px;
       text-align: center;
       @include mq() {
         margin-top: vw(48);
