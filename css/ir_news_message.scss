@@ -524,6 +524,9 @@ $breakpoints: (
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1;
+  a {
+    text-decoration: underline;
+  }
 }
 .news_breadcrumbs li::after {
   content: "";
@@ -538,4 +541,7 @@ $breakpoints: (
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 100% auto;
+}
+.news_breadcrumbs li:last-child::after {
+  display: none;
 }

@@ -1,3 +1,11 @@
+.inquiry__mt {
+  margin-top: 60px;
+}
+
+.inquiry__mb {
+  margin-bottom: 80px;
+}
+
 .page_inquiry {
   padding-top: 0;
 }

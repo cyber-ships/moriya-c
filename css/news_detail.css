@@ -1562,6 +1562,9 @@ main section .inner p + p {
   margin: 0 auto 0 auto;
   padding: 20px 50px 0;
 }
+.news_breadcrumbs li a {
+  text-decoration: underline;
+}
 
 .news_breadcrumbs li {
   position: relative;
@@ -1586,6 +1589,10 @@ main section .inner p + p {
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 100% auto;
+}
+
+.news_breadcrumbs li:last-child::after {
+  display: none;
 }
 
 .news_detail_sub {

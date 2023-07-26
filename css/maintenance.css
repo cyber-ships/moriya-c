@@ -440,6 +440,32 @@
     margin-bottom: 5.0666666667vw;
   }
 }
+.maintenance_download_title {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #003798;
+  border-bottom: solid 2px #003798;
+  padding: 0 0 14px 0;
+  margin: 0 0 20px 0;
+}
+@media screen and (max-width: 768px) {
+  .maintenance_download_title {
+    font-size: 5.3333333333vw;
+  }
+}
+.maintenance_download_title span {
+  font-size: 1.6rem;
+  color: #222222;
+  margin-left: 20px;
+}
+@media screen and (max-width: 768px) {
+  .maintenance_download_title span {
+    font-size: 3.4666666667vw;
+    margin-left: 0;
+    line-height: 1;
+  }
+}
 .maintenance_download h2 {
   font-size: 36px;
   font-weight: bold;

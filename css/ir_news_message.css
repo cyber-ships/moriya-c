@@ -545,6 +545,9 @@
   font-weight: 500;
   line-height: 1;
 }
+.news_breadcrumbs li a {
+  text-decoration: underline;
+}
 
 .news_breadcrumbs li::after {
   content: "";
@@ -559,5 +562,9 @@
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 100% auto;
+}
+
+.news_breadcrumbs li:last-child::after {
+  display: none;
 }
 /*# sourceMappingURL=ir_news_message.css.map */
