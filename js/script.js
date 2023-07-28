@@ -16,7 +16,28 @@ $(".menu-trigger").click(function () {
 /* SP */
 $(document).ready(function () {
   if (window.matchMedia("(max-width: 768px)").matches) {
-    $(".nav-item").on("click", function () {
+    $(".nav-item").on("click", function (e) {
+      e.stopPropagation();
+
+      var subMenu = $(this).children(".nav-item_sub");
+      var isActive = subMenu.hasClass("active");
+
+      $(".nav-item_sub").slideUp().removeClass("active");
+      $(".nav-item").removeClass("active");
+
+      if (!isActive) {
+        subMenu.slideDown().addClass("active");
+        $(this).addClass("active");
+      }
+    });
+
+    $(document).on("click", function (e) {
+      if (!$(e.target).closest(".nav-item").length) {
+        $(".nav-item_sub").slideUp().removeClass("active");
+        $(".nav-item").removeClass("active");
+      }
+
+      /*
       $(this).children(".nav-item_sub").slideToggle();
       $(".nav-item").not($(this)).children(".nav-item_sub").slideUp();
       if ($(".nav-item_sub").hasClass("active")) {
@@ -26,6 +47,7 @@ $(document).ready(function () {
         $(this).addClass("active");
         $(".nav-item_sub").addClass("active");
       }
+      */
     });
 
     $("header > .inner > .contact").appendTo(".global-nav");

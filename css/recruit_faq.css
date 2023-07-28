@@ -586,6 +586,13 @@
   right: 10px;
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .recruit_faq_accordion_item .arrow {
+    width: 30px;
+    height: 30px;
+    top: -5px;
+  }
+}
 .recruit_faq_accordion_item .arrow::after {
   content: "";
   position: absolute;
