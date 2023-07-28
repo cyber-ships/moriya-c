@@ -579,7 +579,7 @@ $breakpoints: (
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
-    &_ttl{
+    &_ttl {
       margin-top: 80px !important;
       @include mq() {
         margin-top: vw(80) !important;
@@ -612,6 +612,31 @@ $breakpoints: (
       }
     }
   }
+
+  &_link {
+    text-decoration: none;
+    color: $sub1;
+    position: relative;
+    padding-right: 20px;
+    &::after {
+      content: "";
+      display: block;
+      width: 7px;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-40%);
+      background-image: url(../img/icon/arrow-r-01_blue.svg);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 100% auto;
+
+      @include mq() {
+        transform: translateY(-50%);
+      }
+    }
+  }
 }
 .renewal_mb {
   margin-bottom: 100px;
@@ -624,7 +649,7 @@ $breakpoints: (
 	renewal_company
 ----------------------------------------------------- */
 .renewal_company {
-  &_img{
+  &_img {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -634,7 +659,7 @@ $breakpoints: (
       margin-top: vw(80);
       margin-bottom: vw(80);
     }
-    img{
+    img {
       width: 100%;
     }
   }

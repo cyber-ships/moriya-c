@@ -655,6 +655,8 @@ header {
   @include mq() {
     margin: vw(60) auto 0 auto;
     padding: 0 vw(50);
+    flex-wrap: wrap;
+    width: 90%;
   }
   li {
     position: relative;
@@ -668,7 +670,13 @@ header {
       padding: 0 vw(30) 0 0;
       margin: 0 0 0 vw(20);
       font-size: vw(22);
+      &.bread_custom {
+        @include mq() {
+          margin: 10px 0 0 0;
+        }
+      }
     }
+
     &::after {
       content: "";
       display: block;
@@ -693,6 +701,11 @@ header {
       padding: 0;
       &::after {
         display: none;
+      }
+      &.bread_custom {
+        @include mq() {
+          margin: 10px 0 0 0;
+        }
       }
     }
     a {

@@ -659,6 +659,21 @@
 }
 
 /* -----------------------------------------------------
+	policy_privacy
+----------------------------------------------------- */
+.policy_privacy_title {
+  color: #003798;
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .policy_privacy_title {
+    font-size: 3.2vw;
+  }
+}
+
+/* -----------------------------------------------------
 	page-top
 ----------------------------------------------------- */
 #page-top {

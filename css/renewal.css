@@ -18,11 +18,9 @@
   display: block;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   background-repeat: no-repeat;
   background-size: contain;
-  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 .btn.type-01 {
@@ -227,14 +225,9 @@
 }
 
 .btn_wrap02 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .btn_wrap02 a {
   width: 320px;
@@ -253,14 +246,9 @@
 }
 
 .btn_wrap03 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   max-width: 415px;
   margin: 0 auto;
 }
@@ -292,20 +280,13 @@
 }
 
 .btn_wrap04 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 @media screen and (max-width: 768px) {
   .btn_wrap04 {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
 .btn_wrap04 a {
@@ -343,14 +324,9 @@
 }
 
 .btn_wrap05 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
   .btn_wrap05 {
@@ -448,23 +424,16 @@
 }
 .page_heading .inner h1 {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .page_heading .inner h1 .text {
   color: #ffffff;
   font-size: 4.5rem;
   line-height: 1.14;
   font-weight: 700;
-  -webkit-font-feature-settings: "palt" 1;
-          font-feature-settings: "palt" 1;
+  font-feature-settings: "palt" 1;
   letter-spacing: 0.1em;
 }
 @media screen and (max-width: 768px) {
@@ -515,18 +484,13 @@
 	layout
 ----------------------------------------------------- */
 .block_type_01 .block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 110px;
 }
 @media screen and (max-width: 768px) {
   .block_type_01 .block {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-top: 10.6666666667vw;
   }
 }
@@ -534,10 +498,7 @@
   margin-top: 0;
 }
 .block_type_01 .block:nth-child(even) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 .block_type_01 .block-img {
   width: 48%;
@@ -624,22 +585,15 @@
   color: #003798;
 }
 .block_type_01.reverse .block {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 /* -----------------------------------------------------
 	renewal
 ----------------------------------------------------- */
 .renewal_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 100px;
 }
 .renewal_box_ttl {
@@ -680,6 +634,31 @@
     font-size: 3.7333333333vw;
   }
 }
+.renewal_link {
+  text-decoration: none;
+  color: #003798;
+  position: relative;
+  padding-right: 20px;
+}
+.renewal_link::after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-40%);
+  background-image: url(../img/icon/arrow-r-01_blue.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 100% auto;
+}
+@media screen and (max-width: 768px) {
+  .renewal_link::after {
+    transform: translateY(-50%);
+  }
+}
 
 .renewal_mb {
   margin-bottom: 100px;
@@ -710,20 +689,13 @@
   width: 100%;
 }
 .renewal_company_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 100px 0;
 }
 @media screen and (max-width: 768px) {
   .renewal_company_box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: 50px 0;
   }
 }
@@ -735,4 +707,5 @@
     width: 100%;
     margin-bottom: 30px;
   }
-}/*# sourceMappingURL=renewal.css.map */
+}
+/*# sourceMappingURL=renewal.css.map */
