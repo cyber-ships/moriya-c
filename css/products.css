@@ -12,6 +12,11 @@
 .page_products .sub-page_list .block:nth-child(2) {
   margin-top: 0;
 }
+@media screen and (max-width: 768px) {
+  .page_products .sub-page_list .block:nth-child(2) {
+    margin-top: 6.6666666667vw;
+  }
+}
 .page_products .sub-page_list .block_01 a {
   background-image: url(../img/products/img2.png);
 }

@@ -617,6 +617,9 @@ $breakpoints: (
     }
   }
   &_table {
+    @include mq() {
+      position: relative;
+    }
     .tr {
       display: flex;
       border-bottom: 2px solid #fff;
@@ -707,20 +710,43 @@ $breakpoints: (
       }
     }
     @include mq() {
+      .head-block {
+        width: vw(180);
+        margin-top: vw(100);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 30;
+        .head {
+          background-color: #003798;
+          height: vw(500);
+          border-right: 2px solid #fff;
+          &:first-child {
+            border-bottom: 2px solid #fff;
+          }
+          p {
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            font-size: vw(26);
+          }
+        }
+      }
       .table {
         display: flex;
         width: 100%;
-        height: vw(1060);
+        height: vw(1118);
         overflow-x: scroll;
+        position: relative;
+        padding-left: vw(180);
         .block {
           width: 90%;
           flex-shrink: 0;
           width: vw(400);
-          &:first-child {
-            width: vw(250);
-            margin-top: vw(100);
-          }
-          &:nth-child(4) {
+          &:nth-child(3) {
             .box-text {
               &:last-child {
                 p {
@@ -729,26 +755,9 @@ $breakpoints: (
               }
             }
           }
-          &:nth-child(5) {
+          &:nth-child(4) {
             .box-text {
-              height: vw(960);
-            }
-          }
-          .head {
-            background-color: #003798;
-            height: vw(480);
-            border-right: 2px solid #fff;
-            &:first-child {
-              border-bottom: 2px solid #fff;
-            }
-            p {
-              color: #fff;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              height: 100%;
-              text-align: center;
-              font-size: vw(26);
+              height: vw(1004);
             }
           }
           .box-title {
@@ -769,7 +778,7 @@ $breakpoints: (
           .box-text {
             background-color: #f1f8fe;
             padding: vw(36);
-            height: vw(480);
+            height: vw(500);
             display: flex;
             align-items: center;
             flex-direction: column;
