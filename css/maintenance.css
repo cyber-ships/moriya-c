@@ -78,12 +78,14 @@
   }
 }
 .maintenance_box_bg .btn_wrap02 .btn.type-01:last-child span {
-  transform: translateY(-30%);
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
   line-height: 1.3;
 }
 @media screen and (max-width: 768px) {
   .maintenance_box_bg .btn_wrap02 .btn.type-01:last-child span {
-    transform: translateY(-30%);
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
   }
 }
 
@@ -103,12 +105,19 @@
   }
 }
 .maintenance_ss__list .box01 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
   .maintenance_ss__list .box01 ul {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .maintenance_ss__list .box01 ul li {
@@ -177,12 +186,19 @@
   }
 }
 .maintenance_ss__list .box02 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
   .maintenance_ss__list .box02 ul {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .maintenance_ss__list .box02 ul li {
@@ -244,7 +260,8 @@
   height: 7px;
   border-top: 1px solid #000;
   border-right: 1px solid #000;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 @media screen and (max-width: 768px) {
   .maintenance_ss__list .box02 ul li a::before {
@@ -274,7 +291,10 @@
   padding-top: 0;
 }
 .conservative-info .block {
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 .conservative-info .btn_wrap02 {
   margin-top: 48px;
@@ -293,12 +313,14 @@
   }
 }
 .conservative-info .btn_wrap02 .btn.type-01:last-child span {
-  transform: translateY(-30%);
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
   line-height: 1.3;
 }
 @media screen and (max-width: 768px) {
   .conservative-info .btn_wrap02 .btn.type-01:last-child span {
-    transform: translateY(-30%);
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
   }
 }
 
@@ -527,21 +549,33 @@
   }
 }
 .maintenance_download_info ul li dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .maintenance_download_info ul li dl dt {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 27.2%;
   padding: 0 30px 20px 40px;
 }
 @media screen and (max-width: 768px) {
   .maintenance_download_info ul li dl dt {
     width: 100%;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     padding: 0 5.3333333333vw;
     margin: 0 0 2vw 0;
   }
@@ -624,7 +658,8 @@
   position: absolute;
   top: 50%;
   right: 102px;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 @media screen and (max-width: 768px) {
   .maintenance_download_info ul li dl dd a.pdf:after {
@@ -666,7 +701,14 @@
 .maintenance_ss_maintenance-agreement_wrap .btn_wrap01 {
   margin-top: 50px;
 }
+@media screen and (max-width: 768px) {
+  .maintenance_ss_maintenance-agreement_table {
+    position: relative;
+  }
+}
 .maintenance_ss_maintenance-agreement_table .tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-bottom: 2px solid #fff;
   line-height: 1.75;
@@ -700,7 +742,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
 }
 .maintenance_ss_maintenance-agreement_table .tr .td:nth-child(2) {
@@ -725,7 +768,8 @@
   position: absolute;
   top: 50%;
   left: 18px;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 100%;
 }
 .maintenance_ss_maintenance-agreement_table .tr:nth-child(3) .td:nth-child(3) {
@@ -735,50 +779,66 @@
   position: absolute;
   top: 50%;
   left: 18px;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 100%;
 }
 .maintenance_ss_maintenance-agreement_table .tr:nth-child(5) .td:nth-child(2) {
   width: 90%;
 }
 @media screen and (max-width: 768px) {
-  .maintenance_ss_maintenance-agreement_table .table {
-    display: flex;
-    width: 100%;
-    height: 141.3333333333vw;
-    overflow-x: scroll;
-  }
-  .maintenance_ss_maintenance-agreement_table .table .block {
-    width: 90%;
-    flex-shrink: 0;
-    width: 53.3333333333vw;
-  }
-  .maintenance_ss_maintenance-agreement_table .table .block:first-child {
-    width: 33.3333333333vw;
+  .maintenance_ss_maintenance-agreement_table .head-block {
+    width: 24vw;
     margin-top: 13.3333333333vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 30;
   }
-  .maintenance_ss_maintenance-agreement_table .table .block:nth-child(4) .box-text:last-child p {
-    height: 20%;
-  }
-  .maintenance_ss_maintenance-agreement_table .table .block:nth-child(5) .box-text {
-    height: 128vw;
-  }
-  .maintenance_ss_maintenance-agreement_table .table .block .head {
+  .maintenance_ss_maintenance-agreement_table .head-block .head {
     background-color: #003798;
-    height: 64vw;
+    height: 66.6666666667vw;
     border-right: 2px solid #fff;
   }
-  .maintenance_ss_maintenance-agreement_table .table .block .head:first-child {
+  .maintenance_ss_maintenance-agreement_table .head-block .head:first-child {
     border-bottom: 2px solid #fff;
   }
-  .maintenance_ss_maintenance-agreement_table .table .block .head p {
+  .maintenance_ss_maintenance-agreement_table .head-block .head p {
     color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 100%;
     text-align: center;
     font-size: 3.4666666667vw;
+  }
+  .maintenance_ss_maintenance-agreement_table .table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 149.0666666667vw;
+    overflow-x: scroll;
+    position: relative;
+    padding-left: 24vw;
+  }
+  .maintenance_ss_maintenance-agreement_table .table .block {
+    width: 90%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 53.3333333333vw;
+  }
+  .maintenance_ss_maintenance-agreement_table .table .block:nth-child(3) .box-text:last-child p {
+    height: 20%;
+  }
+  .maintenance_ss_maintenance-agreement_table .table .block:nth-child(4) .box-text {
+    height: 133.8666666667vw;
   }
   .maintenance_ss_maintenance-agreement_table .table .block .box-title {
     background-color: whitesmoke;
@@ -790,18 +850,31 @@
     font-size: 3.4666666667vw;
     line-height: 1.625;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 100%;
   }
   .maintenance_ss_maintenance-agreement_table .table .block .box-text {
     background-color: #f1f8fe;
     padding: 4.8vw;
-    height: 64vw;
+    height: 66.6666666667vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border-right: 2px solid #fff;
   }
   .maintenance_ss_maintenance-agreement_table .table .block .box-text:nth-child(2) {
@@ -812,8 +885,12 @@
     line-height: 1.625;
     height: 100%;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .maintenance_ss_maintenance-agreement_table .table .block .box-text ul {
     margin-top: 1.8666666667vw;
@@ -845,13 +922,18 @@
   margin: 0 auto 100px;
   background-color: #f5f5f5;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 @media screen and (max-width: 768px) {
   .maintenance_adobe_box {
     width: 100%;
     margin: 50px auto;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 .maintenance_adobe_box a {
@@ -880,5 +962,4 @@
     width: 100%;
     margin-bottom: 20px;
   }
-}
-/*# sourceMappingURL=maintenance.css.map */
+}/*# sourceMappingURL=maintenance.css.map */

@@ -34,6 +34,9 @@ $breakpoints: (
       margin-left: 0;
       &:nth-child(2){
         margin-top: 0;
+        @include mq() {
+          margin-top: vw(50);
+        }
       }
       &_01{
         a{
