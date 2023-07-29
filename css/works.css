@@ -39,7 +39,9 @@
 }
 @media screen and (max-width: 768px) {
   .page_works .head_box .head_category ul {
-    margin-top: 1.3333333333vw;
+    margin-top: 2.6666666667vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 .page_works .head_box .head_category ul li {
@@ -47,7 +49,10 @@
 }
 @media screen and (max-width: 768px) {
   .page_works .head_box .head_category ul li {
-    width: auto;
+    width: 28.6666666667vw;
+  }
+  .page_works .head_box .head_category ul li:first-child, .page_works .head_box .head_category ul li:nth-child(2), .page_works .head_box .head_category ul li:nth-child(3) {
+    margin-bottom: 2.6666666667vw;
   }
 }
 .page_works .head_box .head_category ul li.current a {

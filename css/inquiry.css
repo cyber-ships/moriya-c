@@ -79,7 +79,7 @@
 }
 @media screen and (max-width: 768px) {
   .page_inquiry .inquiry_box .inquiry_form .thanks_box {
-    padding: 5.3333333333vw;
+    padding: 5.3333333333vw 0;
   }
 }
 .page_inquiry .inquiry_box .inquiry_form .thanks_box h3 {
@@ -89,7 +89,7 @@
 }
 @media screen and (max-width: 768px) {
   .page_inquiry .inquiry_box .inquiry_form .thanks_box h3 {
-    font-size: 4.2666666667vw;
+    font-size: 4vw;
   }
 }
 .page_inquiry .inquiry_box .inquiry_form .thanks_box p {
@@ -100,7 +100,7 @@
 @media screen and (max-width: 768px) {
   .page_inquiry .inquiry_box .inquiry_form .thanks_box p {
     margin-top: 4vw;
-    font-size: 3.4666666667vw;
+    font-size: 3.2vw;
   }
 }
 .page_inquiry .inquiry_box .inquiry_form .form .block {
@@ -335,6 +335,11 @@
 }
 .page_inquiry .inquiry_box .inquiry_form .btn_wrap01 {
   margin-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  .page_inquiry .confirm-btn .btn_wrap01:last-child {
+    margin-top: 4vw;
+  }
 }
 .page_inquiry .inquiry__bottom {
   margin-top: 80px;

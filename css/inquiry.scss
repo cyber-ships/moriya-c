@@ -91,14 +91,14 @@ $breakpoints: (
         padding: 30px;
         background-color: #fff;
         @include mq() {
-          padding: vw(40);
+          padding: vw(40) 0;
         }
         h3 {
           text-align: center;
           font-size: 24px;
           font-weight: bold;
           @include mq() {
-            font-size: vw(32);
+            font-size: vw(30);
           }
         }
         p {
@@ -107,7 +107,7 @@ $breakpoints: (
           margin-top: 20px;
           @include mq() {
             margin-top: vw(30);
-            font-size: vw(26);
+            font-size: vw(24);
           }
         }
       }
@@ -290,6 +290,16 @@ $breakpoints: (
       }
       .btn_wrap01 {
         margin-top: 80px;
+      }
+    }
+  }
+
+  .confirm-btn{
+    .btn_wrap01{
+      &:last-child{
+        @include mq() {
+          margin-top: 4vw;
+        }
       }
     }
   }
