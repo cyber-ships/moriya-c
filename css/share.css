@@ -736,7 +736,7 @@ header > .inner > .contact a {
 @media screen and (max-width: 768px) {
   .breadcrumbs li {
     padding: 0 4vw 0 0;
-    margin: 0 0 0 2.6666666667vw;
+    margin: 10px 2.6666666667vw 0 0;
     font-size: 2.9333333333vw;
   }
 }
@@ -765,8 +765,10 @@ header > .inner > .contact a {
     width: 1.4666666667vw;
   }
 }
-.breadcrumbs li:first-child {
-  margin: 0;
+@media screen and (max-width: 768px) {
+  .breadcrumbs li:first-child {
+    margin: 10px 2.6666666667vw 0 0;
+  }
 }
 .breadcrumbs li:last-child {
   padding: 0;

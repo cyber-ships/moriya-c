@@ -48,12 +48,16 @@ $breakpoints: (
         display: flex;
         margin-top: 16px;
         @include mq() {
-          margin-top: vw(10);
+          margin-top: vw(20);
+          flex-wrap: wrap;
         }
         li {
           width: 150px;
           @include mq() {
-            width: auto;
+            width: vw(215);
+            &:first-child, &:nth-child(2), &:nth-child(3){
+              margin-bottom: vw(20);
+            }
           }
           &.current {
             a {
