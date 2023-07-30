@@ -6,7 +6,8 @@ $(window).load(function() {
       direction: "vertical",
       reverse: "true",
       slideshowSpeed: 4000,
-      controlNav: false
+      controlNav: false,
+      directionNav: false
     });
   
   //2つ目のスライダー
@@ -15,6 +16,7 @@ $(window).load(function() {
       direction: "vertical",
       reverse: "true",
       slideshowSpeed: 4000,
-      controlNav: false
+      controlNav: false,
+      directionNav: false
     });
   });
