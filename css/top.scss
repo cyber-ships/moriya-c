@@ -452,6 +452,21 @@ main section {
   border: unset !important;
   border-radius: unset !important;
   box-shadow: unset !important;
+  @include mq() {
+    height: vw(500) !important;
+    .slides>li {
+      height: vw(500);
+      img{
+        height: vw(500);
+      }
+    }
+  }
+}
+
+.flex-viewport{
+  @include mq() {
+    height: vw(500);
+  }
 }
 
 main.top{
@@ -493,8 +508,8 @@ main.top{
       height: 390px;
     }
     @include mq() {
-      width: vw(456);
-      height: vw(480);
+      width: vw(470);
+      height: vw(500);
     }
     &-01{
       top: -140px;
@@ -545,7 +560,7 @@ main.top{
     display: flex;
     justify-content: space-between;
     @include mq() {
-      margin-top: vw(24);
+      margin-top: vw(42);
     }
   }
   &_text {
