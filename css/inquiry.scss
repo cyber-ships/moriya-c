@@ -246,7 +246,7 @@ $breakpoints: (
           display: flex;
           justify-content: center;
           @include mq() {
-            flex-direction: column;
+            flex-direction: column-reverse;
           }
           .btn_wrap01 {
             margin-left: 20px;
@@ -294,9 +294,9 @@ $breakpoints: (
     }
   }
 
-  .confirm-btn{
-    .btn_wrap01{
-      &:last-child{
+  .confirm-btn {
+    .btn_wrap01 {
+      &:first-child {
         @include mq() {
           margin-top: 4vw;
         }
