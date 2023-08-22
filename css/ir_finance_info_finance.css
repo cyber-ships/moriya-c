@@ -455,7 +455,7 @@
 }
 .info_finance_box_content {
   width: 47.5%;
-  height: 713px;
+  height: 650px;
 }
 @media screen and (max-width:1000px) {
   .info_finance_box_content {
@@ -478,6 +478,9 @@
 }
 .info_finance_box_content_graph {
   margin-bottom: 30px;
+}
+.info_finance_box_content_graph img {
+  width: 100%;
 }
 .info_finance_box_content_table {
   margin-bottom: 100px;
@@ -516,5 +519,40 @@
 
 .finance_pb {
   padding-bottom: 30px;
+}
+
+/* -----------------------------------------------------
+	xj_chart
+----------------------------------------------------- */
+.xj_chart_table {
+  width: 100%;
+  font-size: 90%;
+  font-weight: 700;
+}
+.xj_chart_table,
+.xj_chart_table tr,
+.xj_chart_table td {
+  border: 1px solid #e4e4e4;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.xj_chart_table tr td.xj_chart_header {
+  padding: 8px;
+  border-right: 1px solid #e4e4e4;
+  background-color: #f4f4f4;
+}
+
+.xj_chart_table tr td.xj_chart_header_first {
+  border-right: 1px solid #e4e4e4;
+}
+
+.xj_chart_table tr td.xj_chart_header_first {
+  border-right: 1px solid #e4e4e4;
+}
+
+.xj_chart_table tr:first-child td {
+  background-color: #d4d9e1;
+  padding: 11px 5px;
 }
 /*# sourceMappingURL=ir_finance_info_finance.css.map */
