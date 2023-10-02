@@ -1060,6 +1060,23 @@ main.top {
     margin-top: 8vw;
   }
 }
+.top_reason_title .number {
+  padding-top: 0;
+  display: inline-block;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin-top: 5px;
+  margin-bottom: 4px;
+}
+@media screen and (max-width: 768px) {
+  .top_reason_title .number {
+    margin-top: 0.6666666667vw;
+    margin-bottom: 0.8vw;
+  }
+}
+.top_reason_title .number::before {
+  content: none;
+}
 
 .top_business {
   background-image: url(../img/top/top_bg.jpg);
