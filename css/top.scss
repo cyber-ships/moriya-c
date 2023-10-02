@@ -879,6 +879,22 @@ main.top{
       margin-top: vw(60);
     }
   }
+  &_title{
+    .number{
+      padding-top: 0;
+      display: inline-block;
+      transform: rotate(-90deg);
+      margin-top: 5px;
+      margin-bottom: 4px;
+      @include mq() {
+        margin-top: vw(5);
+        margin-bottom: vw(6);
+      }
+      &::before{
+        content: none;
+      }
+    }
+  }
 }
 
 .top_business {
