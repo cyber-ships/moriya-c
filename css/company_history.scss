@@ -993,6 +993,9 @@ main {
 ----------------------------------------------------- */
 .history_mt {
   margin-top: -80px;
+  @include mq(){
+    margin-top: 0;
+  }
 }
 .history_mb {
   margin-bottom: 100px;
@@ -1043,6 +1046,9 @@ main {
         font-size: 2rem;
         @include mq() {
           font-size: 3.7333333333vw;
+          &._w50_{
+            width: 50%;
+          }
         }
         span {
           font-weight: 700;
