@@ -104,6 +104,8 @@
   }
 }
 .page_inquiry .inquiry_box .inquiry_form .form .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100%;
 }
@@ -112,23 +114,34 @@
 }
 .page_inquiry .inquiry_box .inquiry_form .form .block .title {
   padding: 28px 20px;
-  width: 250px;
+  width: 428px;
   border-bottom: 1px solid rgb(212, 212, 212);
   border-left: 1px solid rgb(212, 212, 212);
   background-color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
   .page_inquiry .inquiry_box .inquiry_form .form .block .title {
     padding: 5.2vw 0 5.2vw 3.2vw;
     width: 36vw;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .page_inquiry .inquiry_box .inquiry_form .form .block .title p {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (max-width: 768px) {
   .page_inquiry .inquiry_box .inquiry_form .form .block .title p {
@@ -159,11 +172,44 @@
     padding: 2.6666666667vw;
   }
 }
+.page_inquiry .inquiry_box .inquiry_form .form .block .box-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .page_inquiry .inquiry_box .inquiry_form .form .block .box-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+.page_inquiry .inquiry_box .inquiry_form .form .block .box-inner .require {
+  font-size: 14px;
+  color: red;
+  margin-left: 14px;
+}
+@media screen and (max-width: 768px) {
+  .page_inquiry .inquiry_box .inquiry_form .form .block .box-inner .require {
+    display: inline-block;
+    font-size: 2.6666666667vw;
+    margin-top: 1.3333333333vw;
+    margin-left: 0;
+  }
+}
 .page_inquiry .inquiry_box .inquiry_form .form .block .box input {
   display: block;
   width: 100%;
   padding: 16px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 4px;
   border: 1px solid #eee;
 }
@@ -189,10 +235,11 @@
   width: 8px;
   height: 8px;
   top: 16px;
-  right: 25px;
+  right: 22px;
   border-bottom: 1px solid #fff;
   border-right: 1px solid #fff;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 @media screen and (max-width: 768px) {
   .page_inquiry .inquiry_box .inquiry_form .form .block .box .select::before {
@@ -208,8 +255,9 @@
      -moz-appearance: none;
           appearance: none;
   width: 100%;
-  padding: 14px;
-  box-sizing: border-box;
+  padding: 14px 48px 14px 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 4px;
   background-color: rgb(153, 153, 153);
   border: unset;
@@ -226,14 +274,19 @@
   display: block;
   width: 100%;
   padding: 16px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 4px;
   border: 1px solid #eee;
   margin-top: 20px;
 }
 .page_inquiry .inquiry_box .inquiry_form .form .block .box-confirm {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .page_inquiry .inquiry_box .inquiry_form .form .block .box-select .select {
   margin-bottom: 20px;
@@ -252,12 +305,19 @@
   content: none;
 }
 .page_inquiry .inquiry_box .inquiry_form .form .btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (max-width: 768px) {
   .page_inquiry .inquiry_box .inquiry_form .form .btn-box {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 .page_inquiry .inquiry_box .inquiry_form .form .btn-box .btn_wrap01 {
@@ -300,7 +360,8 @@
   text-align: center;
 }
 .page_inquiry .inquiry_box .inquiry_form .inquiry_form_privacypolicy label span {
-  transform: translateY(1px);
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
   margin-left: 6px;
   display: inline-block;
 }
@@ -323,15 +384,23 @@
 .page_inquiry .inquiry__bottom .tel-box {
   padding: 50px;
   margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
   .page_inquiry .inquiry__bottom .tel-box {
     margin-top: 5.3333333333vw;
     padding: 5.3333333333vw;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .page_inquiry .inquiry__bottom .tel-box a {
@@ -340,8 +409,13 @@
   text-align: center;
   padding: 20px;
   background-color: rgb(211, 211, 211);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media screen and (max-width: 768px) {
   .page_inquiry .inquiry__bottom .tel-box a {
@@ -404,7 +478,8 @@
   position: absolute;
   top: 50%;
   left: -40px;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 30px;
   height: 30px;
   background-image: url(../img/inquiry/tel.png);
@@ -425,5 +500,4 @@
     height: 5.3333333333vw;
     top: 51%;
   }
-}
-/*# sourceMappingURL=inquiry.css.map */
+}/*# sourceMappingURL=inquiry.css.map */

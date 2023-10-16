@@ -495,40 +495,52 @@
               <div class="form">
                 <div class="block">
                   <div class="title">
-                    <p>貴社名</p>
+                    <p>貴社名／学校名（団体名）</p>
                     <span class="require">※必須</span>
                   </div>
                   <div class="box">
-                    <input type="text" placeholder="会社名をご入力ください。" />
+                    <input type="text" placeholder="貴社名／学校名（団体名）をご入力ください。" />
                   </div>
                 </div>
                 <div class="block">
                   <div class="title">
-                    <p>部署・役職</p>
-                    <span class="require">※必須</span>
+                    <p>部署／役職／学部（学科・専攻）</p>
                   </div>
                   <div class="box">
                     <input
                       type="text"
-                      placeholder="部署・役職をご入力ください。"
+                      placeholder="部署／役職／学部（学科・専攻）をご入力ください。"
                     />
                   </div>
                 </div>
                 <div class="block">
                   <div class="title">
-                    <p>担当者名</p>
+                    <p>お名前</p>
                     <span class="require">※必須</span>
                   </div>
                   <div class="box">
                     <input
                       type="text"
-                      placeholder="担当者名をご入力ください。"
+                      placeholder="お名前をご入力ください。"
+                    />
+                  </div>
+                </div>
+                <div class="block">
+                  <div class="title">
+                    <p>お名前（カナ）</p>
+                    <span class="require">※必須</span>
+                  </div>
+                  <div class="box">
+                    <input
+                      type="text"
+                      placeholder="お名前（カナ）をご入力ください。"
                     />
                   </div>
                 </div>
                 <div class="block">
                   <div class="title">
                     <p>郵便番号</p>
+                    <span class="require">※必須</span>
                   </div>
                   <div class="box">
                     <input
@@ -540,6 +552,7 @@
                 <div class="block">
                   <div class="title">
                     <p>住所</p>
+                    <span class="require">※必須</span>
                   </div>
                   <div class="box">
                     <input type="text" placeholder="住所をご入力ください。" />
@@ -559,7 +572,7 @@
                 </div>
                 <div class="block">
                   <div class="title">
-                    <p>Email</p>
+                    <p>Emailアドレス</p>
                     <span class="require">※必須</span>
                   </div>
                   <div class="box">
@@ -574,16 +587,17 @@
                     <p>お問合わせ内容</p>
                   </div>
                   <div class="box">
-                    <div class="select">
-                      <select name="color">
-                        <option value="">営業的なお問合せ</option>
-                        <option value="">サービスに関するお問合せ</option>
-                        <option value="">総務・採用に関するお問合せ</option>
-                        <option value="">
-                          船舶用エレベーターに関するお問合せ
-                        </option>
-                        <option value="">IRに関するお問合せ</option>
-                      </select>
+                    <div class="box-inner">
+                      <div class="select">
+                        <select name="color">
+                          <option value="">荷物用エレベーターの新設に関するお問合わせ</option>
+                          <option value="">荷物用エレベーターのサービス・リニューアルに関するお問合わせ</option>
+                          <option value="">船舶用エレベーターの新設・サービスに関するお問合わせ</option>
+                          <option value="">総務・採用に関するお問合せ</option>
+                          <option value="">IRに関するお問合せ</option>
+                        </select>
+                      </div>
+                      <span class="require">※必須</span>
                     </div>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                   </div>
@@ -624,22 +638,22 @@
                 <div class="tel-box">
                   <a href="tel:0362283460">
                     <p class="text">
-                      営業的なお問合わせ<br />(消費者相談窓口含む)
+                      荷物用エレベーターの<br class="sp"/>新設に関するお問合わせ
                     </p>
                     <p class="tel">03-6228-3460</p>
                   </a>
                   <a href="tel:0457853811">
-                    <p class="text">サービスに関するお問合わせ</p>
+                    <p class="text">荷物用エレベーターのサービス・<br/>リニューアルに関するお問合わせ</p>
                     <p class="tel">045-785-3811</p>
                   </a>
                   <a href="tel:0457853111">
                     <p class="text">
-                      総務・採用に関するお問合わせ<br />受付時間：xx:xx~xx:xx
+                      総務・採用に関するお問合わせ
                     </p>
                     <p class="tel">045-785-3111</p>
                   </a>
                   <a href="tel:0457853704">
-                    <p class="text">船舶エレベーターに関するお問合わせ</p>
+                    <p class="text">船舶用エレベーターの新設・<br/>サービスに関するお問合わせ</p>
                     <p class="tel">045-785-3704</p>
                   </a>
                 </div>
