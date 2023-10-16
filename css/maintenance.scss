@@ -69,10 +69,16 @@ $breakpoints: (
       padding: 0 vw(50);
     }
   }
-  .btn_wrap02 {
+  .btn_wrap02, .btn_wrap01 {
     margin-top: 48px;
     @include mq() {
       margin-top: vw(52);
+    }
+  }
+  &_btn{
+    width: 390px;
+    @include mq() {
+      width: 100%;
     }
   }
   &_bg {
@@ -107,10 +113,18 @@ $breakpoints: (
 
 .maintenance_ss {
   padding-top: 0;
+  &_btn{
+    margin-top: 48px;
+    @include mq() {
+      margin-top: vw(52);
+    }
+  }
 }
 
 .maintenance_ss__list {
-  background-color: #f1f8fe;
+  .inner{
+    padding: 60px 50px 30px;
+  }
   .box01 {
     margin-top: 35px;
     @include mq() {
@@ -604,6 +618,11 @@ $breakpoints: (
         span {
           font-size: vw(28);
         }
+      }
+    }
+    .lead{
+      span{
+        font-weight: bold;
       }
     }
   }

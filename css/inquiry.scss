@@ -120,7 +120,7 @@ $breakpoints: (
           }
           .title {
             padding: 28px 20px;
-            width: 250px;
+            width: 428px;
             border-bottom: 1px solid rgb(212, 212, 212);
             border-left: 1px solid rgb(212, 212, 212);
             background-color: #eee;
@@ -158,6 +158,25 @@ $breakpoints: (
             @include mq() {
               padding: vw(20);
             }
+            &-inner{
+              display: flex;
+              align-items: center;
+              @include mq() {
+                flex-direction: column;
+                align-items: flex-start;
+              }
+              .require {
+                font-size: 14px;
+                color: red;
+                margin-left: 14px;
+                @include mq() {
+                  display: inline-block;
+                  font-size: vw(20);
+                  margin-top: vw(10);
+                  margin-left: 0;
+                }
+              }
+            }
             input {
               display: block;
               width: 100%;
@@ -183,7 +202,7 @@ $breakpoints: (
                 width: 8px;
                 height: 8px;
                 top: 16px;
-                right: 25px;
+                right: 22px;
                 border-bottom: 1px solid #fff;
                 border-right: 1px solid #fff;
                 transform: rotate(45deg);
@@ -198,7 +217,7 @@ $breakpoints: (
                 display: block;
                 appearance: none;
                 width: 100%;
-                padding: 14px;
+                padding: 14px 48px 14px 14px;
                 box-sizing: border-box;
                 border-radius: 4px;
                 background-color: rgb(153, 153, 153);

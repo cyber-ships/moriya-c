@@ -52,12 +52,20 @@
     padding: 0 6.6666666667vw;
   }
 }
-.maintenance_box .btn_wrap02 {
+.maintenance_box .btn_wrap02, .maintenance_box .btn_wrap01 {
   margin-top: 48px;
 }
 @media screen and (max-width: 768px) {
-  .maintenance_box .btn_wrap02 {
+  .maintenance_box .btn_wrap02, .maintenance_box .btn_wrap01 {
     margin-top: 6.9333333333vw;
+  }
+}
+.maintenance_box_btn {
+  width: 390px;
+}
+@media screen and (max-width: 768px) {
+  .maintenance_box_btn {
+    width: 100%;
   }
 }
 .maintenance_box_bg .inner {
@@ -92,9 +100,17 @@
 .maintenance_ss {
   padding-top: 0;
 }
+.maintenance_ss_btn {
+  margin-top: 48px;
+}
+@media screen and (max-width: 768px) {
+  .maintenance_ss_btn {
+    margin-top: 6.9333333333vw;
+  }
+}
 
-.maintenance_ss__list {
-  background-color: #f1f8fe;
+.maintenance_ss__list .inner {
+  padding: 60px 50px 30px;
 }
 .maintenance_ss__list .box01 {
   margin-top: 35px;
@@ -689,6 +705,9 @@
   .maintenance_ss_maintenance-agreement_title h2 span {
     font-size: 3.7333333333vw;
   }
+}
+.maintenance_ss_maintenance-agreement_title .lead span {
+  font-weight: bold;
 }
 .maintenance_ss_maintenance-agreement_wrap {
   margin-top: 50px;
