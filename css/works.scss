@@ -52,7 +52,7 @@ $breakpoints: (
           flex-wrap: wrap;
         }
         li {
-          width: 150px;
+          width: 162px;
           @include mq() {
             width: vw(215);
             &:first-child, &:nth-child(2), &:nth-child(3){
