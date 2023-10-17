@@ -70,6 +70,21 @@
     height: 8.2666666667vw;
   }
 }
+.common_title span.number {
+  padding-top: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  display: inline-block;
+  margin: 4px 0;
+}
+@media screen and (max-width: 768px) {
+  .common_title span.number {
+    margin: 0.8vw 0 0.5333333333vw;
+  }
+}
+.common_title span.number::before {
+  content: none;
+}
 
 #page-top a {
   background-color: #13346e;
