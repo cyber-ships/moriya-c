@@ -37,6 +37,46 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider.min.js"></script>
 <script src="<?php echo get_template_directory_uri();?>/js/slick.js"></script>
 <script src="<?php echo get_template_directory_uri();?>/js/script.js"></script>
+<script
+      type="text/javascript"
+      src="//www.xj-storage.jp/resources/AS08769/lib.js"
+      id="xj-script-lib-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//www.xj-storage.jp/resources/AS08769/xj_news.js"
+      id="xj-script-news-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//www.xj-storage.jp/resources/AS08769/xj_library.js"
+      id="xj-script-library-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//www.xj-storage.jp/resources/AS08769/xj_results.js"
+      id="xj-script-results-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//www.xj-storage.jp/resources/AS08769/xj_presentations.js"
+      id="xj-script-presentations-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//www.xj-storage.jp/resources/AS08769/xj_securities.js"
+      id="xj-script-securities-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//www.xj-storage.jp/resources/AS08769/xj_meeting.js"
+      id="xj-script-meeting-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//www.xj-storage.jp/resources/AS08769/xj_disclosure.js"
+      id="xj-script-disclosure-js"
+    ></script>
 
 <?php wp_footer(); ?>
 </body>
