@@ -153,6 +153,12 @@ function add_files() {
 
   // products Styles
   wp_enqueue_style('products_renewal-style', get_template_directory_uri() . '/css/products_renewal.css');
+
+  // policy Styles
+  wp_enqueue_style('policy-style', get_template_directory_uri() . '/css/policy.css');
+
+  // map Styles
+  wp_enqueue_style('map-style', get_template_directory_uri() . '/css/map.css');
 }
 
 add_action('wp_enqueue_scripts', 'add_files');
