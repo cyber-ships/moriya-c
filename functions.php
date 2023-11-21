@@ -3,6 +3,9 @@ function add_files() {
   // Reset Style
   wp_enqueue_style('reset-style', get_template_directory_uri() . '/css/reset.css');
 
+  // Share Style
+  wp_enqueue_style('share-style', get_template_directory_uri() . '/css/share.css');
+
   // Adobe Fonts
   wp_enqueue_style('adobe-fonts', 'https://use.typekit.net/vzg6rie.css');
 
@@ -120,6 +123,30 @@ function add_files() {
 
   // ir Styles/notice Styles
   wp_enqueue_style('ir_notice-style', get_template_directory_uri() . '/css/ir_notice.css');
+
+  // recruit Styles
+  wp_enqueue_style('recruit-style', get_template_directory_uri() . '/css/recruit.css');
+
+  // recruit Styles/youkou Styles
+  wp_enqueue_style('recruit_youkou-style', get_template_directory_uri() . '/css/recruit_youkou.css');
+
+  // recruit Styles/youkou2 Styles
+  wp_enqueue_style('recruit_youkou2-style', get_template_directory_uri() . '/css/recruit_youkou.css');
+
+  // recruit Styles/message Styles
+  wp_enqueue_style('recruit_message-style', get_template_directory_uri() . '/css/recruit_youkou.css');
+
+  // recruit Styles/joblist Styles
+  wp_enqueue_style('recruit_joblist-style', get_template_directory_uri() . '/css/recruit_youkou.css');
+
+  // recruit Styles/work Styles
+  wp_enqueue_style('recruit_work-style', get_template_directory_uri() . '/css/recruit_work.css');
+
+  // recruit Styles/number Styles
+  wp_enqueue_style('recruit_number-style', get_template_directory_uri() . '/css/recruit_number.css');
+
+  // recruit Styles/faq Styles
+  wp_enqueue_style('recruit_faq-style', get_template_directory_uri() . '/css/recruit_faq.css');
 }
 
 add_action('wp_enqueue_scripts', 'add_files');

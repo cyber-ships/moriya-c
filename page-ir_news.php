@@ -7,7 +7,7 @@
           <h1>
             <span class="text"><small>IR News</small> IR ニュース</span>
             <picture>
-              <img src="<?php echo esc_url(get_theme_file_uri('/img/ir/heading_img.jpg');) ?>" alt="製品紹介" />
+              <img src="<?php echo esc_url(get_theme_file_uri('/img/ir/heading_img.jpg')); ?>" alt="製品紹介" />
             </picture>
           </h1>
         </div>
@@ -177,7 +177,7 @@
       <section id="contact">
         <div class="inner">
           <div class="ttl">
-            <img src="<?php echo esc_url(get_theme_file_uri('/img/contact_ttl.svg');) ?>" alt="CONTACT" />
+            <img src="<?php echo esc_url(get_theme_file_uri('/img/contact_ttl.svg')); ?>" alt="CONTACT" />
           </div>
           <div class="btn_wrap01">
             <a class="btn type-02" href="../../inquiry/index.html"
