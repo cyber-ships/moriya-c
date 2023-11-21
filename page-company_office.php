@@ -361,4 +361,4 @@
     <!-- /office -->
   </main>
 
-<?php fet_footer(); ?>
+<?php get_footer(); ?>
