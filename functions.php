@@ -120,6 +120,12 @@ function add_files() {
 
   // ir Styles/notice Styles
   wp_enqueue_style('ir_notice-style', get_template_directory_uri() . '/css/ir_notice.css');
+
+  // products Styles
+  wp_enqueue_style('products-style', get_template_directory_uri() . '/css/products.css');
+
+  // products Styles
+  wp_enqueue_style('products_renewal-style', get_template_directory_uri() . '/css/products_renewal.css');
 }
 
 add_action('wp_enqueue_scripts', 'add_files');
