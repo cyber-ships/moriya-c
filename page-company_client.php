@@ -381,4 +381,4 @@
       <!-- /company_client -->
     </main>
 
-<?php fet_footer(); ?>
+<?php get_footer(); ?>
