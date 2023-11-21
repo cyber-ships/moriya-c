@@ -169,5 +169,10 @@
           flex-direction: row;
 }
 .type_btn {
-  margin-top: 90px;
+  margin-top: 70px !important;
+}
+@media screen and (max-width: 768px) {
+  .type_btn {
+    margin-top: 9.3333333333vw !important;
+  }
 }/*# sourceMappingURL=products.css.map */

@@ -173,6 +173,9 @@ $breakpoints: (
     }
   }
   &_btn{
-    margin-top: 90px;
+    margin-top: 70px !important;
+    @include mq() {
+      margin-top: vw(70) !important;
+    }
   }
 }

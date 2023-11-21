@@ -147,6 +147,12 @@ function add_files() {
 
   // recruit Styles/faq Styles
   wp_enqueue_style('recruit_faq-style', get_template_directory_uri() . '/css/recruit_faq.css');
+
+  // products Styles
+  wp_enqueue_style('products-style', get_template_directory_uri() . '/css/products.css');
+
+  // products Styles
+  wp_enqueue_style('products_renewal-style', get_template_directory_uri() . '/css/products_renewal.css');
 }
 
 add_action('wp_enqueue_scripts', 'add_files');
