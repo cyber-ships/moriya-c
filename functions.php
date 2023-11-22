@@ -159,6 +159,9 @@ function add_files() {
 
   // map Styles
   wp_enqueue_style('map-style', get_template_directory_uri() . '/css/map.css');
+
+  // works Styles
+  wp_enqueue_style('works-style', get_template_directory_uri() . '/css/works.css');
 }
 
 add_action('wp_enqueue_scripts', 'add_files');
