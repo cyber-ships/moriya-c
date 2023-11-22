@@ -7,7 +7,7 @@
         <h1>
           <span class="text"><small>Office</small>事業所一覧</span>
           <picture>
-            <img src="<?php echo esc_url(get_theme_file_uri('/company/heading_img.jpg')); ?>" alt="企業情報" />
+            <img src="<?php echo esc_url(get_theme_file_uri('/img/company/heading_img.jpg')); ?>" alt="企業情報" />
           </picture>
         </h1>
       </div>
@@ -361,4 +361,4 @@
     <!-- /office -->
   </main>
 
-<?php fet_footer(); ?>
+<?php get_footer(); ?>
