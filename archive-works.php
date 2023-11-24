@@ -30,19 +30,19 @@
               <p class="title">製品選択</p>
               <ul>
                 <li class="current">
-                  <a href="">すべて</a>
+                  <a href="<?php echo home_url('/works/'); ?>">すべて</a>
                 </li>
                 <li>
-                  <a href="">エレベーター</a>
+                  <a href="<?php echo esc_url( get_term_link( 3 , 'works_category' )); ?>">エレベーター</a>
                 </li>
                 <li>
-                  <a href="">船舶用</a>
+                  <a href="<?php echo esc_url( get_term_link( 4 , 'works_category' )); ?>">船舶用</a>
                 </li>
                 <li>
-                  <a href="">マックリフター</a>
+                  <a href="<?php echo esc_url( get_term_link( 5 , 'works_category' )); ?>">マックリフター</a>
                 </li>
                 <li>
-                  <a href="">リニューアル（入替）</a>
+                  <a href="<?php echo esc_url( get_term_link( 6 , 'works_category' )); ?>">リニューアル（入替）</a>
                 </li>
               </ul>
             </div>
@@ -53,15 +53,23 @@
                 <li class="current">
                   <a href="">すべて</a>
                 </li>
-                <li>
-                  <a href="">2022年</a>
-                </li>
-                <li>
-                  <a href="">2021年</a>
-                </li>
-                <li>
-                  <a href="">2020年</a>
-                </li>
+                <?php // 年別アーカイブリストを表示
+                  $year=NULL; // 年の初期化
+                  $args = array( // クエリの作成
+                    'post_type' => 'works', // 投稿タイプの指定
+                    'orderby' => 'date', // 日付順で表示
+                    'posts_per_page' => -1 // すべての投稿を表示
+                  );
+                  $the_query = new WP_Query($args); if($the_query->have_posts()){ // 投稿があれば表示
+                    while ($the_query->have_posts()): $the_query->the_post(); // ループの開始
+                      if ($year != get_the_date('Y')){ // 同じ年でなければ表示
+                        $year = get_the_date('Y'); // 年の取得
+                        echo '<li><a href="'.home_url( '/', 'http' ).'works/'.$year.'">'.$year.'年</a></li>'; // 年別アーカイブリストの表示
+                      }
+                    endwhile; // ループの終了
+                    wp_reset_postdata(); // クエリのリセット
+                  }
+                ?>
               </ul>
             </div>
           </div>
@@ -246,17 +254,16 @@
                     <div class="box">
                       <img src="<?php echo get_template_directory_uri(); ?>/img/works/arrow.png" alt="" class="arrow" />
 
-                          <?php $cat = get_field('works_radio'); ?>
-                          
-                          <?php if ($cat == 'works_cat1') : ?>
+                          <?php if(is_object_in_term($post->ID,'works_category','works_cat-01')): ?>
                             <span class="tag-category tag-category-01">エレベーター</span>
-                          <?php elseif ($cat == 'works_cat2') : ?>
+                          <?php elseif(is_object_in_term($post->ID,'works_category','works_cat-02')) : ?>
                             <span class="tag-category tag-category-03">船舶</span>
-                          <?php elseif ($cat == 'works_cat3') : ?>
+                          <?php elseif(is_object_in_term($post->ID,'works_category','works_cat-03')) : ?>
                             <span class="tag-category tag-category-02">マックリフター</span>
-                          <?php else : ?>
-                            <span class="tag-category tag-category-04">リニューアル（入れ替え）</span>
-                          <?php  endif; ?>
+                          <?php elseif(is_object_in_term($post->ID,'works_category','works_cat-04')) : ?>
+                            <span class="tag-category tag-category-01">リニューアル（入れ替え）</span>
+                          <?php endif; ?>
+
 
                       <h2 class="title"><?php the_title(); ?></h2>
                       <span class="year"><?php echo get_field('works_year'); ?></span>

@@ -31,80 +31,40 @@
               <div class="works_detail_title">
                 <h2><?php the_title(); ?></h2>
                 <div class="tag-box">
-                  <span class="date">2023/11/1 wed.</span>
-                  <?php $cat = get_field('works_radio'); ?>
-                          
-                  <?php if ($cat == 'works_cat1') : ?>
+                  <span class="date"><?php echo get_post_time('Y/m/d D.'); ?></span>
+
+                  <?php if(is_object_in_term($post->ID,'works_category','works_cat-01')): ?>
                     <span class="tag tag-01">エレベーター</span>
-                  <?php elseif ($cat == 'works_cat2') : ?>
+                  <?php elseif(is_object_in_term($post->ID,'works_category','works_cat-02')) : ?>
                     <span class="tag tag-03">船舶</span>
-                  <?php elseif ($cat == 'works_cat3') : ?>
+                  <?php elseif(is_object_in_term($post->ID,'works_category','works_cat-03')) : ?>
                     <span class="tag tag-02">マックリフター</span>
-                  <?php else : ?>
-                    <span class="tag tag-04">リニューアル（入れ替え）</span>
-                  <?php  endif; ?>
+                  <?php elseif(is_object_in_term($post->ID,'works_category','works_cat-04')) : ?>
+                    <span class="tag tag-01">リニューアル（入れ替え）</span>
+                  <?php endif; ?>
                 </div>
               </div>
-              <div class="works_detail_thumbnail">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/works/img-1-01.jpg" alt="" />
-              </div>
-              <div class="col2">
-                <div class="block"><img src="<?php echo get_template_directory_uri(); ?>/img/works/img-1-02.jpg" alt="" /></div>
-                <div class="block"><img src="<?php echo get_template_directory_uri(); ?>/img/works/img-1-03.jpg" alt="" /></div>
-              </div>
-
               <div class="works_detail_table">
                 <div class="works_detail_head">
                   <h3>実績掲載</h3>
                 </div>
                 <div class="table">
-                  <div class="row">
-                    <div class="title">型式</div>
-                    <div class="text">ロープ式マシンルームレス型</div>
+
+                <?php if(have_rows('works_repeat')): ?>
+									<?php while(have_rows('works_repeat')): the_row(); ?>
+                    <div class="row">
+                      <div class="title"><?php echo the_sub_field('works_repeat_title'); ?></div>
+                      <div class="text"><?php echo the_sub_field('works_repeat_text'); ?></div>
                   </div>
-                  <div class="row">
-                    <div class="title">積載量</div>
-                    <div class="text">3,500kg</div>
-                  </div>
-                  <div class="row">
-                    <div class="title">定格速度</div>
-                    <div class="text">45m/min</div>
-                  </div>
-                  <div class="row">
-                    <div class="title">停止階</div>
-                    <div class="text">3階</div>
-                  </div>
-                  <div class="row">
-                    <div class="title">台数</div>
-                    <div class="text">1台</div>
-                  </div>
-                  <div class="row">
-                    <div class="title">施設名</div>
-                    <div class="text">ちばリサーチパーク</div>
-                  </div>
-                  <div class="row">
-                    <div class="title">所在地</div>
-                    <div class="text">千葉県千葉市</div>
-                  </div>
-                  <div class="row">
-                    <div class="title">施主</div>
-                    <div class="text">横浜冷蔵（株）</div>
-                  </div>
-                  <div class="row">
-                    <div class="title">施工</div>
-                    <div class="text">東亜建設工業（株）</div>
-                  </div>
-                  <div class="row">
-                    <div class="title">竣工</div>
-                    <div class="text">2023年2月</div>
-                  </div>
+									<?php endwhile; ?>
+									<?php endif; ?>
+                  
                 </div>
               </div>
 
               <div class="works_detail_comment">
                 <div class="btn_wrap01">
-                  <a class="btn type-01 back" href="../index.html"
-                    ><span>施工・納入実績一覧に戻る</span></a
+                  <a class="btn type-01 back" href="<?php echo home_url('/works/'); ?>"><span>施工・納入実績一覧に戻る</span></a
                   >
                 </div>
               </div>
