@@ -33,16 +33,16 @@
                   <a href="<?php echo home_url('/works/'); ?>">すべて</a>
                 </li>
                 <li>
-                  <a href="<?php echo esc_url( get_term_link( 3 , 'works_category' )); ?>">エレベーター</a>
+                  <a href="<?php echo esc_url( get_term_link( 2 , 'works_category' )); ?>">エレベーター</a>
                 </li>
                 <li class="current">
-                  <a href="<?php echo esc_url( get_term_link( 4 , 'works_category' )); ?>">船舶用</a>
+                  <a href="<?php echo esc_url( get_term_link( 5 , 'works_category' )); ?>">船舶用</a>
                 </li>
                 <li>
-                  <a href="<?php echo esc_url( get_term_link( 5 , 'works_category' )); ?>">マックリフター</a>
+                  <a href="<?php echo esc_url( get_term_link( 3 , 'works_category' )); ?>">マックリフター</a>
                 </li>
                 <li>
-                  <a href="<?php echo esc_url( get_term_link( 6 , 'works_category' )); ?>">リニューアル（入替）</a>
+                  <a href="<?php echo esc_url( get_term_link( 4 , 'works_category' )); ?>">リニューアル（入替）</a>
                 </li>
               </ul>
             </div>
