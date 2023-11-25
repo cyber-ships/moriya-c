@@ -379,6 +379,62 @@
     font-size: 3.2vw;
   }
 }
+.page_works .wp-pagenavi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page_works .wp-pagenavi a, .page_works .wp-pagenavi span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  border: unset;
+}
+@media screen and (max-width: 768px) {
+  .page_works .wp-pagenavi a, .page_works .wp-pagenavi span {
+    width: 7.7333333333vw;
+    height: 7.7333333333vw;
+    font-size: 3.2vw;
+  }
+}
+.page_works .wp-pagenavi a.page, .page_works .wp-pagenavi a.nextpostslink, .page_works .wp-pagenavi a.previouspostslink {
+  background-color: #f1f8fe;
+}
+.page_works .wp-pagenavi a.previouspostslink {
+  margin-right: 25px;
+}
+@media screen and (max-width: 768px) {
+  .page_works .wp-pagenavi a.previouspostslink {
+    margin-right: 4.9333333333vw;
+  }
+}
+.page_works .wp-pagenavi a.nextpostslink {
+  margin-left: 25px;
+}
+@media screen and (max-width: 768px) {
+  .page_works .wp-pagenavi a.nextpostslink {
+    margin-left: 4.9333333333vw;
+  }
+}
+.page_works .wp-pagenavi span.current {
+  color: #fff;
+  background-color: #003798;
+}
 .page_works .works_detail {
   margin-top: 32px;
 }
@@ -464,6 +520,34 @@
   .page_works .works_detail .works_detail_thumbnail p {
     margin-top: 4vw;
     font-size: 3.4666666667vw;
+  }
+}
+.page_works .works_detail .col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .page_works .works_detail .col2 {
+    display: block;
+    margin-top: 4vw;
+  }
+}
+.page_works .works_detail .col2 div {
+  width: 49%;
+}
+@media screen and (max-width: 768px) {
+  .page_works .works_detail .col2 div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page_works .works_detail .col2 div + div {
+    margin-top: 4vw;
   }
 }
 .page_works .works_detail .works_detail_head {

@@ -278,35 +278,9 @@
               </ul>
               <div class="pager">
                 <div class="pager_inner">
-                  <ul>
-                    <li>
-                      <a href="#">≪</a>
-                    </li>
-                    <li class="prev">
-                      <a href="#">＜</a>
-                    </li>
-                    <li class="current">
-                      <a href="#">1</a>
-                    </li>
-                    <li>
-                      <a href="#">2</a>
-                    </li>
-                    <li>
-                      <a href="#">3</a>
-                    </li>
-                    <li>
-                      <a href="#">4</a>
-                    </li>
-                    <li>
-                      <a href="#">5</a>
-                    </li>
-                    <li class="next">
-                      <a href="#">＞</a>
-                    </li>
-                    <li>
-                      <a href="#">≫</a>
-                    </li>
-                  </ul>
+                  <?php if (function_exists('wp_pagenavi')) {
+                    wp_pagenavi();
+                  } ?>
                 </div>
               </div>
             </div>
