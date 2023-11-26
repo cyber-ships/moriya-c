@@ -348,10 +348,22 @@
   }
 }
 .page_inquiry .inquiry_box .inquiry_form .inquiry_form_privacypolicy .text-scroll p {
+  font-size: 1.4rem;
   line-height: 1.625;
 }
 @media screen and (max-width: 768px) {
   .page_inquiry .inquiry_box .inquiry_form .inquiry_form_privacypolicy .text-scroll p {
+    font-size: 3.2vw;
+  }
+}
+.page_inquiry .inquiry_box .inquiry_form .inquiry_form_privacypolicy .text-scroll .policy_privacy_title {
+  color: #003798;
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .page_inquiry .inquiry_box .inquiry_form .inquiry_form_privacypolicy .text-scroll .policy_privacy_title {
     font-size: 3.2vw;
   }
 }
@@ -367,6 +379,56 @@
 }
 .page_inquiry .inquiry_box .inquiry_form .btn_wrap01 {
   margin-top: 80px;
+}
+.page_inquiry .inquiry_box .btn.type-01 {
+  padding: 0;
+}
+.page_inquiry .inquiry_box .btn.type-01 input, .page_inquiry .inquiry_box .btn.type-01 button {
+  width: 340px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1.7rem;
+  padding: 24px 0;
+  background-color: unset;
+  cursor: pointer;
+  border: unset;
+}
+@media screen and (max-width: 768px) {
+  .page_inquiry .inquiry_box .btn.type-01 input, .page_inquiry .inquiry_box .btn.type-01 button {
+    padding: 4.9333333333vw 0;
+  }
+}
+.page_inquiry .inquiry_box .btn.type-01.back {
+  margin-bottom: 40px;
+}
+.page_inquiry .inquiry_box a.btn.type-01 {
+  background-color: #003798;
+  width: 340px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1.7rem;
+  padding: 24px 0;
+  cursor: pointer;
+  border: unset;
+}
+@media screen and (max-width: 768px) {
+  .page_inquiry .inquiry_box a.btn.type-01 {
+    padding: 4.9333333333vw 0;
+  }
+}
+.page_inquiry .mw_wp_form_input .back {
+  display: none;
+}
+.page_inquiry .mw_wp_form_confirm .require, .page_inquiry .mw_wp_form_confirm .inquiry_form_privacypolicy, .page_inquiry .mw_wp_form_confirm .policy_privacy_text {
+  display: none;
+}
+.page_inquiry .mw_wp_form_confirm .block .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (max-width: 768px) {
   .page_inquiry .confirm-btn .btn_wrap01:first-child {

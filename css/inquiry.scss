@@ -291,9 +291,21 @@ $breakpoints: (
             margin-bottom: vw(40);
           }
           p {
+            font-size: 1.4rem;
             line-height: 1.625;
             @include mq() {
               font-size: vw(24);
+            }
+          }
+          .policy_privacy {
+            &_title {
+              color: $sub1;
+              font-weight: bold;
+              font-size: 1.6rem;
+              margin-top: 20px;
+              @include mq() {
+                font-size: 3.2vw;
+              }
             }
           }
         }
@@ -310,6 +322,52 @@ $breakpoints: (
       .btn_wrap01 {
         margin-top: 80px;
       }
+    }
+    .btn.type-01{
+      padding: 0;
+      input, button{
+        width: 340px;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 1.7rem;
+        padding: 24px 0;
+        background-color: unset;
+        cursor: pointer;
+        border: unset;
+        @include mq() {
+          padding: vw(37) 0;
+        }
+      }
+      &.back{
+        margin-bottom: 40px;
+      }
+    }
+    a.btn.type-01{
+      background-color: #003798;
+      width: 340px;
+      margin: 0 auto;
+      color: #fff;
+      font-size: 1.7rem;
+      padding: 24px 0;
+      cursor: pointer;
+      border: unset;
+      @include mq() {
+        padding: vw(37) 0;
+      }
+    }
+  }
+  .mw_wp_form_input{
+    .back{
+      display: none;
+    }
+  }
+  .mw_wp_form_confirm{
+    .require, .inquiry_form_privacypolicy, .policy_privacy_text{
+      display: none;
+    }
+    .block .box {
+      display: flex;
+      align-items: center;
     }
   }
 
