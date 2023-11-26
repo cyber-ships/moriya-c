@@ -162,6 +162,9 @@ function add_files() {
 
   // works Styles
   wp_enqueue_style('works-style', get_template_directory_uri() . '/css/works.css');
+
+  // inquiry Styles
+  wp_enqueue_style('inquiry-style', get_template_directory_uri() . '/css/inquiry.css');
 }
 
 add_action('wp_enqueue_scripts', 'add_files');
