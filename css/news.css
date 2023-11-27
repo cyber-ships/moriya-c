@@ -1481,31 +1481,31 @@ main section .inner p + p {
 /* -----------------------------------------------------
 	news_ir_info
 ----------------------------------------------------- */
-.ir_info {
+.news {
   margin-bottom: 80px;
 }
 @media screen and (max-width: 768px) {
-  .ir_info {
+  .news {
     margin-bottom: 40px;
   }
 }
-.ir_info ul li {
+.news ul li {
   border-bottom: solid 1px #999999;
   margin-top: 20px;
 }
 @media screen and (max-width: 768px) {
-  .ir_info ul li {
+  .news ul li {
     margin-top: 2.6666666667vw;
   }
 }
-.ir_info ul li dl {
+.news ul li dl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.ir_info ul li dl dt {
+.news ul li dl dt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1521,7 +1521,7 @@ main section .inner p + p {
   padding: 0 30px 20px 40px;
 }
 @media screen and (max-width: 768px) {
-  .ir_info ul li dl dt {
+  .news ul li dl dt {
     width: 100%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1530,17 +1530,17 @@ main section .inner p + p {
     margin: 0 0 2vw 0;
   }
 }
-.ir_info ul li dl dt .date {
+.news ul li dl dt .date {
   display: block;
   font-size: 1.6rem;
   font-weight: 700;
 }
 @media screen and (max-width: 768px) {
-  .ir_info ul li dl dt .date {
+  .news ul li dl dt .date {
     font-size: 3.4666666667vw;
   }
 }
-.ir_info ul li dl dt .cat {
+.news ul li dl dt .cat {
   display: block;
   background-color: #b70000;
   color: #fff;
@@ -1552,24 +1552,24 @@ main section .inner p + p {
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  .ir_info ul li dl dt .cat {
+  .news ul li dl dt .cat {
     font-size: 2.6666666667vw;
     padding: 0.8vw 0;
     width: 16.8vw;
     margin: 0 0 0 2.6666666667vw;
   }
 }
-.ir_info ul li dl dd {
+.news ul li dl dd {
   width: 72.8%;
   padding: 0 0 20px 0;
 }
 @media screen and (max-width: 768px) {
-  .ir_info ul li dl dd {
+  .news ul li dl dd {
     width: 100%;
     padding: 0 5.3333333333vw 2.6666666667vw 5.3333333333vw;
   }
 }
-.ir_info ul li dl dd a {
+.news ul li dl dd a {
   display: block;
   font-size: 1.6rem;
   font-weight: 500;
@@ -1580,23 +1580,23 @@ main section .inner p + p {
   padding: 0 102px 0 0;
 }
 @media screen and (max-width: 768px) {
-  .ir_info ul li dl dd a {
+  .news ul li dl dd a {
     font-size: 3.4666666667vw;
     background-position: right center;
     background-size: 4vw auto;
     padding: 0 5.3333333333vw 0 0;
   }
 }
-.ir_info ul li dl dd a.pdf {
+.news ul li dl dd a.pdf {
   position: relative;
   padding: 0 142px 0 0;
 }
 @media screen and (max-width: 768px) {
-  .ir_info ul li dl dd a.pdf {
+  .news ul li dl dd a.pdf {
     padding: 0 16vw 0 0;
   }
 }
-.ir_info ul li dl dd a.pdf:after {
+.news ul li dl dd a.pdf:after {
   content: "";
   display: block;
   width: 30px;
@@ -1612,26 +1612,26 @@ main section .inner p + p {
           transform: translateY(-50%);
 }
 @media screen and (max-width: 768px) {
-  .ir_info ul li dl dd a.pdf:after {
+  .news ul li dl dd a.pdf:after {
     width: 5.3333333333vw;
     height: 5.8666666667vw;
     background-size: 5.3333333333vw auto;
     right: 9.3333333333vw;
   }
 }
-.ir_info ul li:first-child {
+.news ul li:first-child {
   margin-top: 0;
 }
-.ir_info .txt_lnk {
+.news .txt_lnk {
   margin: 30px 0 0 0;
   text-align: right;
 }
 @media screen and (max-width: 768px) {
-  .ir_info .txt_lnk {
+  .news .txt_lnk {
     margin: 4vw 0 0 0;
   }
 }
-.ir_info .txt_lnk a {
+.news .txt_lnk a {
   font-size: 1.4rem;
   letter-spacing: 0.06em;
   display: inline-block;
@@ -1643,70 +1643,24 @@ main section .inner p + p {
   color: #000;
 }
 @media screen and (max-width: 768px) {
-  .ir_info .txt_lnk a {
+  .news .txt_lnk a {
     font-size: 3.2vw;
     padding: 0 3.2vw 0 0;
     background-size: 1.4666666667vw auto;
   }
 }
-
-/* -----------------------------------------------------
-	news
------------------------------------------------------ */
-.pager {
-  margin-top: 80px;
-}
-@media screen and (max-width: 768px) {
-  .pager {
-    margin-top: 8vw;
-  }
-}
-.pager_inner ul {
+.news .wp-pagenavi {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.pager_inner ul li {
-  border: none;
-  margin-right: 4px;
-}
-@media screen and (max-width: 768px) {
-  .pager_inner ul li {
-    margin-right: 0.9333333333vw;
-  }
-}
-.pager_inner ul li:first-child {
-  margin-left: 4px;
-}
-@media screen and (max-width: 768px) {
-  .pager_inner ul li:first-child {
-    margin-left: 0.9333333333vw;
-  }
-}
-.pager_inner ul li.next {
-  margin-left: 25px;
-}
-@media screen and (max-width: 768px) {
-  .pager_inner ul li.next {
-    margin-left: 4.9333333333vw;
-  }
-}
-.pager_inner ul li.prev {
-  margin-right: 25px;
-}
-@media screen and (max-width: 768px) {
-  .pager_inner ul li.prev {
-    margin-right: 4.9333333333vw;
-  }
-}
-.pager_inner ul li.current a {
-  color: #fff;
-  background-color: #003798;
-}
-.pager_inner ul li a {
+.news .wp-pagenavi a, .news .wp-pagenavi span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1719,14 +1673,37 @@ main section .inner p + p {
   width: 40px;
   height: 40px;
   font-weight: bold;
-  background-color: #f1f8fe;
+  border: unset;
 }
 @media screen and (max-width: 768px) {
-  .pager_inner ul li a {
+  .news .wp-pagenavi a, .news .wp-pagenavi span {
     width: 7.7333333333vw;
     height: 7.7333333333vw;
     font-size: 3.2vw;
   }
+}
+.news .wp-pagenavi a.page, .news .wp-pagenavi a.nextpostslink, .news .wp-pagenavi a.previouspostslink {
+  background-color: #f1f8fe;
+}
+.news .wp-pagenavi a.previouspostslink {
+  margin-right: 25px;
+}
+@media screen and (max-width: 768px) {
+  .news .wp-pagenavi a.previouspostslink {
+    margin-right: 4.9333333333vw;
+  }
+}
+.news .wp-pagenavi a.nextpostslink {
+  margin-left: 25px;
+}
+@media screen and (max-width: 768px) {
+  .news .wp-pagenavi a.nextpostslink {
+    margin-left: 4.9333333333vw;
+  }
+}
+.news .wp-pagenavi span.current {
+  color: #fff;
+  background-color: #003798;
 }
 
 /* -----------------------------------------------------

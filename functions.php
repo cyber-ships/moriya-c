@@ -165,6 +165,12 @@ function add_files() {
 
   // inquiry Styles
   wp_enqueue_style('inquiry-style', get_template_directory_uri() . '/css/inquiry.css');
+
+  // news Styles
+  wp_enqueue_style('news-style', get_template_directory_uri() . '/css/news.css');
+
+  // news_detail Styles
+  wp_enqueue_style('news_detail-style', get_template_directory_uri() . '/css/news_detail.css');
 }
 
 add_action('wp_enqueue_scripts', 'add_files');
