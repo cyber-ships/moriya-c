@@ -420,7 +420,7 @@
   display: none;
 }
 .page_inquiry .mw_wp_form_confirm .require, .page_inquiry .mw_wp_form_confirm .inquiry_form_privacypolicy, .page_inquiry .mw_wp_form_confirm .policy_privacy_text {
-  display: none;
+  display: none !important;
 }
 .page_inquiry .mw_wp_form_confirm .block .box {
   display: -webkit-box;
@@ -429,6 +429,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.page_inquiry .mw_wp_form_confirm .block:nth-child(9) .box {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.page_inquiry .mw_wp_form_confirm .block:nth-child(9) .box .select {
+  width: 100% !important;
+  margin-bottom: 10px;
+}
+.page_inquiry .mw_wp_form_confirm .block:nth-child(9) .box .select::before {
+  content: none !important;
 }
 @media screen and (max-width: 768px) {
   .page_inquiry .confirm-btn .btn_wrap01:first-child {

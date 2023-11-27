@@ -363,11 +363,26 @@ $breakpoints: (
   }
   .mw_wp_form_confirm{
     .require, .inquiry_form_privacypolicy, .policy_privacy_text{
-      display: none;
+      display: none !important;
     }
     .block .box {
       display: flex;
       align-items: center;
+    }
+    .block{
+      &:nth-child(9){
+        .box{
+          flex-direction: column;
+          align-items: flex-start;
+          .select{
+            width: 100% !important;
+            margin-bottom: 10px;
+            &::before{
+              content: none !important;
+            }
+          }
+        }
+      }
     }
   }
 
