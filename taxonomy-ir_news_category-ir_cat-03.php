@@ -26,7 +26,7 @@
           <div class="head_box">
             <div class="head_category">
               <ul>
-                <li class="current">
+                <li>
                   <a href="<?php echo home_url('/ir_news/') ?>">すべて</a>
                 </li>
                 <li>
@@ -35,7 +35,7 @@
                 <li>
                   <a href="<?php echo esc_url(get_term_link('ir_cat-02','ir_news_category')) ?>">適時開示</a>
                 </li>
-                <li>
+                <li class="current">
                   <a href="<?php echo esc_url(get_term_link('ir_cat-03','ir_news_category')) ?>">法定開示</a>
                 </li>
                 <li>
@@ -72,16 +72,19 @@
 
           <div class="ir_info">
             <ul>
-              <?php 
-                $query = new WP_Query(array(
-                  'post_type' => "ir_news",
-                  'posts_per_pages' => 5,
-                  'paged' => get_query_var('paged')
-                ));
-                if($query->have_posts()){
-                  while($query->have_posts()){
-                    $query->the_post();
-              ?>
+            <?php
+              $term_object = get_queried_object();
+              $term_slug = $term_object->slug;
+              $args = array(
+                'post_type' => 'ir_news',
+                'posts_per_page' => 5,
+                'taxonomy' => 'ir_news_category',
+                'term' => $term_slug
+              );
+              $the_query = new WP_Query($args);
+            ?>
+            <?php if($the_query->have_posts()): ?>
+            <?php while($the_query->have_posts()): $the_query->the_post(); ?>
               <li>
                 <dl>
                   <dt>
@@ -108,11 +111,10 @@
                   </dd>
                 </dl>
               </li>
-              <?php
-                }
-                }
-                wp_reset_postdata();
-              ?>
+              
+              <?php endwhile; ?>
+              <?php endif; ?>
+              <?php wp_reset_postdata(); ?>
             </ul>
             <div class="pager">
               <div class="pager_inner">
