@@ -43,7 +43,7 @@
       <section>
         <div class="inner">
           <div class="btn_wrap01">
-            <a class="btn type-01 back" href="../../news/index.html"
+            <a class="btn type-01 back" href="<?php echo home_url('/news/'); ?>"
               ><span>ニュース一覧に戻る</span></a
             >
           </div>
