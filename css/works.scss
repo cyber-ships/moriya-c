@@ -147,6 +147,10 @@ $breakpoints: (
             font-weight: bold;
             padding: 12px 20px;
             background-color: #f1f8fe;
+            position: relative;
+            &::after{
+              content: '年';
+            }
           }
         }
       }

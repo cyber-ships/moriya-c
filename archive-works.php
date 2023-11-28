@@ -49,189 +49,24 @@
             <div class="head_year">
               <p class="title">年度選択</p>
               <div class="head_year_btn">すべて</div>
+              
               <ul class="head_year_list">
-                <li class="current">
-                  <a href="">すべて</a>
-                </li>
-                <?php // 年別アーカイブリストを表示
-                  $year=NULL; // 年の初期化
-                  $args = array( // クエリの作成
-                    'post_type' => 'works', // 投稿タイプの指定
-                    'orderby' => 'date', // 日付順で表示
-                    'posts_per_page' => -1 // すべての投稿を表示
-                  );
-                  $the_query = new WP_Query($args); if($the_query->have_posts()){ // 投稿があれば表示
-                    while ($the_query->have_posts()): $the_query->the_post(); // ループの開始
-                      if ($year != get_the_date('Y')){ // 同じ年でなければ表示
-                        $year = get_the_date('Y'); // 年の取得
-                        echo '<li><a href="'.home_url( '/', 'http' ).'works/'.$year.'">'.$year.'年</a></li>'; // 年別アーカイブリストの表示
-                      }
-                    endwhile; // ループの終了
-                    wp_reset_postdata(); // クエリのリセット
-                  }
+              <?php
+                wp_get_archives (array(
+                  'type' => 'yearly', //表示するアーカイブの種類
+                  'limit' => -1, //取得する件数
+                  'format' => 'html', //アーカイブの表示形式
+                  'before' => '', //formatがhtmlまたはcustomのとき、aタグの直前に付けるテキスト（htmlタグ可）
+                  'after' => '', //formatがhtmlまたはcustomのとき、aタグの直後に付けるテキスト（htmlタグ可）
+                  'show_post_count' => false, //投稿数を表示するか
+                  'echo' => 1, //表示するか（1）、値を返すか（0）
+                  'order' => 'DESC', //項目をどの方向に並べるか
+                  'post_type' => 'works' //アーカイブを取得する投稿タイプ
+                ));
                 ?>
-              </ul>
-            </div>
-          </div>
-
-          <!-- <div class="works_archive">
-            <div class="works_archive__wrap">
-              <ul class="works_archive_list">
-                <li>
-                  <a href="../works/works-detail/index.html">
-                    <div class="thumbnail">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/works/img-1-01.jpg" alt="" />
-                    </div>
-                    <div class="box">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/works/arrow.png" alt="" class="arrow" />
-                      <span class="tag-category tag-category-01"
-                        >エレベーター</span
-                      >
-                      <h2 class="title">ちばリサーチパーク</h2>
-                      <span class="year">2023年</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="../works/works-detail/index.html">
-                    <div class="thumbnail">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/works/img3.jpg" alt="" />
-                    </div>
-                    <div class="box">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/works/arrow.png" alt="" class="arrow" />
-                      <span class="tag-category tag-category-02"
-                        >マックリフター</span
-                      >
-                      <h2 class="title">マックリフター</h2>
-                      <span class="year">2022年</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="../works/works-detail/index.html">
-                    <div class="thumbnail">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/works/img4.jpg" alt="" />
-                    </div>
-                    <div class="box">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/works/arrow.png" alt="" class="arrow" />
-                      <span class="tag-category tag-category-02"
-                        >マックリフター</span
-                      >
-                      <h2 class="title">マックリフター</h2>
-                      <span class="year">2022年</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="../works/works-detail/index.html">
-                    <div class="thumbnail">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/works/img5.jpg" alt="" />
-                    </div>
-                    <div class="box">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/works/arrow.png" alt="" class="arrow" />
-                      <span class="tag-category tag-category-01"
-                        >エレベーター</span
-                      >
-                      <h2 class="title">荷物用エレベーター</h2>
-                      <span class="year">2022年</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="../works/works-detail/index.html">
-                    <div class="thumbnail">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/works/img.jpg" alt="" />
-                    </div>
-                    <div class="box">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/works/arrow.png" alt="" class="arrow" />
-                      <span class="tag-category tag-category-01"
-                        >エレベーター</span
-                      >
-                      <h2 class="title">荷物用エレベーター</h2>
-                      <span class="year">2022年</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="../works/works-detail/index.html">
-                    <div class="thumbnail">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/works/img6.jpg" alt="" />
-                    </div>
-                    <div class="box">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/works/arrow.png" alt="" class="arrow" />
-                      <span class="tag-category tag-category-03">船舶用</span>
-                      <h2 class="title">船舶用エレベーター</h2>
-                      <span class="year">2022年</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="../works/works-detail/index.html">
-                    <div class="thumbnail">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/works/img4.jpg" alt="" />
-                    </div>
-                    <div class="box">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/works/arrow.png" alt="" class="arrow" />
-                      <span class="tag-category tag-category-02"
-                        >マックリフター</span
-                      >
-                      <h2 class="title">マックリフター</h2>
-                      <span class="year">2022年</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="../works/works-detail/index.html">
-                    <div class="thumbnail">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/works/img5.jpg" alt="" />
-                    </div>
-                    <div class="box">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/works/arrow.png" alt="" class="arrow" />
-                      <span class="tag-category tag-category-01"
-                        >エレベーター</span
-                      >
-                      <h2 class="title">荷物用エレベーター</h2>
-                      <span class="year">2022年</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-              <div class="pager">
-                <div class="pager_inner">
-                  <ul>
-                    <li>
-                      <a href="#">≪</a>
-                    </li>
-                    <li class="prev">
-                      <a href="#">＜</a>
-                    </li>
-                    <li class="current">
-                      <a href="#">1</a>
-                    </li>
-                    <li>
-                      <a href="#">2</a>
-                    </li>
-                    <li>
-                      <a href="#">3</a>
-                    </li>
-                    <li>
-                      <a href="#">4</a>
-                    </li>
-                    <li>
-                      <a href="#">5</a>
-                    </li>
-                    <li class="next">
-                      <a href="#">＞</a>
-                    </li>
-                    <li>
-                      <a href="#">≫</a>
-                    </li>
-                  </ul>
-                </div>
+                </ul>
               </div>
-            </div>
-          </div> -->
-
+          </div>
 
           <div class="works_archive">
             <div class="works_archive__wrap">

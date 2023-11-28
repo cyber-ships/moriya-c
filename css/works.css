@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .page_works {
   margin-top: 38px;
 }
@@ -152,6 +153,10 @@
   font-weight: bold;
   padding: 12px 20px;
   background-color: #f1f8fe;
+  position: relative;
+}
+.page_works .head_box .head_year .head_year_list li a::after {
+  content: "年";
 }
 .page_works .works_archive {
   margin-top: 32px;
