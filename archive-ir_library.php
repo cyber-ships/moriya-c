@@ -79,30 +79,27 @@
           <div class="ir_library_box">
             <div class="ir_library_box_content">
             <?php
-        $categories = array('library_cat-01');  // カテゴリのスラッグを追加してください
-
-        foreach ($categories as $category) {
-            $category_query = new WP_Query(array(
-                'post_type' => 'ir_library',
-                'tax_query' => array(
-                    array(
-                        'taxonomy' => 'ir_library_category',
-                        'field' => 'slug',
-                        'terms' => $category,
-                    ),
+        $term_object = get_queried_object();
+        $term_slug = $term_object->slug;
+        $args = array(
+            'post_type' => 'ir_library',
+            'posts_per_page' => 1,
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'ir_library_category',
+                    'field' => 'slug',
+                    'terms' => 'library_cat-01'
                 ),
-                'posts_per_page' => 1,
-                'paged' => get_query_var('paged')
-            ));
-
-            if ($category_query->have_posts()) {
-                while ($category_query->have_posts()) {
-                    $category_query->the_post();
-    ?>
+            ),
+        );
+        $the_query = new WP_Query($args);
+        ?>
+        <?php if($the_query->have_posts()): ?>
+        <?php while($the_query->have_posts()): $the_query->the_post(); ?>
               <p class="ir_library_box_content_title">決算短信</p>
-              <p class="ir_library_box_content_date">2023/08/09</p>
+              <p class="ir_library_box_content_date"><?php echo get_field('library_date'); ?></p>
               <a
-                href="https://contents.xj-storage.jp/xcontents/AS08769/07e6e0a8/eb69/41cf/9d73/5532aa498111/140120230809538365.pdf"
+                href="<?php echo get_field('library_pdf'); ?>"
                 target="_blank"
                 class="ir_library_box_content_pdf"
                 ><?php the_title(); ?><span
@@ -112,130 +109,268 @@
               ></a>
               <div class="library_flex">
                 <a
-                  href="../library/results/index.html"
+                  href="<?php echo esc_url(get_term_link('library_cat-01','ir_library_category')) ?>"
                   class="ir_library_box_content_link"
                   >決算短信一覧</a
                 >
               </div>
-              <?php
-                }
-                wp_reset_postdata();
-            }
-        }
-    ?>
+              
+              <?php endwhile; ?>
+              <?php endif; ?>
+              <?php wp_reset_postdata(); ?>
             </div>
 
             <div class="ir_library_box_content">
+            <?php
+        $term_object = get_queried_object();
+        $term_slug = $term_object->slug;
+        $args = array(
+            'post_type' => 'ir_library',
+            'posts_per_page' => 1,
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'ir_library_category',
+                    'field' => 'slug',
+                    'terms' => 'library_cat-02'
+                ),
+            ),
+        );
+        $the_query = new WP_Query($args);
+        ?>
+        <?php if($the_query->have_posts()): ?>
+        <?php while($the_query->have_posts()): $the_query->the_post(); ?>
               <p class="ir_library_box_content_title">決算説明資料</p>
-              <p class="ir_library_box_content_date">◯◯/◯/◯</p>
-              <a href="#" class="ir_library_box_content_pdf"
-                >2023年3月期 第2四半期決算説明資料<span
+              <p class="ir_library_box_content_date"><?php echo get_field('library_date'); ?></p>
+              <a href="<?php echo get_field('library_pdf') ?>" class="ir_library_box_content_pdf"
+                ><?php the_title(); ?><span
                   ><img
                     src="<?php echo esc_url(get_theme_file_uri('/img/icon/arrow-r-02_black.svg')); ?>"
                     alt="" /></span
               ></a>
               <div class="library_flex">
                 <a
-                  href="../library/presentation/"
+                  href="<?php echo esc_url(get_term_link('library_cat-02','ir_library_category')) ?>"
                   class="ir_library_box_content_link"
                   >決算説明資料一覧</a
                 >
               </div>
+
+              <?php endwhile; ?>
+              <?php endif; ?>
+              <?php wp_reset_postdata(); ?>
             </div>
             
             <div class="ir_library_box_content">
+            <?php
+        $term_object = get_queried_object();
+        $term_slug = $term_object->slug;
+        $args = array(
+            'post_type' => 'ir_library',
+            'posts_per_page' => 1,
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'ir_library_category',
+                    'field' => 'slug',
+                    'terms' => 'library_cat-03'
+                ),
+            ),
+        );
+        $the_query = new WP_Query($args);
+        ?>
+        <?php if($the_query->have_posts()): ?>
+        <?php while($the_query->have_posts()): $the_query->the_post(); ?>
               <p class="ir_library_box_content_title">適時開示情報</p>
-              <p class="ir_library_box_content_date">◯◯/◯/◯</p>
-              <a href="#" class="ir_library_box_content_pdf"
-                >実績予想の修正に関するお知らせ<span
+              <p class="ir_library_box_content_date"><?php echo get_field('library_date'); ?></p>
+              <a href="<?php echo get_field('library_pdf'); ?>" class="ir_library_box_content_pdf"
+                ><?php the_title(); ?><span
                   ><img
                     src="<?php echo esc_url(get_theme_file_uri('/img/icon/arrow-r-02_black.svg')); ?>"
                     alt="" /></span
               ></a>
               <div class="library_flex">
                 <a
-                  href="../library/disclosure/index.html"
+                  href="<?php echo esc_url(get_term_link('library_cat-03','ir_library_category')) ?>"
                   class="ir_library_box_content_link"
                   >適時開示情報一覧</a
                 >
               </div>
+
+              <?php endwhile; ?>
+              <?php endif; ?>
+              <?php wp_reset_postdata(); ?>
             </div>
 
             <div class="ir_library_box_content">
+
+            <?php
+        $term_object = get_queried_object();
+        $term_slug = $term_object->slug;
+        $args = array(
+            'post_type' => 'ir_library',
+            'posts_per_page' => 1,
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'ir_library_category',
+                    'field' => 'slug',
+                    'terms' => 'library_cat-04'
+                ),
+            ),
+        );
+        $the_query = new WP_Query($args);
+        ?>
+        <?php if($the_query->have_posts()): ?>
+        <?php while($the_query->have_posts()): $the_query->the_post(); ?>
+
               <p class="ir_library_box_content_title">
                 有価証券報告書等法定開示資料
               </p>
-              <p class="ir_library_box_content_date">◯◯/◯/◯</p>
-              <a href="#" class="ir_library_box_content_pdf"
-                >2023年3月期 第2四半期短信[日本基準]（非連結）<span
+              <p class="ir_library_box_content_date"><?php echo get_field('library_date'); ?></p>
+              <a href="<?php echo get_field('library_pdf'); ?>" class="ir_library_box_content_pdf"
+                ><?php the_title(); ?><span
                   ><img
                     src="<?php echo esc_url(get_theme_file_uri('/img/icon/arrow-r-02_black.svg')); ?>"
                     alt="" /></span
               ></a>
               <div class="library_flex">
                 <a
-                  href="../library/securities/"
+                  href="<?php echo esc_url(get_term_link('library_cat-04','ir_library_category')) ?>"
                   class="ir_library_box_content_link"
                   >有価証券報告書等法定開示資料一覧</a
                 >
               </div>
+
+              <?php endwhile; ?>
+              <?php endif; ?>
+              <?php wp_reset_postdata(); ?>
             </div>
 
             <div class="ir_library_box_content">
+
+            <?php
+        $term_object = get_queried_object();
+        $term_slug = $term_object->slug;
+        $args = array(
+            'post_type' => 'ir_library',
+            'posts_per_page' => 1,
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'ir_library_category',
+                    'field' => 'slug',
+                    'terms' => 'library_cat-05'
+                ),
+            ),
+        );
+        $the_query = new WP_Query($args);
+        ?>
+        <?php if($the_query->have_posts()): ?>
+        <?php while($the_query->have_posts()): $the_query->the_post(); ?>
+
               <p class="ir_library_box_content_title">IR資料</p>
-              <p class="ir_library_box_content_date">◯◯/◯/◯</p>
-              <a href="#" class="ir_library_box_content_pdf"
-                >会社説明資料（2022年11月）<span
+              <p class="ir_library_box_content_date"><?php echo get_field('library_date'); ?></p>
+              <a href="<?php echo get_field('library_pdf'); ?>" class="ir_library_box_content_pdf"
+                ><?php the_title(); ?><span
                   ><img
                     src="<?php echo esc_url(get_theme_file_uri('/img/icon/arrow-r-02_black.svg')); ?>"
                     alt="" /></span
               ></a>
               <div class="library_flex">
                 <a
-                  href="../library/others/index.html"
+                  href="<?php echo esc_url(get_term_link('library_cat-05','ir_library_category')) ?>"
                   class="ir_library_box_content_link"
                   >IR資料一覧</a
                 >
               </div>
+
+              <?php endwhile; ?>
+              <?php endif; ?>
+              <?php wp_reset_postdata(); ?>
             </div>
             
             <div class="ir_library_box_content">
+
+            <?php
+        $term_object = get_queried_object();
+        $term_slug = $term_object->slug;
+        $args = array(
+            'post_type' => 'ir_library',
+            'posts_per_page' => 1,
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'ir_library_category',
+                    'field' => 'slug',
+                    'terms' => 'library_cat-06'
+                ),
+            ),
+        );
+        $the_query = new WP_Query($args);
+        ?>
+        <?php if($the_query->have_posts()): ?>
+        <?php while($the_query->have_posts()): $the_query->the_post(); ?>
+
               <p class="ir_library_box_content_title">株主総会関連資料</p>
-              <p class="ir_library_box_content_date">◯◯/◯/◯</p>
-              <a href="#" class="ir_library_box_content_pdf"
-                >決議通知<span
+              <p class="ir_library_box_content_date"><?php echo get_field('library_date'); ?></p>
+              <a href="<?php echo get_field('library_pdf'); ?>" class="ir_library_box_content_pdf"
+                ><?php the_title(); ?><span
                   ><img
                     src="<?php echo esc_url(get_theme_file_uri('/img/icon/arrow-r-02_black.svg')); ?>"
                     alt="" /></span
               ></a>
               <div class="library_flex">
                 <a
-                  href="../library/meeting/index.html"
+                  href="<?php echo esc_url(get_term_link('library_cat-06','ir_library_category')) ?>"
                   class="ir_library_box_content_link"
                   >株主総会関連資料一覧</a
                 >
               </div>
+
+              <?php endwhile; ?>
+              <?php endif; ?>
+              <?php wp_reset_postdata(); ?>
             </div>
 
             <div class="ir_library_box_content">
+
+            <?php
+        $term_object = get_queried_object();
+        $term_slug = $term_object->slug;
+        $args = array(
+            'post_type' => 'ir_library',
+            'posts_per_page' => 1,
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'ir_library_category',
+                    'field' => 'slug',
+                    'terms' => 'library_cat-07'
+                ),
+            ),
+        );
+        $the_query = new WP_Query($args);
+        ?>
+        <?php if($the_query->have_posts()): ?>
+        <?php while($the_query->have_posts()): $the_query->the_post(); ?>
+
               <p class="ir_library_box_content_title">
                 コーポレート・ガバナンス一覧
               </p>
-              <p class="ir_library_box_content_date">◯◯/◯/◯</p>
-              <a href="#" class="ir_library_box_content_pdf"
-                >コーポレート・ガバナンスに関する報告書2022/10/18<span
+              <p class="ir_library_box_content_date"><?php echo get_field('library_date'); ?></p>
+              <a href="<?php echo get_field('library_pdf'); ?>" class="ir_library_box_content_pdf"
+                ><?php the_title(); ?><span
                   ><img
                     src="<?php echo esc_url(get_theme_file_uri('/img/icon/arrow-r-02_black.svg')); ?>"
                     alt="" /></span
               ></a>
               <div class="library_flex">
                 <a
-                  href="../library/governance/index.html"
+                  href="<?php echo esc_url(get_term_link('library_cat-07','ir_library_category')) ?>"
                   class="ir_library_box_content_link"
                   >コーポレート・ガバナンス報告書一覧</a
                 >
               </div>
             </div>
+
+            <?php endwhile; ?>
+              <?php endif; ?>
+              <?php wp_reset_postdata(); ?>
           </div>
 
           <div class="ir_library_adobe">

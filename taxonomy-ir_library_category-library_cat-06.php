@@ -45,72 +45,39 @@
           <h2 class="library_meeting_title">招集通知</h2>
           <div class="ir_info">
             <ul>
+            <?php
+                  $term_object = get_queried_object();
+                  $term_slug = $term_object->slug;
+                  $args = array(
+                    'post_type' => 'ir_library',
+                    'posts_per_page' => 10,
+                    'taxonomy' => 'ir_library_category',
+                    'term' => $term_slug
+                  );
+                  $the_query = new WP_Query($args);
+                ?>
+                <?php if($the_query->have_posts()): ?>
+                  <?php while($the_query->have_posts()): $the_query->the_post(); ?>
+
               <li>
                 <dl>
                   <dt>
-                    <span class="date">2023/06/06</span>
+                    <span class="date"><?php echo get_field('library_date'); ?></span>
                   </dt>
                   <dd>
                     <a
                       class="pdf"
-                      href="https://contents.xj-storage.jp/xcontents/AS08769/1805374a/b2ff/4e14/9bea/760822e7b46b/140120230605595814.pdf"
+                      href="<?php echo get_field('library_pdf'); ?>"
                       target="_blank"
-                      >第76期定時株主総会招集通知及び株主総会資料</a
+                      ><?php the_title(); ?></a
                     >
                   </dd>
                 </dl>
               </li>
-              <li>
-                <dl>
-                  <dt>
-                    <span class="date">◯◯/◯/◯</span>
-                  </dt>
-                  <dd>
-                    <a class="pdf" href="#"
-                      >2022年定時株主総会招集通知 インターネット開示事項</a
-                    >
-                  </dd>
-                </dl>
-              </li>
-            </ul>
-          </div>
-
-          <h2 class="library_meeting_title">決議通知</h2>
-          <div class="ir_info">
-            <ul>
-              <li>
-                <dl>
-                  <dt>
-                    <span class="date">2023/06/29</span>
-                  </dt>
-                  <dd>
-                    <a
-                      class="pdf"
-                      href="https://contents.xj-storage.jp/xcontents/AS08769/1928d496/2493/4536/9d65/022c5e441cfb/S100R8L6.pdf"
-                      target="_blank"
-                      >決議通知</a
-                    >
-                  </dd>
-                </dl>
-              </li>
-            </ul>
-          </div>
-
-          <h2 class="library_meeting_title">株主通信</h2>
-          <div class="ir_info">
-            <ul>
-              <li>
-                <dl>
-                  <dt>
-                    <span class="date">◯◯/◯/◯</span>
-                  </dt>
-                  <dd>
-                    <a class="pdf" href="#"
-                      >第76期中間事業報告書（2022年4月1日〜2022年9月30日）</a
-                    >
-                  </dd>
-                </dl>
-              </li>
+              
+              <?php endwhile; ?>
+              <?php endif; ?>
+              <?php wp_reset_postdata(); ?>
             </ul>
           </div>
 
@@ -126,22 +93,22 @@
           </div>
 
           <div class="library_meeting_btn">
-            <a href="../results/index.html" class="library_meeting_btn_item"
+            <a href="<?php echo esc_url(get_term_link('library_cat-01','ir_library_category')) ?>" class="library_meeting_btn_item"
               >決算短信</a
             >
-            <a href="../presentation/index.html" class="library_meeting_btn_item"
+            <a href="<?php echo esc_url(get_term_link('library_cat-02','ir_library_category')) ?>" class="library_meeting_btn_item"
               >決算説明資料</a
             >
-            <a href="../disclosure/index.html" class="library_meeting_btn_item"
+            <a href="<?php echo esc_url(get_term_link('library_cat-03','ir_library_category')) ?>" class="library_meeting_btn_item"
               >適時開示資料</a
             >
-            <a href="../securities/" class="library_meeting_btn_item"
+            <a href="<?php echo esc_url(get_term_link('library_cat-04','ir_library_category')) ?>" class="library_meeting_btn_item"
               >有価証券報告書等法定開示資料</a
             >
-            <a href="../others/index.html" class="library_meeting_btn_item"
+            <a href="<?php echo esc_url(get_term_link('library_cat-05','ir_library_category')) ?>" class="library_meeting_btn_item"
               >IR資料</a
             >
-            <a href="../meeting/index.html" class="library_meeting_btn_item"
+            <a href="<?php echo esc_url(get_term_link('library_cat-06','ir_library_category')) ?>" class="library_meeting_btn_item"
               >株主総会関連資料</a
             >
           </div>

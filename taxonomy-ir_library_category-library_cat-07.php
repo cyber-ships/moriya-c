@@ -52,13 +52,32 @@
 
           <h2 class="ttl_s"><span>■</span>コーポレート・ガバナンス報告書</h2>
           <div>
+          <?php
+                  $term_object = get_queried_object();
+                  $term_slug = $term_object->slug;
+                  $args = array(
+                    'post_type' => 'ir_library',
+                    'posts_per_page' => 1,
+                    'taxonomy' => 'ir_library_category',
+                    'term' => $term_slug
+                  );
+                  $the_query = new WP_Query($args);
+                ?>
+                <?php if($the_query->have_posts()): ?>
+                  <?php while($the_query->have_posts()): $the_query->the_post(); ?>
+
             <p class="library_governance_copy">
               当社は東京証券取引所に「コーポレート・ガバナンスに関する報告書
               」を提出しております。
             </p>
-            <a href="https://contents.xj-storage.jp/xcontents/AS08769/3b99aec3/5a98/492d/8974/d4a3c6eeea3a/140120230629514455.pdf" target="_blank" class="library_governance_pdf"
-              >コーポレート・ガバナンスに関する報告書 2023/06/29</a
+            
+
+            <a href="<?php echo get_field('library_pdf'); ?>" target="_blank" class="library_governance_pdf"
+              ><?php the_title(); ?></a
             >
+            <?php endwhile; ?>
+              <?php endif; ?>
+              <?php wp_reset_postdata(); ?>
           </div>
 
           <div class="library_governance_adobe">

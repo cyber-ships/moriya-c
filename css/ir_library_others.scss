@@ -453,9 +453,8 @@ $breakpoints: (
   }
   ul {
     li {
-      margin: 20px 0 50px;
+      margin: 20px 0 0;
       padding-bottom: 20px;
-      border-bottom: 2px solid $fontColor;
       @include mq() {
         margin-top: vw(20);
       }
@@ -822,6 +821,47 @@ $breakpoints: (
           }
         }
       }
+    }
+  }
+  .wp-pagenavi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a,
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      font-weight: bold;
+      border: unset;
+      @include mq() {
+        width: vw(58);
+        height: vw(58);
+        font-size: vw(24);
+      }
+    }
+    a.page,
+    a.nextpostslink,
+    a.previouspostslink {
+      background-color: #f1f8fe;
+    }
+    a.previouspostslink {
+      margin-right: 25px;
+      @include mq() {
+        margin-right: vw(37);
+      }
+    }
+    a.nextpostslink {
+      margin-left: 25px;
+      @include mq() {
+        margin-left: vw(37);
+      }
+    }
+    span.current {
+      color: #fff;
+      background-color: #003798;
     }
   }
 }

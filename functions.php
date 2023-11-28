@@ -83,7 +83,7 @@ function add_files() {
   wp_enqueue_style('ir_library_results-style', get_template_directory_uri() . '/css/ir_library_results.css');
 
   // ir Styles/library Styles/presentations Styles
-  wp_enqueue_style('ir_library_presentations-style', get_template_directory_uri() . '/css/ir_library_presentations.css');
+  wp_enqueue_style('ir_library_presentations-style', get_template_directory_uri() . '/css/ir_library_presentation.css');
 
   // ir Styles/library Styles/securities Styles
   wp_enqueue_style('ir_library_securities-style', get_template_directory_uri() . '/css/ir_library_securities.css');
