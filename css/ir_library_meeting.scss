@@ -451,7 +451,6 @@ $breakpoints: (
   }
   ul {
     li {
-      border-bottom: solid 1px #999999;
       margin-top: 20px;
       @include mq() {
         margin-top: vw(20);

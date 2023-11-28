@@ -451,7 +451,6 @@ $breakpoints: (
   }
   ul {
     li {
-      border-bottom: solid 1px #999999;
       margin-top: 20px;
       @include mq() {
         margin-top: vw(20);
@@ -795,134 +794,175 @@ $breakpoints: (
       }
     }
   }
-}
 
-.head_year {
-  width: 158px;
-  position: relative;
-  margin-left: auto;
-  margin-bottom: 20px;
-  z-index: 9999;
-  @include mq() {
-    width: 100%;
-    margin-top: vw(22);
-  }
-  .title {
-    font-size: 20px;
-    font-weight: bold;
-    @include mq() {
-      font-size: vw(30);
-    }
-  }
-  .head_year_btn {
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 16px;
+  .head_year {
+    width: 158px;
     position: relative;
+    margin-left: auto;
+    margin-bottom: 20px;
+    z-index: 9999;
     @include mq() {
-      font-size: vw(26);
-      margin-top: vw(14);
+      width: 100%;
+      margin-top: vw(22);
     }
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: 16px;
-      transform: translateY(-50%);
-      width: 14px;
-      height: 8px;
-      background-image: url(../img/works/arrow02.png);
-      background-repeat: no-repeat;
-      background-size: contain;
+    .title {
+      font-size: 20px;
+      font-weight: bold;
       @include mq() {
-        right: vw(20);
-        width: vw(14);
-        height: vw(8);
+        font-size: vw(30);
       }
     }
-  }
-  .head_year_list {
-    margin-top: 10px;
-    display: none;
-    width: 100%;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    @include mq() {
-      margin-top: vw(10);
-      top: vw(100);
-    }
-    li {
-      &.current {
-        a {
-          color: #003798;
-        }
+    .head_year_btn {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 16px;
+      position: relative;
+      @include mq() {
+        font-size: vw(26);
+        margin-top: vw(14);
       }
-      a {
-        display: block;
-        font-size: 16px;
-        font-weight: bold;
-        padding: 12px 20px;
-        background-color: #f1f8fe;
-      }
-    }
-  }
-}
-
-.pager {
-  margin-top: 80px;
-  @include mq() {
-    margin-top: vw(60);
-  }
-  &_inner {
-    ul {
-      display: flex;
-      justify-content: center;
-      li {
-        border: none;
-        margin-right: 4px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 8px;
+        background-image: url(../img/works/arrow02.png);
+        background-repeat: no-repeat;
+        background-size: contain;
         @include mq() {
-          margin-right: vw(7);
+          right: vw(20);
+          width: vw(14);
+          height: vw(8);
         }
-        &:first-child {
-          margin-left: 4px;
-          @include mq() {
-            margin-left: vw(7);
-          }
-        }
-        &.next {
-          margin-left: 25px;
-          @include mq() {
-            margin-left: vw(37);
-          }
-        }
-        &.prev {
-          margin-right: 25px;
-          @include mq() {
-            margin-right: vw(37);
-          }
-        }
+      }
+    }
+    .head_year_list {
+      margin-top: 10px;
+      display: none;
+      width: 100%;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      @include mq() {
+        margin-top: vw(10);
+        top: vw(100);
+      }
+      li {
         &.current {
           a {
-            color: #fff;
-            background-color: #003798;
+            color: #003798;
           }
         }
         a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 40px;
-          height: 40px;
+          display: block;
+          font-size: 16px;
           font-weight: bold;
+          padding: 12px 20px;
           background-color: #f1f8fe;
+        }
+      }
+    }
+  }
+
+  .pager {
+    margin-top: 80px;
+    @include mq() {
+      margin-top: vw(60);
+    }
+    &_inner {
+      ul {
+        display: flex;
+        justify-content: center;
+        li {
+          border: none;
+          margin-right: 4px;
           @include mq() {
-            width: vw(58);
-            height: vw(58);
-            font-size: vw(24);
+            margin-right: vw(7);
+          }
+          &:first-child {
+            margin-left: 4px;
+            @include mq() {
+              margin-left: vw(7);
+            }
+          }
+          &.next {
+            margin-left: 25px;
+            @include mq() {
+              margin-left: vw(37);
+            }
+          }
+          &.prev {
+            margin-right: 25px;
+            @include mq() {
+              margin-right: vw(37);
+            }
+          }
+          &.current {
+            a {
+              color: #fff;
+              background-color: #003798;
+            }
+          }
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            font-weight: bold;
+            background-color: #f1f8fe;
+            @include mq() {
+              width: vw(58);
+              height: vw(58);
+              font-size: vw(24);
+            }
           }
         }
       }
+    }
+  }
+  .wp-pagenavi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a,
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      font-weight: bold;
+      border: unset;
+      @include mq() {
+        width: vw(58);
+        height: vw(58);
+        font-size: vw(24);
+      }
+    }
+    a.page,
+    a.nextpostslink,
+    a.previouspostslink {
+      background-color: #f1f8fe;
+    }
+    a.previouspostslink {
+      margin-right: 25px;
+      @include mq() {
+        margin-right: vw(37);
+      }
+    }
+    a.nextpostslink {
+      margin-left: 25px;
+      @include mq() {
+        margin-left: vw(37);
+      }
+    }
+    span.current {
+      color: #fff;
+      background-color: #003798;
     }
   }
 }

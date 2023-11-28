@@ -37,35 +37,9 @@
 
             <div class="pager">
               <div class="pager_inner">
-                <ul>
-                  <li>
-                    <a href="#">≪</a>
-                  </li>
-                  <li class="prev">
-                    <a href="#">＜</a>
-                  </li>
-                  <li class="current">
-                    <a href="#">1</a>
-                  </li>
-                  <li>
-                    <a href="#">2</a>
-                  </li>
-                  <li>
-                    <a href="#">3</a>
-                  </li>
-                  <li>
-                    <a href="#">4</a>
-                  </li>
-                  <li>
-                    <a href="#">5</a>
-                  </li>
-                  <li class="next">
-                    <a href="#">＞</a>
-                  </li>
-                  <li>
-                    <a href="#">≫</a>
-                  </li>
-                </ul>
+              <?php if (function_exists('wp_pagenavi')) {
+                    wp_pagenavi();
+                  } ?>
               </div>
             </div>
 
@@ -82,22 +56,22 @@
           </div>
 
           <div class="library_others_btn">
-            <a href="../results/index.html" class="library_others_btn_item"
+            <a href="<?php echo esc_url(get_term_link('library_cat-01','ir_library_category')) ?>" class="library_others_btn_item"
               >決算短信</a
             >
-            <a href="../presentation/index.html" class="library_others_btn_item"
+            <a href="<?php echo esc_url(get_term_link('library_cat-02','ir_library_category')) ?>" class="library_others_btn_item"
               >決算説明資料</a
             >
-            <a href="../disclosure/index.html" class="library_others_btn_item"
+            <a href="<?php echo esc_url(get_term_link('library_cat-03','ir_library_category')) ?>" class="library_others_btn_item"
               >適時開示資料</a
             >
-            <a href="../securities/" class="library_others_btn_item"
+            <a href="<?php echo esc_url(get_term_link('library_cat-04','ir_library_category')) ?>" class="library_others_btn_item"
               >有価証券報告書等法定開示資料</a
             >
-            <a href="../others/index.html" class="library_others_btn_item"
+            <a href="<?php echo esc_url(get_term_link('library_cat-05','ir_library_category')) ?>" class="library_others_btn_item"
               >IR資料</a
             >
-            <a href="../meeting/index.html" class="library_others_btn_item"
+            <a href="<?php echo esc_url(get_term_link('library_cat-06','ir_library_category')) ?>" class="library_others_btn_item"
               >株主総会関連資料</a
             >
           </div>
