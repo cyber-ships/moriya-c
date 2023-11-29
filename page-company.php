@@ -16,7 +16,7 @@
 
       <!-- breadcrumbs -->
       <ul class="breadcrumbs">
-        <li><a href="../index.html">トップページ</a></li>
+        <li><a href="/">トップページ</a></li>
         <li>企業情報</li>
       </ul>
       <!-- /breadcrumbs -->
@@ -26,27 +26,27 @@
         <div class="inner">
           <div class="sub-page_list">
             <div class="block profile">
-              <a href="./profile/index.html">
+              <a href="/company_profile/">
                 <div class="ttl">会社概要<small>Company Profile</small></div>
               </a>
             </div>
             <div class="block message">
-              <a href="./message/index.html">
+              <a href="/company_message/">
                 <div class="ttl">代表メッセージ<small>Message</small></div>
               </a>
             </div>
             <div class="block history">
-              <a href="./history/index.html">
+              <a href="/company_history/">
                 <div class="ttl">沿革<small>History</small></div>
               </a>
             </div>
             <div class="block office">
-              <a href="./office/index.html">
+              <a href="/company_office/">
                 <div class="ttl">事業所一覧<small>Office</small></div>
               </a>
             </div>
             <div class="block client">
-              <a href="./client/index.html">
+              <a href="/company_client/">
                 <div class="ttl">主な取引先<small>Client</small></div>
               </a>
             </div>
@@ -60,7 +60,7 @@
             <img src="<?php echo esc_url(get_theme_file_uri('/img/contact_ttl.svg')); ?>" alt="CONTACT" />
           </div>
           <div class="btn_wrap01">
-            <a class="btn type-02" href="../inquiry/index.html"
+            <a class="btn type-02" href="/contact/"
               ><span>お問合わせはこちら</span></a
             >
           </div>
