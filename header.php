@@ -39,27 +39,27 @@
                   <div class="nav-item_sub_list">
                     <div class="list">
                       <div class="heading">
-                        <a href="/company/profile/"><span>会社概要</span></a>
+                        <a href="/company_profile/"><span>会社概要</span></a>
                       </div>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/company/message/"><span>代表メッセージ</span></a>
+                        <a href="/company_message/"><span>代表メッセージ</span></a>
                       </div>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/company/history/"><span>沿革</span></a>
+                        <a href="/company_history/"><span>沿革</span></a>
                       </div>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/company/office/"><span>事業所一覧 </span></a>
+                        <a href="/company_office/"><span>事業所一覧 </span></a>
                       </div>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/company/client/"><span>主な取引先</span></a>
+                        <a href="/company_client/"><span>主な取引先</span></a>
                       </div>
                     </div>
                   </div>
@@ -79,43 +79,43 @@
                   <div class="nav-item_sub_list">
                     <div class="list">
                       <div class="heading">
-                        <a href="/ir/news/"><span>ニュース</span></a>
+                        <a href="/ir_news/"><span>ニュース</span></a>
                       </div>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/ir/finance_info/"><span>業績・財務情報</span></a>
+                        <a href="/ir_finance_info/"><span>業績・財務情報</span></a>
                       </div>
                       <ul>
                         <li>
-                          <a href="/ir/finance_info/performance/"><span>業績推移</span></a>
+                          <a href="/ir_finance_info_performance/"><span>業績推移</span></a>
                         </li>
                         <li>
-                          <a href="/ir/finance_info/finance/"><span>財務状況</span></a>
+                          <a href="/ir_finance_info_finance/"><span>財務状況</span></a>
                         </li>
                         <li>
-                          <a href="/ir/finance_info/cashflow/"><span>キャッシュフロー</span></a>
+                          <a href="/ir_finance_info_cashflow/"><span>キャッシュフロー</span></a>
                         </li>
                       </ul>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/ir/library/"><span>IRライブラリ</span></a>
+                        <a href="/ir_library/"><span>IRライブラリ</span></a>
                       </div>
                       <ul>
                         <li>
-                          <a href="/ir/library/results/"><span>決算短信</span></a>
+                          <a href="<?php echo esc_url(get_term_link('library_cat-01','ir_library_category')) ?>"><span>決算短信</span></a>
                         </li>
                         <li>
-                          <a href="/ir/library/presentation/"><span>決算説明資料</span></a>
+                          <a href="<?php echo esc_url(get_term_link('library_cat-02','ir_library_category')) ?>"><span>決算説明資料</span></a>
                         </li>
                         <li>
-                          <a href="/ir/library/disclosure/">
+                          <a href="<?php echo esc_url(get_term_link('library_cat-03','ir_library_category')) ?>">
                             <span>適時開示情報</span>
                           </a>
                         </li>
                         <li>
-                          <a href="/ir/library/securities/"
+                          <a href="<?php echo esc_url(get_term_link('library_cat-04','ir_library_category')) ?>/"
                             ><span
                               >有価証券報告書等<br
                                 class="pc"
@@ -125,50 +125,50 @@
                       </ul>
                       <ul>
                         <li>
-                          <a href="/ir/library/others/"><span>IR資料</span></a>
+                          <a href="<?php echo esc_url(get_term_link('library_cat-05','ir_library_category')) ?>"><span>IR資料</span></a>
                         </li>
                         <li>
-                          <a href="/ir/library/meeting/">
+                          <a href="<?php echo esc_url(get_term_link('library_cat-06','ir_library_category')) ?>">
                             <span>株主総会関連資料</span>
                           </a>
                         </li>
                         <li>
-                          <a href="/ir/library/governance/"><span>コーポレート・ガバナンス</span></a>
+                          <a href="<?php echo esc_url(get_term_link('library_cat-07','ir_library_category')) ?>"><span>コーポレート・ガバナンス</span></a>
                         </li>
                       </ul>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/ir/stock_info/"><span>株式情報</span></a>
+                        <a href="/ir_stock_info/"><span>株式情報</span></a>
                       </div>
                       <ul>
                         <li>
-                          <a href="/ir/stock_info/stock/"><span>株式基本情報</span></a>
+                          <a href="/ir_stock_info_stock/"><span>株式基本情報</span></a>
                         </li>
                         <li>
-                          <a href="/ir/stock_info/quote/"><span>株価情報</span></a>
+                          <a href="/ir_stock_info_quote/"><span>株価情報</span></a>
                         </li>
                       </ul>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/ir/others/"><span>その他情報</span></a>
+                        <a href="/ir_others/"><span>その他情報</span></a>
                       </div>
                       <ul>
                         <li>
-                          <a href="/ir/others/calender/"><span>IRカレンダー</span></a>
+                          <a href="/ir_others_calender/"><span>IRカレンダー</span></a>
                         </li>
                         <li>
-                          <a href="/ir/others/policy/"><span>ディスクロージャーポリシー</span></a>
+                          <a href="/ir_others_policy/"><span>ディスクロージャーポリシー</span></a>
                         </li>
                         <li>
-                          <a href="/ir/others/disclimer/"><span>免責事項</span></a>
+                          <a href="/ir_others_disclaimer/"><span>免責事項</span></a>
                         </li>
                       </ul>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/ir/notice/"><span>電子広告</span></a>
+                        <a href="/ir_notice/"><span>電子広告</span></a>
                       </div>
                     </div>
                   </div>
@@ -188,22 +188,22 @@
                   <div class="nav-item_sub_list">
                     <div class="list">
                       <div class="heading">
-                        <a href="/products/freightelevator/"><span>荷物用エレベーター</span></a>
+                        <a href="/products_freightelevator/"><span>荷物用エレベーター</span></a>
                       </div>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/products/shipelevator/"><span>船舶用エレベーター</span></a>
+                        <a href="/products_shipelevator/"><span>船舶用エレベーター</span></a>
                       </div>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/products/macklifter/"><span>マックリフター </span></a>
+                        <a href="/products_macklifter/"><span>マックリフター </span></a>
                       </div>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/products/renewal/">
+                        <a href="/products_renewal/">
                           <span>リニューアル（入替）</span>
                         </a>
                       </div>
@@ -225,40 +225,40 @@
                   <div class="nav-item_sub_list">
                     <div class="list">
                       <div class="heading">
-                        <a href="/maintenance/ss/"><span>メンテナンスについて</span></a>
+                        <a href="/maintenance_ss/"><span>メンテナンスについて</span></a>
                       </div>
                       <ul>
                         <li>
-                          <a href="/maintenance/ss/maintenance-agreement/">
+                          <a href="/maintenance_maintenance-agreement/">
                             <span>メンテナンス契約</span>
                           </a>
                         </li>
                         <li>
-                          <a href="/maintenance/ss/base/"><span>サービス拠点</span></a>
+                          <a href="/maintenance_base/"><span>サービス拠点</span></a>
                         </li>
                         <li>
-                          <a href="/maintenance/partial/"><span>リニューアル（部分入替）</span></a>
+                          <a href="/maintenance_partial"><span>リニューアル（部分入替）</span></a>
                         </li>
                       </ul>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/maintenance/conservative-info/"><span>メンナンス契約</span></a>
+                        <a href="/maintenance_conservative-info/"><span>メンナンス契約</span></a>
                       </div>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/maintenance/conservative-info/technicalinformation/"><span>プランジャー測定対象エレベーターの技術情報</span></a>
+                        <a href="/maintenance_technicalinformation/"><span>プランジャー測定対象エレベーターの技術情報</span></a>
                       </div>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/maintenance/conservative-info/periodicinspection/"><span>定期検査情報</span></a>
+                        <a href="/maintenance_periodicinspection/"><span>定期検査情報</span></a>
                       </div>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/maintenance/ss/base/"><span>サービス拠点</span></a>
+                        <a href="/maintenance_base/"><span>サービス拠点</span></a>
                       </div>
                     </div>
                   </div>
@@ -282,45 +282,45 @@
                   <div class="nav-item_sub_list">
                     <div class="list">
                       <div class="heading">
-                        <a href="/recruit/youkou/"><span>【中途採用】募集要項 </span></a>
+                        <a href="/recruit_youkou/"><span>【中途採用】募集要項 </span></a>
                       </div>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/recruit/youkou_2/"><span>【新卒採用】募集要項 </span></a>
+                        <a href="/recruit_youkou2/"><span>【新卒採用】募集要項 </span></a>
                       </div>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/recruit/message/">
+                        <a href="/recruit_message/">
                           <span>応募者へのメッセージ</span>
                         </a>
                       </div>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/recruit/joblist/">
+                        <a href="/recruit_joblist/">
                           <span>職種紹介</span>
                         </a>
                       </div>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/recruit/work/">
+                        <a href="/recruit_work/">
                           <span>社員紹介</span>
                         </a>
                       </div>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/recruit/number/">
+                        <a href="/recruit_number/">
                           <span>数字で見る守谷エレベーター</span>
                         </a>
                       </div>
                     </div>
                     <div class="list">
                       <div class="heading">
-                        <a href="/recruit/faq/">
+                        <a href="/recruit_faq/">
                           <span>FAQ</span>
                         </a>
                       </div>
@@ -335,7 +335,7 @@
           </ul>
         </nav>
         <div class="contact">
-          <a href="/inquiry/"><span>お問合わせ</span></a>
+          <a href="/contact/"><span>お問合わせ</span></a>
         </div>
       </div>
     </header>

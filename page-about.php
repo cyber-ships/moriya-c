@@ -15,7 +15,7 @@
       <!-- company_page_heading -->
 
       <ul class="breadcrumbs">
-        <li><a href="#">トップページ</a></li>
+        <li><a href="/">トップページ</a></li>
         <li>私たちについて</li>
       </ul>
 

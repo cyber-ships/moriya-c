@@ -16,8 +16,8 @@
 
       <!-- breadcrumbs -->
       <ul class="breadcrumbs">
-        <li><a href="../../index.html">トップページ</a></li>
-        <li><a href="../../company/index.html">企業情報</a></li>
+        <li><a href="/">トップページ</a></li>
+        <li><a href="/company/">企業情報</a></li>
         <li>会社概要</li>
       </ul>
       <!-- /breadcrumbs -->

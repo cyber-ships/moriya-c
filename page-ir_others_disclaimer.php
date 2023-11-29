@@ -8,7 +8,7 @@
             <span class="text"><small>Disclaimer</small>免責事項</span>
             <picture>
               <img
-                src="<?php echo esc_url(get_theme_file_uri('img/ir/stock_info/heading_img.jpg')); ?>/"
+                src="<?php echo esc_url(get_theme_file_uri('img/ir/stock_info/heading_img.jpg')); ?>"
                 alt="IR 情報"
               />
             </picture>
