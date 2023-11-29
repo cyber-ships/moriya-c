@@ -31,7 +31,7 @@
 
       <!-- breadcrumbs -->
       <ul class="breadcrumbs">
-        <li><a href="../index.html">トップページ</a></li>
+        <li><a href="/">トップページ</a></li>
         <li>採用情報</li>
       </ul>
       <!-- /breadcrumbs -->
@@ -62,7 +62,7 @@
                   <p>新たなステージで「自らの成長」と<br>
                     「会社の成長」をともに創ってゆきましょう。</p>
                   <div class="btn_wrap01">
-                    <a class="btn type-01" href="../recruit/message/index.html"
+                    <a class="btn type-01" href="/recruit_message/"
                       ><span>詳しく見る</span></a
                     >
                   </div>
@@ -84,7 +84,7 @@
                   <p>荷物用エレベーターをトータルサポート、<br>
                     守谷輸送機工業の職種をご紹介します。</p>
                   <div class="btn_wrap01">
-                    <a class="btn type-01" href="../recruit/joblist/index.html"
+                    <a class="btn type-01" href="/recruit_joblist/"
                       ><span>詳しく見る</span></a
                     >
                   </div>
@@ -109,7 +109,7 @@
                     様々な情報を数字でまとめました。
                   </p>
                   <div class="btn_wrap01">
-                    <a class="btn type-01" href="../recruit/number/index.html"
+                    <a class="btn type-01" href="/recruit_number/"
                       ><span>詳しく見る</span></a
                     >
                   </div>
@@ -130,7 +130,7 @@
                   </h2>
                   <p>先輩社員にお仕事内容や<br class="pc">職場雰囲気等をとことんインタビュー</p>
                   <div class="btn_wrap01">
-                    <a class="btn type-01" href="../recruit/work/index.html"
+                    <a class="btn type-01" href="/recruit_work/"
                       ><span>詳しく見る</span></a
                     >
                   </div>
@@ -151,10 +151,10 @@
                   <div class="btn_wrap01">
                     <a
                       class="btn type-01 btn_mb"
-                      href="../recruit/youkou_2/index.html"
+                      href="/recruit_youkou2/"
                       ><span>新卒採用</span></a
                     >
-                    <a class="btn type-01" href="../recruit/youkou/index.html"
+                    <a class="btn type-01" href="/recruit_youkou/"
                       ><span>中途採用</span></a
                     >
                   </div>
@@ -173,7 +173,7 @@
                   </h2>
                   <p>採用以外にも入社後の内容もご覧いただけます。</p>
                   <div class="btn_wrap01">
-                    <a class="btn type-01" href="../recruit/faq/index.html"
+                    <a class="btn type-01" href="/recruit_recruit_faq/"
                       ><span>詳しく見る</span></a
                     >
                   </div>
@@ -195,7 +195,7 @@
             />お問合わせフォームよりお問合わせください。
           </p>
           <div class="btn_wrap01">
-            <a class="btn type-02" href="../inquiry/index.html"
+            <a class="btn type-02" href="/contact/"
               ><span>お問合わせはこちら</span></a
             >
           </div>

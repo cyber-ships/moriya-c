@@ -18,9 +18,9 @@
       </section>
 
       <ul class="breadcrumbs">
-        <li><a href="../../index.html">トップページ</a></li>
+        <li><a href="/">トップページ</a></li>
         <li>
-          <a href="../../recruit/index.html">採用情報</a>
+          <a href="/recruit/">採用情報</a>
         </li>
         <li>職種紹介</li>
       </ul>
@@ -49,7 +49,7 @@
               <div class="block-cnt">
                 <p>従来よりお取引のあるお客様への営業が基本となります。お客様からのご要望に合わせた、オーダーメイドエレベーターの営業を行っています。<br>
                   荷物用エレベーター、船舶用エレベーターの営業、メンテナンスや改修・入替等のご提案が主な仕事で、営業部門はそれぞれ分かれています。お客様は大手企業が中心で、荷物用エレベーターは物流センターや倉庫、工場、研究施設など、船舶用エレベーターはコンテナ船等の大型船から観光船など様々な船種で使われます。</p>
-                <div><a class="btn type-01" style="margin-top: 20px;" href="https://cyberships.xyz/moriya-c/company/client/" target="_blank"><span>主な取引先はこちら</span></a></div>
+                <div><a class="btn type-01" style="margin-top: 20px;" href="/company_client/" target="_blank"><span>主な取引先はこちら</span></a></div>
               </div>
             </div>
           </div>
@@ -159,7 +159,7 @@
             />お問合わせフォームよりお問合わせください。
           </p>
           <div class="btn_wrap01">
-            <a class="btn type-02" href="../../inquiry/index.html"
+            <a class="btn type-02" href="/contact/"
               ><span>お問合わせはこちら</span></a
             >
           </div>

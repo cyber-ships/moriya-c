@@ -17,9 +17,9 @@
       <!-- ir_news_message -->
       <div class="news_message_bgc">
         <ul class="news_breadcrumbs">
-          <li><a href="../../../index.html">トップページ</a></li>
-          <li><a href="../../../ir/index.html">IR情報</a></li>
-          <li><a href="../../../ir/news/index.html">IRニュース</a></li>
+          <li><a href="/">トップページ</a></li>
+          <li><a href="/ir/">IR情報</a></li>
+          <li><a href="/ir_news/">IRニュース</a></li>
           <li><?php the_title(); ?></li>
         </ul>
         <section class="ir_news_message">
@@ -47,7 +47,7 @@
       <section>
         <div class="inner">
           <div class="btn_wrap01">
-            <a class="btn type-01 back" href="../../../ir/news/index.html"
+            <a class="btn type-01 back" href="/ir_news/"
               ><span>IR ニュース一覧に戻る </span></a
             >
           </div>

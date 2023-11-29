@@ -23,8 +23,8 @@
       <!-- company_page_heading -->
 
       <ul class="breadcrumbs">
-        <li><a href="../../index.html">トップページ</a></li>
-        <li><a href="../../recruit/index.html">採用情報</a></li>
+        <li><a href="/">トップページ</a></li>
+        <li><a href="/recruit/">採用情報</a></li>
         <li>数字で見る守谷エレベーター</li>
       </ul>
 
@@ -119,7 +119,7 @@
 
       <section class="bg">
         <div class="btn_wrap01">
-          <a class="btn type-01" href="../../works/index.html"
+          <a class="btn type-01" href="/recruit_works/"
             ><span>施工・納入実績を見る</span></a
           >
         </div>
@@ -136,7 +136,7 @@
             />お問合わせフォームよりお問合わせください。
           </p>
           <div class="btn_wrap01">
-            <a class="btn type-02" href="../../inquiry/index.html"
+            <a class="btn type-02" href="/contact/"
               ><span>お問合わせはこちら</span></a
             >
           </div>

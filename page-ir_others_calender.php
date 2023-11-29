@@ -18,9 +18,9 @@
       <!-- _page_heading -->
 
       <ul class="breadcrumbs">
-        <li><a href="#">トップページ</a></li>
-        <li><a href="../../../ir/index.html">IR情報</a></li>
-        <li><a href="../../../ir/others/index.html">その他情報</a></li>
+        <li><a href="/">トップページ</a></li>
+        <li><a href="/ir/">IR情報</a></li>
+        <li><a href="/ir_others/">その他情報</a></li>
         <li>IR カレンダー</li>
       </ul>
 

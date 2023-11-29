@@ -15,9 +15,9 @@
       <!-- company_page_heading -->
 
       <ul class="breadcrumbs">
-        <li><a href="#">トップページ</a></li>
-        <li><a href="../../../ir/index.html">IR情報</a></li>
-        <li><a href="../../../ir/library/index.html">IRライブラリ</a></li>
+        <li><a href="/">トップページ</a></li>
+        <li><a href="/ir/">IR情報</a></li>
+        <li><a href="/ir_library/">IRライブラリ</a></li>
         <li>決算短信</li>
       </ul>
 

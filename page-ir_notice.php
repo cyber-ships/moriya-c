@@ -18,8 +18,8 @@
       <!-- _page_heading -->
 
       <ul class="breadcrumbs">
-        <li><a href="../../index.html">トップページ</a></li>
-        <li><a href="../../ir/index.html">IR情報</a></li>
+        <li><a href="/">トップページ</a></li>
+        <li><a href="/ir/">IR情報</a></li>
         <li>電子公告</li>
       </ul>
 
@@ -48,19 +48,19 @@
           </div>
 
           <div class="btn_wrap05">
-            <a class="btn type-05" href="../../ir/index.html"
+            <a class="btn type-05" href="/ir/"
               ><span>IR情報</span></a
             >
-            <a class="btn type-05" href="../../ir/finance_info/"
+            <a class="btn type-05" href="/ir_finance_info/"
               ><span>業績・財務情報</span></a
             >
-            <a class="btn type-05" href="../../ir/library/index.html"
+            <a class="btn type-05" href="/ir_library/"
               ><span>IRライブラリ</span></a
             >
-            <a class="btn type-05" href="../../ir/stock_info/index.html"
+            <a class="btn type-05" href="/ir_stock_info/"
               ><span>株式情報</span></a
             >
-            <a class="btn type-05" href="../../ir/others/index.html"
+            <a class="btn type-05" href="/ir_others/"
               ><span>その他情報</span></a
             >
           </div>

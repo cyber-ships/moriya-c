@@ -16,7 +16,7 @@
 
       <!-- breadcrumbs -->
       <ul class="breadcrumbs">
-        <li><a href="../index.html">トップページ</a></li>
+        <li><a href="/">トップページ</a></li>
         <li>IR情報</li>
       </ul>
       <!-- /breadcrumbs -->
@@ -67,13 +67,13 @@
               </li>
             </ul>
             <div class="txt_lnk">
-              <a href="../ir/news/index.html">IR NEWS一覧はこちら</a>
+              <a href="/ir_news/">IR NEWS一覧はこちら</a>
             </div>
           </div>
 
           <div class="ir_cat_list">
             <div class="block financial">
-              <a href="../ir/finance_info/index.html">
+              <a href="/ir_finance_info/">
                 <div class="ttl">
                   業績・財務情報<small>Financial Information</small>
                 </div>
@@ -81,15 +81,15 @@
               <div class="list">
                 <ul>
                   <li>
-                    <a href="../ir/finance_info/performance/index.html"
+                    <a href="/ir_finance_info_performance/"
                       >経営成績</a
                     >
                   </li>
                   <li>
-                    <a href="../ir/finance_info/finance/index.html">財政情報</a>
+                    <a href="/ir_finance_info_finance/">財政情報</a>
                   </li>
                   <li>
-                    <a href="../ir/finance_info/cashflow/index.html"
+                    <a href="/ir_finance_info_cashflow/"
                       >キャッシュフロー</a
                     >
                   </li>
@@ -100,39 +100,39 @@
 
           <div class="ir_cat_list">
             <div class="block financial">
-              <a href="../ir/library/index.html">
+              <a href="/ir_library/">
                 <div class="ttl">IRライブラリ<small>IR Library</small></div>
               </a>
               <div class="list">
                 <ul>
                   <li>
-                    <a href="../ir/library/results/index.html">決算短信</a>
+                    <a href="<?php echo esc_url(get_term_link('library_cat-01','ir_library_category')) ?>">決算短信</a>
                   </li>
                   <li>
-                    <a href="../ir/library/presentation/index.html"
+                    <a href="<?php echo esc_url(get_term_link('library_cat-02','ir_library_category')) ?>"
                       >決算説明資料</a
                     >
                   </li>
                   <li>
-                    <a href="../ir/library/securities/index.html"
+                    <a href="<?php echo esc_url(get_term_link('library_cat-04','ir_library_category')) ?>"
                       >有価証券報告書等法定開示資料</a
                     >
                   </li>
                   <li>
-                    <a href="../ir/library/meeting/index.html"
+                    <a href="<?php echo esc_url(get_term_link('library_cat-06','ir_library_category')) ?>"
                       >株主総会関連資料</a
                     >
                   </li>
                   <li>
-                    <a href="../ir/library/others/index.html">その他IR資料</a>
+                    <a href="<?php echo esc_url(get_term_link('library_cat-05','ir_library_category')) ?>">その他IR資料</a>
                   </li>
                   <li>
-                    <a href="../ir/library/disclosure/index.html"
+                    <a href="<?php echo esc_url(get_term_link('library_cat-03','ir_library_category')) ?>"
                       >適時開示資料</a
                     >
                   </li>
                   <li>
-                    <a href="../ir/library/governance/index.html"
+                    <a href="<?php echo esc_url(get_term_link('library_cat-07','ir_library_category')) ?>"
                       >コーポレート・ガバナンス</a
                     >
                   </li>
@@ -143,16 +143,16 @@
 
           <div class="ir_cat_list">
             <div class="block financial">
-              <a href="../ir/stock_info/index.html">
+              <a href="/ir_stock_info/">
                 <div class="ttl">株式情報<small>Stock Information</small></div>
               </a>
               <div class="list">
                 <ul>
                   <li>
-                    <a href="../ir/stock_info/stock/index.html">株式基本情報</a>
+                    <a href="/ir_stock_info_stock/">株式基本情報</a>
                   </li>
                   <li>
-                    <a href="../ir/stock_info/quote/index.html">株価情報</a>
+                    <a href="/ir_stock_info_quote/">株価情報</a>
                   </li>
                 </ul>
               </div>
@@ -161,28 +161,28 @@
 
           <div class="ir_cat_list">
             <div class="block financial">
-              <a href="../ir/others/index.html">
+              <a href="/ir_others/">
                 <div class="ttl">
                   その他IR情報<small>Other IR Information</small>
                 </div>
               </a>
               <div class="list">
                 <ul>
-                  <li><a href="../company/profile/index.html">会社概要</a></li>
+                  <li><a href="/company_profile/">会社概要</a></li>
                   <li>
-                    <a href="../company/message/index.html">代表メッセージ</a>
+                    <a href="/company_message/">代表メッセージ</a>
                   </li>
                   <li>
-                    <a href="../ir/others/calender/index.html">IRカレンダー</a>
+                    <a href="/ir_others_calender/">IRカレンダー</a>
                   </li>
-                  <li><a href="../ir/others/faq/index.html">FAQ</a></li>
+                  <li><a href="/ir_others_faq/">FAQ</a></li>
                   <li>
-                    <a href="../ir/others/policy/index.html"
+                    <a href="/ir_others_policy/"
                       >ディスクロージャーポリシー</a
                     >
                   </li>
                   <li>
-                    <a href="../ir/others/disclimer/index.html">免責事項</a>
+                    <a href="/ir_others_disclaimer/">免責事項</a>
                   </li>
                 </ul>
               </div>
@@ -190,7 +190,7 @@
           </div>
 
           <div class="btn_wrap04">
-            <a class="btn type-01" href="../ir/notice/index.html"
+            <a class="btn type-01" href="/ir_notice/"
               ><span>電子広告</span></a
             >
           </div>

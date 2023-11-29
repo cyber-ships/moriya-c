@@ -18,8 +18,8 @@
       <!-- _page_heading -->
 
       <ul class="breadcrumbs">
-        <li><a href="../../../">トップページ</a></li>
-        <li><a href="../../../ir/">IR情報</a></li>
+        <li><a href="/">トップページ</a></li>
+        <li><a href="/ir/">IR情報</a></li>
         <li>株式情報</li>
       </ul>
 
@@ -28,33 +28,33 @@
         <div class="inner">
           <div class="stock_info_sub_page_list">
             <div class="block information">
-              <a href="../stock_info/stock/">
+              <a href="/ir_stock_info_stock/">
                 <div class="ttl">
                   株式基本情報<small>Stock Information</small>
                 </div>
               </a>
             </div>
             <div class="block quotes">
-              <a href="../stock_info/quote/index.html">
+              <a href="/ir_stock_info_quote/">
                 <div class="ttl">株価情報<small>Stock Quotes</small></div>
               </a>
             </div>
           </div>
 
           <div class="btn_wrap05">
-            <a class="btn type-05" href="../../ir/library/index.html"
+            <a class="btn type-05" href="/ir_library/"
               ><span>IRライブラリ</span></a
             >
-            <a class="btn type-05" href="../../ir/index.html"
+            <a class="btn type-05" href="/ir/"
               ><span>IR情報</span></a
             >
-            <a class="btn type-05" href="../../ir/finance_info/index.html"
+            <a class="btn type-05" href="/ir_finance_info/"
               ><span>業績・財務情報</span></a
             >
-            <a class="btn type-05" href="../../ir/others/index.html"
+            <a class="btn type-05" href="/ir_others/"
               ><span>その他情報</span></a
             >
-            <a class="btn type-05" href="../../ir/notice/index.html"
+            <a class="btn type-05" href="/ir_notice/"
               ><span>電子公告</span></a
             >
           </div>

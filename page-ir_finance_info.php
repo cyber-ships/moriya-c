@@ -18,8 +18,8 @@
 
       <!-- breadcrumbs -->
       <ul class="breadcrumbs">
-        <li><a href="../../index.html">トップページ</a></li>
-        <li><a href="../../news/index.html">IR情報</a></li>
+        <li><a href="/">トップページ</a></li>
+        <li><a href="/ir_news/">IR情報</a></li>
         <li>業績・財務情報</li>
       </ul>
       <!-- /breadcrumbs -->
@@ -29,17 +29,17 @@
         <div class="inner">
           <div class="ir_finance_info_list">
             <div class="block operating">
-              <a href="../finance_info/performance/index.html">
+              <a href="/ir_finance_info_performance/">
                 <div class="ttl">業績推移<small>Operating Results</small></div>
               </a>
             </div>
             <div class="block financial">
-              <a href="../finance_info/finance/index.html">
+              <a href="/ir_finance_info_finance/">
                 <div class="ttl">財務状況<small>Financial Information</small></div>
               </a>
             </div>
             <div class="block cash">
-              <a href="../finance_info/cashflow/index.html">
+              <a href="/ir_finance_info_cashflow/">
                 <div class="ttl">キャッシュフロー<small>Cash Flow</small></div>
               </a>
             </div>
@@ -53,7 +53,7 @@
             <img src="<?php echo esc_url(get_theme_file_uri('/img/contact_ttl.svg')); ?>" alt="CONTACT" />
           </div>
           <div class="btn_wrap01">
-            <a class="btn type-02" href="../../inquiry/index.html"
+            <a class="btn type-02" href="/contact/"
               ><span>お問合わせはこちら</span></a
             >
           </div>

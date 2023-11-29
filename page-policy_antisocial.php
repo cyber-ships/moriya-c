@@ -19,8 +19,8 @@
       <!-- company_page_heading -->
 
       <ul class="breadcrumbs">
-        <li><a href="../../index.html">トップページ</a></li>
-        <li><a href="../../policy/index.html">ポリシー</a></li>
+        <li><a href="/">トップページ</a></li>
+        <li><a href="/policy/">ポリシー</a></li>
         <li class="bread_custom">反社会勢力への対応に関する基本方針</li>
       </ul>
 

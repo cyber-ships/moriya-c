@@ -20,8 +20,8 @@
       <!-- company_page_heading -->
 
       <ul class="breadcrumbs">
-        <li><a href="../../index.html">トップページ</a></li>
-        <li><a href="../../recruit/index.html">採用情報</a></li>
+        <li><a href="/">トップページ</a></li>
+        <li><a href="/recruit/">採用情報</a></li>
         <li>応募者へのメッセージ</li>
       </ul>
 
@@ -56,7 +56,7 @@
             />お問合わせフォームよりお問合わせください。
           </p>
           <div class="btn_wrap01">
-            <a class="btn type-02" href="../../inquiry/index.html"
+            <a class="btn type-02" href="/contact/"
               ><span>お問合わせはこちら</span></a
             >
           </div>

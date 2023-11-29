@@ -18,9 +18,9 @@
       <!-- company_page_heading -->
 
       <ul class="breadcrumbs">
-        <li><a href="../../../index.html">トップページ</a></li>
-        <li><a href="../../../recruit/index.html">採用情報</a></li>
-        <li><a href="../../../recruit/work/index.html">社員紹介</a></li>
+        <li><a href="/">トップページ</a></li>
+        <li><a href="/recruit/">採用情報</a></li>
+        <li><a href="/recruit_work/">社員紹介</a></li>
         <li><?php the_title(); ?></li>
       </ul>
 
