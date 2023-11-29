@@ -15,8 +15,8 @@
       <!-- company_page_heading -->
 
       <ul class="breadcrumbs">
-        <li><a href="../../index.html">トップページ</a></li>
-        <li><a href="../../ir/index.html">IR情報</a></li>
+        <li><a href="/">トップページ</a></li>
+        <li><a href="/ir/">IR情報</a></li>
         <li>IRニュース</li>
       </ul>
 
@@ -131,7 +131,7 @@
             <img src="<?php echo esc_url(get_theme_file_uri('/img/contact_ttl.svg')); ?>" alt="CONTACT" />
           </div>
           <div class="btn_wrap01">
-            <a class="btn type-02" href="../../inquiry/index.html"
+            <a class="btn type-02" href="/contact/"
               ><span>お問合わせはこちら</span></a
             >
           </div>

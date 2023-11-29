@@ -16,7 +16,7 @@
       <!-- company_page_heading -->
       
       <ul class="breadcrumbs">
-        <li><a href="../../index.html">トップページ</a></li>
+        <li><a href="/">トップページ</a></li>
         <li class="bread_custom">ポリシー</li>
       </ul>
 
@@ -25,34 +25,34 @@
         <div class="inner">
           <div class="sub-page_list">
             <div class="block _01">
-              <a href="../policy/privacy_policy/index.html">
+              <a href="/policy_privacy/">
                 <div class="ttl">プライバシーポリシー</div>
               </a>
             </div>
             <div class="block _01">
-              <a href="../policy/antisocial_policy/index.html">
+              <a href="/policy_antisocial/">
                 <div class="ttl">
                   反社会勢力勢力への<br />対応に関する基本方針
                 </div>
               </a>
             </div>
             <div class="block _01">
-              <a href="../policy/security_policy/index.html">
+              <a href="/policy_security/">
                 <div class="ttl">情報セキュリティ方針</div>
               </a>
             </div>
             <div class="block _02">
-              <a href="../policy/gender_equality/index.html">
+              <a href="/policy_gender/">
                 <div class="ttl">男女共同参画基本法に<br />基づく開示</div>
               </a>
             </div>
             <div class="block _01">
-              <a href="../ir/others/policy/index.html">
+              <a href="/ir_others_policy/">
                 <div class="ttl">ディスクロージャーポリシー</div>
               </a>
             </div>
             <div class="block _02">
-              <a href="../policy/career/index.html">
+              <a href="/policy_career/">
                 <div class="ttl">中途採用実績データ</div>
               </a>
             </div>

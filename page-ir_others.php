@@ -21,8 +21,8 @@
       <!-- _page_heading -->
 
       <ul class="breadcrumbs">
-        <li><a href="#">トップページ</a></li>
-        <li><a href="../../ir/index.html">IR情報</a></li>
+        <li><a href="/">トップページ</a></li>
+        <li><a href="/ir/">IR情報</a></li>
         <li>その他情報</li>
       </ul>
 
@@ -31,38 +31,38 @@
         <div class="inner">
           <div class="ir_others_list">
             <div class="block calendar">
-              <a href="../../ir/others/calender/index.html">
+              <a href="/ir_others_calender/">
                 <div class="ttl">IRカレンダー<small>IR Calendar</small></div>
               </a>
             </div>
             <div class="block policy">
-              <a href="../../ir/others/policy/index.html">
+              <a href="/ir_others_policy/">
                 <div class="ttl">
                   ディスクロージャーポリシー<small>Disclosure Policy</small>
                 </div>
               </a>
             </div>
             <div class="block policy">
-              <a href="../../ir/others/disclimer/index.html">
+              <a href="/ir_others_disclaimer/">
                 <div class="ttl">免責事項<small>Disclaimer</small></div>
               </a>
             </div>
           </div>
 
           <div class="btn_wrap05">
-            <a class="btn type-05" href="../../ir/library/index.html"
+            <a class="btn type-05" href="/ir_library/"
               ><span>IRライブラリ</span></a
             >
-            <a class="btn type-05" href="../../ir/index.html"
+            <a class="btn type-05" href="/ir/"
               ><span>IR情報</span></a
             >
-            <a class="btn type-05" href="../../ir/finance_info/index.html"
+            <a class="btn type-05" href="/ir_finance_info/"
               ><span>業績・財務情報</span></a
             >
-            <a class="btn type-05" href="../../ir/stock_info/index.html"
+            <a class="btn type-05" href="/ir_stock_info/"
               ><span>株式情報</span></a
             >
-            <a class="btn type-05" href="../../ir/notice/index.html"
+            <a class="btn type-05" href="/ir_notice/"
               ><span>電子公告</span></a
             >
           </div>

@@ -8,10 +8,10 @@
     <nav>
       <ul>
         <li>
-          <a href="./policy/index.html"><span>ポリシー</span></a>
+          <a href="/policy/"><span>ポリシー</span></a>
         </li>
         <li>
-          <a href="./map/index.html"><span>サイトマップ</span></a>
+          <a href="/map/"><span>サイトマップ</span></a>
         </li>
       </ul>
     </nav>

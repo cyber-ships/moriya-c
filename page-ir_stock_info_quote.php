@@ -18,9 +18,9 @@
       <!-- _page_heading -->
 
       <ul class="breadcrumbs">
-        <li><a href="../../../">トップページ</a></li>
-        <li><a href="../../../ir/index.html">IR情報</a></li>
-        <li><a href="../../../ir/stock_info/index.html">株式情報</a></li>
+        <li><a href="/">トップページ</a></li>
+        <li><a href="/ir/">IR情報</a></li>
+        <li><a href="/ir_stock_info/">株式情報</a></li>
         <li>株価情報</li>
       </ul>
 

@@ -18,9 +18,9 @@
 
       <!-- breadcrumbs -->
       <ul class="breadcrumbs">
-        <li><a href="../../../index.html">トップページ</a></li>
-        <li><a href="../../../news/index.html">IR情報</a></li>
-        <li><a href="../../finance_info/index.html">業績・財務情報</a></li>
+        <li><a href="/">トップページ</a></li>
+        <li><a href="/ir/">IR情報</a></li>
+        <li><a href="/ir_finance_info/">業績・財務情報</a></li>
         <li>キャッシュフロー</li>
       </ul>
       <!-- /breadcrumbs -->
@@ -31,10 +31,10 @@
           <div class="btn_wrap04">
             <a
               class="btn type-01"
-              href="../../finance_info/performance/index.html"
+              href="/ir_finance_info_performance/"
               ><span>業績推移</span></a
             >
-            <a class="btn type-01" href="../../finance_info/finance/index.html"
+            <a class="btn type-01" href="/ir_finance_info_finance/"
               ><span>財務状況</span></a
             >
             <a class="not-link"><span>キャッシュフロー</span></a>
@@ -145,19 +145,19 @@
           </p>
 
           <div class="btn_wrap05">
-            <a class="btn type-05" href="../../../ir/library/index.html"
+            <a class="btn type-05" href="/ir_library/"
               ><span>IRライブラリ</span></a
             >
-            <a class="btn type-05" href="../../../ir/index.html"
+            <a class="btn type-05" href="/ir/"
               ><span>IR情報</span></a
             >
-            <a class="btn type-05" href="../../stock_info/index.html"
+            <a class="btn type-05" href="/ir_stock_info/"
               ><span>株式情報</span></a
             >
-            <a class="btn type-05" href="../../others/index.html"
+            <a class="btn type-05" href="/ir_others/"
               ><span>その他情報</span></a
             >
-            <a class="btn type-05" href="../../notice/index.html"
+            <a class="btn type-05" href="/ir_notice/"
               ><span>電子公告</span></a
             >
           </div>
