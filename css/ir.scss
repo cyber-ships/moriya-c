@@ -289,7 +289,7 @@ $breakpoints: (
   a {
     width: 32%;
     //margin: 0 0 0 2%;
-    margin: 0 auto;
+    margin: 0 auto !important;
     @include mq() {
       width: vw(530);
       margin: vw(30) 0 0 0;
