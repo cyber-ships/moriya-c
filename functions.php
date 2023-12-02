@@ -30,11 +30,6 @@ function add_files() {
     wp_enqueue_style('top-style', get_template_directory_uri() . '/css/top.css');
   }
 
-  // maintenance Styles
-  if(is_page('maintenance')){
-    wp_enqueue_style('maintenance-style', get_template_directory_uri() . '/css/maintenance.css'); 
-  }
-
   // maintenance/partial Styles
   if(is_page('maintenance_partial')){
     wp_enqueue_style('maintenance_partial-style', get_template_directory_uri() . '/css/maintenance_partial.css');
@@ -180,6 +175,7 @@ function add_files() {
   || is_tax('recruit_works_category','recruit_cat-04') || is_tax('recruit_works_category','recruit_cat-05') || is_tax('recruit_works_category','recruit_cat-06')){
     wp_enqueue_style('recruit_work-style', get_template_directory_uri() . '/css/recruit_work.css');
   }
+
   // recruit Styles/number Styles
   if(is_page('recruit_number')){
     wp_enqueue_style('recruit_number-style', get_template_directory_uri() . '/css/recruit_number.css');
@@ -190,11 +186,15 @@ function add_files() {
     wp_enqueue_style('recruit_faq-style', get_template_directory_uri() . '/css/recruit_faq.css');
   }
 
+  if(is_page('products') || is_page('products_macklifter') || is_page('products_renewal') || is_page('products_renewalelevator') || 
+  is_page('products_freightelevator') || is_page('products_shipelevator')){
   // products Styles
   wp_enqueue_style('products-style', get_template_directory_uri() . '/css/products.css');
 
   // products Styles
   wp_enqueue_style('products_renewal-style', get_template_directory_uri() . '/css/products_renewal.css');
+
+  }
 
   // policy Styles
   if(is_page('policy') || is_page('policy_privacy') || is_page('policy_antisocial') || is_page('policy_security') || 
@@ -207,17 +207,28 @@ function add_files() {
     wp_enqueue_style('map-style', get_template_directory_uri() . '/css/map.css');
   }
   
-  // works Styles
-  wp_enqueue_style('works-style', get_template_directory_uri() . '/css/works.css');
+  if(is_post_type_archive('works') || is_singular('works') || is_tax('works_category','works_cat-01') || is_tax('works_category','works_cat-02') || is_tax('works_category','works_cat-03') || is_tax('works_category','works_cat-04')){
+    // works Styles
+    wp_enqueue_style('works-style', get_template_directory_uri() . '/css/works.css');
+  }
 
+  if(is_page('contact') || is_page('thanks') || is_page('confirm')){
   // inquiry Styles
   wp_enqueue_style('inquiry-style', get_template_directory_uri() . '/css/inquiry.css');
+  }
 
+  if(is_post_type_archive('news') || is_singular('news')){
   // news Styles
   wp_enqueue_style('news-style', get_template_directory_uri() . '/css/news.css');
 
   // news_detail Styles
   wp_enqueue_style('news_detail-style', get_template_directory_uri() . '/css/news_detail.css');
+  }
+
+    // maintenance Styles
+    if(is_page('maintenance') || is_post_type_archive('maintenance_download') || is_singular('maintenance_download') || is_page('maintenance_ss') || is_page('maintenance_technicalinformation') || is_page('maintenance_periodicinspection') || is_page('maintenance_maintenance-agreement') || is_page('maintenance_conservative-info') || is_page('maintenance_base')){
+      wp_enqueue_style('maintenance-style', get_template_directory_uri() . '/css/maintenance.css'); 
+    }
 }
 
 add_action('wp_enqueue_scripts', 'add_files');
